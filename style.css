@@ -143,6 +143,13 @@
   margin: 0; /* Default spacing */
 }
 
+@media (max-width: 757px) {
+  .shop-now-btn {
+    display: none;
+  }
+
+}
+
 
 .announcementsec {
   display:flex;
@@ -177,6 +184,10 @@
   max-width: 200px;
 }
 
+.sticky-top {
+  top: 50px;
+}
+
 /* Center the ratingstarsdiv content on mobile devices */
 @media (max-width: 768px) { /* Adjust breakpoint as necessary */
   .ratingstarsdiv {
@@ -190,6 +201,7 @@
       margin-bottom: 8px; /* Add spacing if stacked vertically */
   }
 }
+
 
 .custom-carousel-container {
   max-width: 600px;

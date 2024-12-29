@@ -8360,7 +8360,7 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background: linear-gradient(97deg, rgba(189,239,169,1) 0%, rgba(50,93,18,1) 100%, rgba(170,232,141,1) 100%)!important;
+    background-color: #023008;
 }
 
 .bg-secondary {
