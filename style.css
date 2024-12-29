@@ -305,6 +305,13 @@
   }
 }
 
+.productimg {
+  display: block;
+  margin: auto;
+  width:100%;
+}
+
+
   
   /*** Feature ***/
   
