@@ -308,7 +308,9 @@
 .productimg {
   display: block;
   margin: auto;
-  width:100%;
+  max-width:800px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 
