@@ -310,6 +310,14 @@
   padding-top: 20px;
 }
 
+.producttextbox {
+  padding: 1rem;                /* Adds inner space around the text */
+  background-color: #d1f1d5;    /* Applies the light green background color */
+  border-radius: 5px;           /* Rounds the corners */
+  text-align: center;           /* Optional: Centers the text */
+  margin-bottom: 1rem;  
+}
+
 
   
   /*** Feature ***/
