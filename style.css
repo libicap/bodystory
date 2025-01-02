@@ -143,6 +143,19 @@
   margin: 0; /* Default spacing */
 }
 
+.logo-img {
+  margin-left: 10px;
+}
+
+@media (max-width:720px) {
+  .logo-img {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+
+  }
+}
+
 @media (max-width: 992px) {
   .shop-now-btn {
     display: none;
@@ -152,17 +165,13 @@
 
 
 .announcementsec {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  position:fixed;
-  z-index: 10000;
   background-color: white;
   width: 100%;
+  position: fixed;
 }
 
 .announcementdiv {
-  vertical-align: center;
+  max-width: 100%;
 }
 
 .yearendsales {
@@ -171,6 +180,12 @@
   margin-top: 10px;
   margin-bottom:10px;
   font-weight: bold;
+  flex-grow: 1;
+}
+
+.shop-now-btn {
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 .herosection {
@@ -178,6 +193,10 @@
 }
 .ratingstarsdiv {
   display: inline;
+}
+
+.logodiv {
+  padding-top: 40px;
 }
 
 .ratingstars {
@@ -190,6 +209,10 @@
 
 .checkmark {
   width: 20px;
+}
+
+.featurediv {
+  max-width: 300px;
 }
 /* Center the ratingstarsdiv content on mobile devices */
 @media (max-width: 768px) { /* Adjust breakpoint as necessary */
