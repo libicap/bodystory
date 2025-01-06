@@ -145,6 +145,7 @@
 
 .logo-img {
   margin-left: 10px;
+  z-index: 1000;
 }
 
 @media (max-width:720px) {
