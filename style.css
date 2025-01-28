@@ -349,6 +349,10 @@
 
   
   /*** Feature ***/
+
+  .video-wrapper {
+    max-height: 80%;
+  }
   
   .feature-item .border {
     position: relative;
