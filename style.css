@@ -406,8 +406,8 @@
     text-transform: capitalize;
   }
 
-  .fs-4 .text-decoration-line-through {
-    display: inline-block
+  .fs-5 .text-decoration-line-through {
+    display:inline-block;
   }
 
   
