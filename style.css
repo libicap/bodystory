@@ -406,31 +406,9 @@
     text-transform: capitalize;
   }
 
-  /* Ensure the parent div is a flex container and center content */
-.bg-white.text-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Ensures text is centered */
-  height: 100%; /* Ensure it takes up full height if necessary */
-}
-
-/* Make sure the Add to Cart button inside the Shopify component is centered */
-#product-component-1739634954853 .shopify-buy-button {
-  display: block !important;   /* Force block display */
-  margin: 0 auto !important;   /* Ensure it's centered */
-  text-align: center !important; /* Make sure text inside the button is centered */
-}
-
-/* Optionally, you can style the surrounding container to ensure proper alignment */
-#product-component-1739634954853 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
+  .fs-4 .text-decoration-line-through {
+    display: inline-block
+  }
 
   
   /*** How To Use ***/
