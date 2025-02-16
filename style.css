@@ -1,5 +1,12 @@
-/********** Template CSS **********/
-/*** Spinner ***/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; /* Default text */
+}
+h1, h2, h3 {
+  font-weight: 700; /* Bold for headings */
+}
+
+
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -12,14 +19,7 @@
     visibility: visible;
     opacity: 1;
   }
-  
-  .back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
-  }
+
   
   img.animated.pulse {
     animation-duration: 5s;
@@ -60,93 +60,47 @@
     font-weight: normal;
     border-radius: 50px;
   }
-  
-  /*** Navbar ***/
-  .sticky-top {
-    top: -150px;
-    transition: 0.5s;
-  }
-  
-  .navbar {
-    padding: 11px 0 !important;
-    height: 85px;
-  }
-  
-  .navbar .navbar-nav .nav-link {
-    margin-right: 45px;
-    padding: 0;
-    color: var(--bs-dark);
-    font-weight: 500;
-    transition: 0.5s;
-    outline: none;
-  }
-  
-  .navbar .navbar-nav .nav-link:hover,
-  .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-white);
-  }
-  
-  .navbar .dropdown-toggle::after {
-    border: none;
-    content: '\f107';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
-  }
-  
-  @media (max-width: 991.98px) {
-    .navbar .navbar-nav {
-      padding: 0 15px;
-      background: var(--bs-primary);
-    }
-  
-    .navbar .navbar-nav .nav-link {
-      margin-right: 0;
-      padding: 10px 0;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-      display: block;
-      border: none;
-      margin-top: 0;
-      top: 150%;
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.5s;
-    }
-  
-    .navbar .nav-item:hover .dropdown-menu {
-      top: 100%;
-      visibility: visible;
-      transition: 0.5s;
-      opacity: 1;
-    }
-  }
 
-/* Default: Desktop styles */
-.navbar {
+
+
+
+/* Center the div inside the section */
+.logodiv {
   display: flex;
-  justify-content: space-between; /* Distributes items across the navbar */
+  justify-content: center;
   align-items: center;
-  flex-direction: row; /* Row layout by default */
+  width: 100%;
+  padding-bottom: 2.5px;
+  padding-top: 10px;
 }
 
-.navbar .navbar-brand {
-  text-align: left; /* Keeps the logo on the left */
+.announcementdiv {
+
+  display:flex;
+  width: 100%;
+  background-color: white;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
-.navbar .shop-now-btn {
-  display: inline-block; /* Button is visible by default */
-  margin: 0; /* Default spacing */
+
+.announcementdiv p {
+  margin: 0; /* Remove default margin */
+  font-size: 1.2rem; /* Adjust font size for better readability */
+  line-height: 1.5; /* Adds space between lines for better legibility */
+  font-size: clamp(12px, 2vw, 16px); /* Makes text responsive on different screens */
+  font-weight:bold;
 }
 
+
+/* Make the logo responsive */
 .logo-img {
-  margin-left: 10px;
-  z-index: 1000;
+  max-width: 50px;
+  height: auto;
 }
+
 
 @media (max-width:720px) {
   .logo-img {
@@ -168,22 +122,11 @@
 .announcementsec {
   background-color: white;
   width: 100%;
-  position: fixed;
-  z-index: 1000;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
 }
 
-.announcementdiv {
-  max-width: 100%;
-}
-
-.yearendsales {
-  text-align: center;
-  vertical-align: middle;
-  margin-top: 10px;
-  margin-bottom:10px;
-  font-weight: bold;
-  flex-grow: 1;
-}
 
 .shop-now-btn {
   margin-left: auto;
@@ -195,10 +138,6 @@
 }
 .ratingstarsdiv {
   display: inline;
-}
-
-.logodiv {
-  padding-top: 40px;
 }
 
 .ratingstars {
@@ -588,7 +527,6 @@
   .footer .btn.btn-link::before {
     position: relative;
     content: '\f105';
-    font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 10px;
   }
