@@ -221,7 +221,7 @@
                                 <img src="img/hijab3.png" alt="Sports Hijab" class="img-fluid mb-3">
                                 <h4>Black</h4>
                                 <p class="mb-3">Product description goes here</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
+                                <div id='product-component-1740846497185' style="max-width: 200px; margin: 0 auto;"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -229,12 +229,137 @@
                                 <img src="img/hijab3.png" alt="Sports Hijab" class="img-fluid mb-3">
                                 <h4>Beige</h4>
                                 <p class="mb-3">Product description goes here</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
+                                <div id='product-component-1740846497186' style="max-width: 200px; margin: 0 auto;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'mrrpjk-zs.myshopify.com',
+                  storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  // First product (Black)
+                  ui.createComponent('product', {
+                    id: '7595444994132',
+                    variantId: '41812315111508',
+                    node: document.getElementById('product-component-1740846497185'),
+                    moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "auto",
+                              "margin-right": "auto",
+                              "text-align": "center"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Open Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#256105"
+                            },
+                            "background-color": "#163903",
+                            ":focus": {
+                              "background-color": "#256105"
+                            },
+                            "border-radius": "18px",
+                            "margin": "0 auto",
+                            "display": "block"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false,
+                          "options": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Open Sans"
+                        ]
+                      }
+                    }
+                  });
+
+                  // Second product (Beige)
+                  ui.createComponent('product', {
+                    id: '7595444994132',
+                    variantId: '41812315111508',
+                    node: document.getElementById('product-component-1740846497186'),
+                    moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "auto",
+                              "margin-right": "auto",
+                              "text-align": "center"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Open Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#256105"
+                            },
+                            "background-color": "#163903",
+                            ":focus": {
+                              "background-color": "#256105"
+                            },
+                            "border-radius": "18px",
+                            "margin": "0 auto",
+                            "display": "block"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false,
+                          "options": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Open Sans"
+                        ]
+                      }
+                    }
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+            </script>
 
             <!-- Transition Section Start -->
             <section class="transition-section py-5">
