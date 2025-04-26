@@ -202,6 +202,17 @@ h1, h2, h3 {
   }
 }
 
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    text-align: center;      /* Center text */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
 .communityline {
   text-align: center;
   font-size: 32px;
