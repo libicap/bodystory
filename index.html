@@ -64,33 +64,33 @@
         </div>
     </div>
 
-    <section class="herosection bg-primary">
+    <section class="herosection bg-white">
         <div class="container-xl mx-auto" style="max-width: 1400px;">
             <div class="ratingstarsdiv d-flex align-items-center justify-content-center">
                 <img src="img/ratingstars.png" alt="5-Star Ratings" class="ratingstars me-2">
-                <p class="mb-0 text-white">Rated 4.7/5 By Happy Customers</p>
+                <p class="mb-0 text-dark">Rated 4.7/5 By Happy Customers</p>
             </div>
 
             <div class="container-fluid hero-header mb-5">
                 <div class="container">
                     <div class="row g-5 align-items-center text-center">
                         <div class="col-lg-8 text-lg-start">
-                            <h3 class="fw-light text-white animated slideInRight">Sports Tudung Designed For Malaysian Weather</h3>
-                            <h1 class="display-4 text-white animated slideInRight">Protect Yourself From Harsh Heat And Humidity Throughout Your Workout!</h1>
+                            <h3 class="fw-light text-dark animated slideInRight">Sports Tudung Designed For Malaysian Weather</h3>
+                            <h1 class="display-4 text-dark animated slideInRight">Protect Yourself From Harsh Heat And Humidity Throughout Your Workout!</h1>
                             <img class="img-fluid animated pulse infinite mobile-image" src="img/nikemodel.png"
                                 alt="prodcut">
                             <div class="mb-3 mx-lg-0 mx-auto featurediv">   
                                 <div class="d-flex align-items-center featureone">
-                                    <img class="checkmark me-2" src="img/checkmark-white-icon.png">
-                                    <p class="mb-0 text-white text-start ms-2"> 98% UV Blocking</p>
+                                    <i class="fas fa-check me-2 text-dark"></i>
+                                    <p class="mb-0 text-dark text-start ms-2"> 98% UV Blocking</p>
                                 </div>
                                 <div class="d-flex align-items-center featuretwo mt-3">     
-                                    <img class="checkmark me-2" src="img/checkmark-white-icon.png">
-                                    <p class="mb-0 text-white text-start ms-2"> Moisture Wicking Fabric</p>
+                                    <i class="fas fa-check me-2 text-dark"></i>
+                                    <p class="mb-0 text-dark text-start ms-2"> Moisture Wicking Fabric</p>
                                 </div>
                                 <div class="d-flex align-items-center featurethree mt-3">     
-                                    <img class="checkmark me-2" src="img/checkmark-white-icon.png">
-                                    <p class="mb-0 text-white text-start ms-2"> 4-Way Stretch Breathable Fabric</p>
+                                    <i class="fas fa-check me-2 text-dark"></i>
+                                    <p class="mb-0 text-dark text-start ms-2"> 4-Way Stretch Breathable Fabric</p>
                                 </div>
                             </div>
 
@@ -105,6 +105,78 @@
             </div>
         </div>
     </section>
+
+    <!-- Animated Arrow -->
+    <div class="scroll-down-arrow">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <style>
+        .scroll-down-arrow {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            color: #163903;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-20px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+        }
+
+        .scroll-down-arrow.hidden {
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .herosection {
+            padding-bottom: 120px;
+            position: relative;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const arrow = document.querySelector('.scroll-down-arrow');
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    arrow.classList.add('hidden');
+                } else {
+                    // Scrolling up
+                    if (scrollTop < 100) { // Only show if near top of page
+                        arrow.classList.remove('hidden');
+                    }
+                }
+                lastScrollTop = scrollTop;
+            });
+
+            // Click to scroll
+            arrow.addEventListener('click', function() {
+                window.scrollTo({
+                    top: window.innerHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
     <div class="container-fluid px-0">
         <div class="container-xl mx-auto" style="max-width: 1400px;">
@@ -221,7 +293,7 @@
                                 <img src="img/hijab3.png" alt="Sports Hijab" class="img-fluid mb-3">
                                 <h4>Black</h4>
                                 <p class="mb-3">Product description goes here</p>
-                                <div id='product-component-1740846497185' style="max-width: 200px; margin: 0 auto;"></div>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -229,137 +301,12 @@
                                 <img src="img/hijab3.png" alt="Sports Hijab" class="img-fluid mb-3">
                                 <h4>Beige</h4>
                                 <p class="mb-3">Product description goes here</p>
-                                <div id='product-component-1740846497186' style="max-width: 200px; margin: 0 auto;"></div>
+                                <a href="#" class="btn btn-primary">Shop Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <script type="text/javascript">
-            /*<![CDATA[*/
-            (function () {
-              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-              if (window.ShopifyBuy) {
-                if (window.ShopifyBuy.UI) {
-                  ShopifyBuyInit();
-                } else {
-                  loadScript();
-                }
-              } else {
-                loadScript();
-              }
-              function loadScript() {
-                var script = document.createElement('script');
-                script.async = true;
-                script.src = scriptURL;
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-                script.onload = ShopifyBuyInit;
-              }
-              function ShopifyBuyInit() {
-                var client = ShopifyBuy.buildClient({
-                  domain: 'mrrpjk-zs.myshopify.com',
-                  storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',
-                });
-                ShopifyBuy.UI.onReady(client).then(function (ui) {
-                  // First product (Black)
-                  ui.createComponent('product', {
-                    id: '7595444994132',
-                    variantId: '41812315111508',
-                    node: document.getElementById('product-component-1740846497185'),
-                    moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
-                    options: {
-                      "product": {
-                        "styles": {
-                          "product": {
-                            "@media (min-width: 601px)": {
-                              "max-width": "100%",
-                              "margin-left": "auto",
-                              "margin-right": "auto",
-                              "text-align": "center"
-                            }
-                          },
-                          "button": {
-                            "font-family": "Open Sans, sans-serif",
-                            ":hover": {
-                              "background-color": "#256105"
-                            },
-                            "background-color": "#163903",
-                            ":focus": {
-                              "background-color": "#256105"
-                            },
-                            "border-radius": "18px",
-                            "margin": "0 auto",
-                            "display": "block"
-                          }
-                        },
-                        "contents": {
-                          "img": false,
-                          "title": false,
-                          "price": false,
-                          "options": false
-                        },
-                        "text": {
-                          "button": "Add to cart"
-                        },
-                        "googleFonts": [
-                          "Open Sans"
-                        ]
-                      }
-                    }
-                  });
-
-                  // Second product (Beige)
-                  ui.createComponent('product', {
-                    id: '7595444994132',
-                    variantId: '41812315111508',
-                    node: document.getElementById('product-component-1740846497186'),
-                    moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
-                    options: {
-                      "product": {
-                        "styles": {
-                          "product": {
-                            "@media (min-width: 601px)": {
-                              "max-width": "100%",
-                              "margin-left": "auto",
-                              "margin-right": "auto",
-                              "text-align": "center"
-                            }
-                          },
-                          "button": {
-                            "font-family": "Open Sans, sans-serif",
-                            ":hover": {
-                              "background-color": "#256105"
-                            },
-                            "background-color": "#163903",
-                            ":focus": {
-                              "background-color": "#256105"
-                            },
-                            "border-radius": "18px",
-                            "margin": "0 auto",
-                            "display": "block"
-                          }
-                        },
-                        "contents": {
-                          "img": false,
-                          "title": false,
-                          "price": false,
-                          "options": false
-                        },
-                        "text": {
-                          "button": "Add to cart"
-                        },
-                        "googleFonts": [
-                          "Open Sans"
-                        ]
-                      }
-                    }
-                  });
-                });
-              }
-            })();
-            /*]]>*/
-            </script>
 
 
 
