@@ -2,6 +2,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; /* Default text */
   color: #000;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', sans-serif;
@@ -191,10 +194,10 @@ p, span, a, li {
 
 
 .custom-carousel-container {
-  max-width: 600px;
-  margin: 50px auto; /* 50px space on top and bottom */
-  border-radius: 10px; /* Optional: Rounded corners */
-  overflow: hidden; /* Optional: Hide overflowing content */
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .carousel-item img {
@@ -234,16 +237,25 @@ p, span, a, li {
 }
 
 
-.communityline {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  text-align: center;
-  font-size: 32px;
+.communitydiv {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.communitydiv {
-  padding-top: 5px;
-  padding-bottom:20px;
+.communityline {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
 }
 
   
@@ -635,5 +647,47 @@ p, span, a, li {
     background-color: #256105 !important;
     border-color: #256105 !important;
     box-shadow: 0 0 0 0.25rem rgba(37, 97, 5, 0.25) !important;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow-x: hidden;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 100%;
+    }
+    
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }
   
