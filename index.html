@@ -55,12 +55,37 @@
                 <div class="logodiv">
                     <img src="img/logo.svg" alt="Logo" class="logo-img" height="50">
                 </div>
-                <div class="announcementdiv">
-                    <p class="fs-7 mb-0">Free Shipping To West Malaysia and Over RM100 Spent</p>
+                <div class="announcementdiv" style="background-color: #fff;">
+                    <p class="fs-7 mb-0" style="color: #000;">Free Shipping To West Malaysia and Over RM100 Spent</p>
                 </div>
             </section>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const announcementDiv = document.querySelector('.announcementdiv');
+            const announcementText = announcementDiv.querySelector('p');
+            const logoDiv = document.querySelector('.logodiv');
+            
+            window.addEventListener('scroll', function() {
+                const logoRect = logoDiv.getBoundingClientRect();
+                const logoBottom = logoRect.bottom;
+                const logoTop = logoRect.top;
+                
+                // Check if logo is fully visible
+                if (logoTop >= 0 && logoBottom <= window.innerHeight) {
+                    // Logo is fully visible
+                    announcementDiv.style.backgroundColor = '#fff';
+                    announcementText.style.color = '#000';
+                } else {
+                    // Logo is not fully visible
+                    announcementDiv.style.backgroundColor = '#163903';
+                    announcementText.style.color = '#fff';
+                }
+            });
+        });
+    </script>
 
     <section class="herosection bg-white">
         <div class="container-xl mx-auto" style="max-width: 1400px; margin-top: -20px;">

@@ -99,23 +99,23 @@ p, span, a, li {
 }
 
 .announcementdiv {
-
-  display:flex;
-  width: 100%;
-  background-color: white;
-  padding: 10px 0px;
-  justify-content: center;
-  align-items: center;
-  height: auto;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-
 .announcementdiv p {
-  margin: 0; /* Remove default margin */
-  font-size: 1.2rem; /* Adjust font size for better readability */
-  line-height: 1.5; /* Adds space between lines for better legibility */
-  font-size: clamp(12px, 2vw, 16px); /* Makes text responsive on different screens */
-  font-weight: 700;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-size: clamp(12px, 2vw, 16px);
+    font-weight: 700;
+    transition: color 0.5s ease;
 }
 
 
