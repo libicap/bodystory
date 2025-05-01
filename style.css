@@ -280,17 +280,20 @@ h1, h2, h3 {
   }
 }
 
+.productcontainer {
+    max-width: 1400px;
+}
+
 .productimg {
-  padding-bottom: 20px;
-  padding-top: 20px;
+    padding: 20px 0;
 }
 
 .producttextbox {
-  padding: 1rem;                /* Adds inner space around the text */
-  background-color: #d1f1d5;    /* Applies the light green background color */
-  border-radius: 20px;           /* Rounds the corners */
-  text-align: center;           /* Optional: Centers the text */
-  margin-bottom: 1rem;  
+    padding: 1rem;
+    background-color: #d1f1d5;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 
@@ -568,4 +571,20 @@ h1, h2, h3 {
     padding-right: 0;
     border-right: none;
   }
+  
+.container-xl {
+    max-width: 1400px;
+}
+
+.herosection .container-xl {
+    margin-top: -20px;
+}
+
+.hero-header {
+    position: relative;
+    margin-top: -85px;
+    padding-top: 5rem;
+    background: url(../img/bg.png) center center no-repeat;
+    background-size: cover;
+}
   
