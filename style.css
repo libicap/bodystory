@@ -1,11 +1,32 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; /* Default text */
+  color: #000;
 }
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700; /* Bold for headings */
+  color: #000;
 }
 
+p, span, a, li {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+}
+
+/* Override any specific text colors that might be set */
+.text-primary,
+.text-dark,
+.text-white {
+  color: #000 !important;
+}
+
+/* Keep white text for specific elements that need it */
+.btn-primary,
+.btn-dark,
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+}
 
 #spinner {
     opacity: 0;
@@ -27,7 +48,8 @@ h1, h2, h3 {
   
   /*** Button ***/
   .btn {
-    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     transition: 0.5s;
   }
   
@@ -90,7 +112,7 @@ h1, h2, h3 {
   font-size: 1.2rem; /* Adjust font size for better readability */
   line-height: 1.5; /* Adds space between lines for better legibility */
   font-size: clamp(12px, 2vw, 16px); /* Makes text responsive on different screens */
-  font-weight:bold;
+  font-weight: 700;
 }
 
 
@@ -213,9 +235,10 @@ h1, h2, h3 {
 
 
 .communityline {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   text-align: center;
   font-size: 32px;
-  font-weight: bold;
 }
 
 .communitydiv {
@@ -589,5 +612,28 @@ h1, h2, h3 {
     padding-top: 5rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
+}
+
+.btn-primary,
+.btn-dark,
+.btn {
+    background-color: #163903 !important;
+    border-color: #163903 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-dark:hover,
+.btn:hover {
+    background-color: #256105 !important;
+    border-color: #256105 !important;
+}
+
+.btn-primary:focus,
+.btn-dark:focus,
+.btn:focus {
+    background-color: #256105 !important;
+    border-color: #256105 !important;
+    box-shadow: 0 0 0 0.25rem rgba(37, 97, 5, 0.25) !important;
 }
   
