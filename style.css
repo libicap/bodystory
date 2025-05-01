@@ -228,7 +228,7 @@ h1, h2, h3 {
   .hero-header {
     position: relative;
     margin-top: -85px;
-    padding-top: 12rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     background: url(../img/bg.png) center center no-repeat;
     background-size: cover;
