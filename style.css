@@ -107,6 +107,9 @@ p, span, a, li {
     align-items: center;
     height: auto;
     transition: background-color 0.5s ease, color 0.5s ease;
+    position: sticky; /* Keep the announcement bar fixed */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .announcementdiv p {
@@ -711,4 +714,8 @@ p, span, a, li {
         margin-right: -15px;
         margin-left: -15px;
     }
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
