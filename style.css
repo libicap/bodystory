@@ -320,11 +320,21 @@ p, span, a, li {
 }
 
 .productimg {
-    width: 100%; /* Set the width to 100% of the container */
+    width: 100%; /* Ensure the image takes the full width of the container */
     height: auto; /* Maintain aspect ratio */
     aspect-ratio: 1 / 1; /* Enforce a 1:1 ratio */
     object-fit: cover; /* Ensure the image covers the area without distortion */
     transition: opacity 0.5s ease-in-out; /* Smooth transition for image changes */
+}
+
+.productimg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Optional: Set a max width for the container */
+    aspect-ratio: 1 / 1; /* Enforce a 1:1 ratio for the container */
+    overflow: hidden; /* Ensure the image does not overflow */
 }
 
 .productimg.fade-out {
