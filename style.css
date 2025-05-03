@@ -99,17 +99,13 @@ p, span, a, li {
 }
 
 .announcementdiv {
-    display: flex;
-    width: 100%;
-    background-color: white;
-    padding: 10px 0px;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    transition: background-color 0.5s ease, color 0.5s ease;
     position: sticky; /* Keep the announcement bar fixed */
     top: 0; /* Stick to the top of the viewport */
     z-index: 1000; /* Ensure it stays above other elements */
+    height: 50px; /* Set a consistent height to prevent layout shifts */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .announcementdiv p {
@@ -354,6 +350,8 @@ p, span, a, li {
     border-radius: 20px;
     text-align: center;
     margin-bottom: 1rem;
+    min-height: 150px; /* Set a consistent minimum height to prevent layout shifts */
+    box-shadow: none; /* Removed the subtle shadow for a clean look */
 }
 
 
