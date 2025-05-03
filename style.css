@@ -384,6 +384,21 @@ p, span, a, li {
     }
 }
 
+@media (max-width: 768px) {
+    .product-box:nth-child(2) {
+        transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    }
+
+    .product-box:nth-child(2):hover {
+        transform: scale(1.05); /* Zoom in Duo Colors when scrolling reaches this part */
+    }
+
+    .product-box:nth-child(1):active, /* Black */
+    .product-box:nth-child(3):active { /* Beige */
+        transform: scale(1.05); /* Zoom in on click for Black and Beige */
+    }
+}
+
   
   /*** Feature ***/
 
