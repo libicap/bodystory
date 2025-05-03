@@ -102,10 +102,11 @@ p, span, a, li {
     position: sticky; /* Keep the announcement bar fixed */
     top: 0; /* Stick to the top of the viewport */
     z-index: 1000; /* Ensure it stays above other elements */
-    height: 50px; /* Set a consistent height to prevent layout shifts */
+    height: 50px; /* Fixed height to prevent layout shifts */
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: none; /* Disable transitions during scrolling */
 }
 
 .announcementdiv p {
@@ -350,10 +351,24 @@ p, span, a, li {
     border-radius: 20px;
     text-align: center;
     margin-bottom: 1rem;
-    min-height: 150px; /* Set a consistent minimum height to prevent layout shifts */
+    min-height: 150px; /* Ensure consistent height */
     box-shadow: none; /* Removed the subtle shadow for a clean look */
+    transition: none; /* Disable transitions */
 }
 
+.product-box {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.product-box:hover {
+    transform: scale(1.05); /* Slightly zoom in the box on hover */
+}
+
+@media (max-width: 1024px) {
+    .product-box:active {
+        transform: scale(1.05); /* Apply zoom effect on click for tablets */
+    }
+}
 
   
   /*** Feature ***/
@@ -715,5 +730,5 @@ p, span, a, li {
 }
 
 html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+    scroll-behavior: auto; /* Temporarily disable smooth scrolling */
 }
