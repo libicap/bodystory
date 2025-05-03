@@ -320,7 +320,19 @@ p, span, a, li {
 }
 
 .productimg {
-    padding: 20px 0;
+    width: 100%; /* Set the width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    aspect-ratio: 1 / 1; /* Enforce a 1:1 ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for image changes */
+}
+
+.productimg.fade-out {
+    opacity: 0; /* Fade out effect */
+}
+
+.productimg.fade-in {
+    opacity: 1; /* Fade in effect */
 }
 
 .producttextbox {
@@ -690,4 +702,3 @@ p, span, a, li {
         margin-left: -15px;
     }
 }
-  

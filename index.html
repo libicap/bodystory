@@ -161,35 +161,105 @@
             padding-bottom: 30px;
             position: relative;
         }
+
+        .producttextbox.highlight {
+            position: relative;
+        }
+
+        .producttextbox.highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #163903;
+            animation: highlight-animation 0.5s ease-in-out;
+        }
+
+        @keyframes highlight-animation {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        .fade-in {
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
     </style>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const arrow = document.querySelector('.scroll-down-arrow');
-            let lastScrollTop = 0;
+        document.addEventListener('DOMContentLoaded', function () {
+            const productTextboxes = document.querySelectorAll('.producttextbox');
+            const productImage = document.querySelector('.productimg');
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                if (scrollTop > lastScrollTop) {
-                    // Scrolling down
-                    arrow.classList.add('hidden');
+            // Pair images with product textboxes
+            const imagePairs = [
+                { textbox: productTextboxes[0], image: 'img/weather.png' },
+                { textbox: productTextboxes[1], image: 'img/egghead.png' },
+                { textbox: productTextboxes[2], image: 'img/odor.png' },
+                { textbox: productTextboxes[3], image: 'img/wrinkles.png' },
+                { textbox: productTextboxes[4], image: 'img/fabric.png' }
+            ];
+
+            let currentIndex = 0;
+
+            function updateImage(index) {
+                const { image, textbox } = imagePairs[index];
+
+                // Add fade-out class
+                productImage.classList.add('fade-out');
+
+                // Wait for the fade-out transition to complete
+                setTimeout(() => {
+                    productImage.setAttribute('src', image);
+
+                    // Remove fade-out and add fade-in class
+                    productImage.classList.remove('fade-out');
+                    productImage.classList.add('fade-in');
+
+                    // Remove fade-in class after the transition
+                    setTimeout(() => {
+                        productImage.classList.remove('fade-in');
+                    }, 500);
+                }, 500);
+
+                if (isMobile) {
+                    // Hide all textboxes except the current one
+                    productTextboxes.forEach((textbox, i) => {
+                        textbox.style.display = i === index ? 'block' : 'none';
+                    });
                 } else {
-                    // Scrolling up
-                    if (scrollTop < 100) { // Only show if near top of page
-                        arrow.classList.remove('hidden');
-                    }
+                    // Highlight the corresponding textbox with an animated line
+                    productTextboxes.forEach((textbox, i) => {
+                        textbox.classList.remove('highlight');
+                    });
+                    textbox.classList.add('highlight');
                 }
-                lastScrollTop = scrollTop;
-            });
+            }
 
-            // Click to scroll
-            arrow.addEventListener('click', function() {
-                window.scrollTo({
-                    top: window.innerHeight,
-                    behavior: 'smooth'
-                });
-            });
+            function startImageRotation() {
+                const interval = isMobile ? 5000 : 3000; // 5 seconds for mobile, 3 seconds for desktop/tablet
+
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % imagePairs.length;
+                    updateImage(currentIndex);
+                }, interval);
+            }
+
+            // Initialize the first image and start rotation
+            updateImage(currentIndex);
+            startImageRotation();
         });
     </script>
 
@@ -661,7 +731,7 @@
 
 
     <div data-lastpass-root=""
-        style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important;">
+        style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important; float: left !important;">
     </div>
 
 
