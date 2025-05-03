@@ -369,6 +369,12 @@ p, span, a, li {
     height: auto; /* Maintain aspect ratio */
     aspect-ratio: 1 / 1; /* Enforce a 1:1 ratio */
     object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 15px; /* Rounded corners for product images */
+}
+
+.product-box.zoomed {
+    transform: scale(1.05); /* Apply zoom effect */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 
 @media (max-width: 1024px) {
