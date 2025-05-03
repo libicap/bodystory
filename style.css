@@ -375,6 +375,13 @@ p, span, a, li {
     .product-box:active {
         transform: scale(1.05); /* Apply zoom effect on click for tablets */
     }
+
+    .product-box img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1; /* Enforce 1:1 ratio for tablets */
+        object-fit: cover;
+    }
 }
 
   
