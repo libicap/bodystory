@@ -213,6 +213,7 @@
             ];
 
             let currentIndex = 0;
+            let intervalId;
 
             function updateImage(index) {
                 const { image, textbox } = imagePairs[index];
@@ -240,7 +241,7 @@
                         textbox.style.display = i === index ? 'block' : 'none';
                     });
                 } else {
-                    // Highlight the corresponding textbox with an animated line
+                    // Highlight the corresponding textbox
                     productTextboxes.forEach((textbox, i) => {
                         textbox.classList.remove('highlight');
                     });
@@ -251,10 +252,20 @@
             function startImageRotation() {
                 const interval = isMobile ? 5000 : 3000; // 5 seconds for mobile, 3 seconds for desktop/tablet
 
-                setInterval(() => {
+                intervalId = setInterval(() => {
                     currentIndex = (currentIndex + 1) % imagePairs.length;
                     updateImage(currentIndex);
                 }, interval);
+            }
+
+            // Add click event for mobile to change to the next image
+            if (isMobile) {
+                productImage.addEventListener('click', function () {
+                    clearInterval(intervalId); // Stop automatic rotation on click
+                    currentIndex = (currentIndex + 1) % imagePairs.length;
+                    updateImage(currentIndex);
+                    startImageRotation(); // Restart automatic rotation
+                });
             }
 
             // Initialize the first image and start rotation
