@@ -409,31 +409,50 @@ p, span, a, li {
   /*** Feature ***/
 
   .video-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Ensure the video takes the full width of the column */
+    max-width: 600px; /* Set a maximum width for the video */
+    margin: 0 auto; /* Center the video horizontally */
     display: flex;
+    justify-content: flex-start; /* Align the video to the left */
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
   }
 
   .video-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-height: 450px;
+    width: 100%; /* Ensure the video scales responsively */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height for the video */
+    object-fit: cover; /* Ensure the video covers the area without distortion */
   }
 
-  @media (max-width: 768px) {
-    .video-wrapper video {
-        max-height: 250px;
-    }
-  }
-  
   .feature-item .border {
     position: relative;
     border-color: rgba(255, 255, 255, 0.2) !important;
     z-index: 1;
+  }
+
+  .feature-list {
+    max-width: 600px; /* Match the width of the video */
+    margin: 0 auto; /* Center the list horizontally */
+    padding-left: 0; /* Remove default padding */
+    list-style: none; /* Remove default bullets */
+  }
+
+  .feature-list li {
+    display: flex; /* Align items horizontally */
+    align-items: flex-start; /* Align text with bullet points */
+    margin-bottom: 1rem; /* Add spacing between list items */
+  }
+
+  .feature-list li::before {
+    content: '\2022'; /* Add a bullet point */
+    color: #163903; /* Match the theme color */
+    font-size: 1.5rem; /* Make the bullet larger */
+    margin-right: 1rem; /* Add spacing between bullet and text */
+  }
+
+  .feature-list li strong {
+    font-weight: 600; /* Highlight the key text */
+    color: #000; /* Ensure good contrast */
   }
   
   /*** Deal ***/
