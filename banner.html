@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Banner</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eaeaea; /* Slightly darker gray background */
+        }
+
+        .banner {
+            width: 1080px;
+            height: 1080px;
+            background-color: #eaeaea; /* Slightly darker gray background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text alignment */
+            font-family: 'League Spartan', sans-serif; /* Use League Spartan font */
+            color: #000000; /* Black text color */
+            padding: 40px; /* Add padding for spacing */
+            box-sizing: border-box;
+            position: relative; /* Enable positioning for child elements */
+        }
+
+        .banner p {
+            font-size: 75px; /* Font size for all text */
+            font-weight: 900; /* Maximum boldness */
+            color: #000000; /* Black text color */
+            margin: 0; /* Remove extra margin */
+            line-height: 1.5; /* Consistent line spacing */
+            margin-bottom: auto; /* Push the text upward */
+        }
+
+        .logo {
+            position: absolute;
+            bottom: 20px; /* Position 20px from the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust for the logo's size */
+            width: 50px; /* Adjust the logo size */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .spacer {
+            flex-grow: 1; /* Add flexible space above the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="spacer"></div> <!-- Flexible space above -->
+        <p>Move now</p>
+        <img src="img/logo.svg" alt="Logo" class="logo"> <!-- Add logo here -->
+    </div>
+</body>
+</html>
