@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BodyStory</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-header {
+            background: #163903;
+            color: #fff;
+            padding: 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-header .container {
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-header-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 70px;
+        }
+        .contact-header-left {
+            display: flex;
+            align-items: center;
+            min-width: 0;
+        }
+        .contact-header-title {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            white-space: nowrap;
+            text-align: left;
+        }
+        .contact-header-policy-link {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-left: 24px;
+            cursor: pointer;
+            text-align: right;
+        }
+        @media (max-width: 767.98px) {
+            .contact-header {
+                height: 70px;
+                padding: 0;
+            }
+            .contact-header .container {
+                height: 70px;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                display: flex;
+                align-items: center;
+            }
+            .contact-header-row {
+                flex-direction: column !important;
+                align-items: stretch !important;
+                justify-content: flex-start !important;
+                height: 70px;
+            }
+            .contact-header-left {
+                justify-content: center !important;
+                text-align: center !important;
+                width: 100% !important;
+            }
+            .contact-header-title {
+                font-size: 1rem !important;
+                text-align: center !important;
+                white-space: normal;
+            }
+            .contact-header-policy-link {
+                margin-left: 0 !important;
+                margin-top: 8px !important;
+                width: 100%;
+                text-align: center !important;
+                font-size: 1rem !important;
+            }
+            .mobile-exchange-spacer {
+                display: block;
+                height: 50px;
+                width: 100%;
+            }
+        }
+        @media (min-width: 768px) {
+            .mobile-exchange-spacer {
+                display: none;
+            }
+        }
+        body { background: #f8f9fa; font-family: 'Open Sans', Arial, sans-serif; }
+        .contact-section { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(22,57,3,0.07); padding: 32px; }
+        .contact-section h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: 18px; color: #163903; }
+        .contact-section p { font-size: 1.05rem; margin-bottom: 18px; }
+        .contact-details { font-size: 1.05rem; margin-bottom: 18px; }
+        .contact-details strong { color: #163903; }
+        .contact-box-link {
+            max-width:260px; min-width:180px; background:#fff; border-radius:12px;
+            box-shadow:0 2px 8px rgba(22,57,3,0.07); padding:32px 18px; text-align:center;
+            color:#111; font-weight:700; font-size:1.15rem; transition:box-shadow 0.2s;
+            border:2px solid #163903; 
+            text-decoration:none;
+            margin:0;
+            display:block;
+        }
+        .contact-box-link:hover, .contact-box-link:focus {
+            box-shadow:0 4px 16px rgba(22,57,3,0.13);
+            border-color:#145c2a;
+            color:#145c2a;
+            background:#f6fff6;
+        }
+        @media (max-width: 767.98px) {
+            .contact-section { padding: 18px; }
+            .container.d-flex {
+                flex-direction:column !important;
+                gap:16px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="contact-header">
+      <div class="container py-3">
+        <div class="contact-header-row">
+          <div class="contact-header-left">
+            <img src="img/logowhitecropped.png" alt="BodyStory Logo" style="max-height:24px; height:24px; margin-right:12px;">
+            <span class="contact-header-title">Contact Us</span>
+          </div>
+          <a href="refundexchange.html" class="contact-header-policy-link">Read Policy Here</a>
+        </div>
+      </div>
+    </header>
+    <div style="height:70px;"></div>
+    <div class="mobile-exchange-spacer"></div>
+    <div style="height:50px;"></div>
+    <div class="container d-flex justify-content-center align-items-center mb-4" style="gap:24px; flex-wrap:wrap;">
+        <a href="refundexchange.html#exchange" class="contact-box-link">
+            I Want An Exchange
+        </a>
+        <a href="refundexchange.html#refund" class="contact-box-link">
+            Return and Refund
+        </a>
+    </div>
+    <div class="contact-section">
+        <h2>Contact Details</h2>
+        <div class="contact-details">
+            <strong>Address:</strong> 1, Jalan SP 16, Taman Sri Putra, 47000, Sungai Buloh Selangor<br>
+            <strong>Whatsapp Us:</strong> <a href="https://wa.me/60123005566" target="_blank">+60123005566</a><br>
+        </div>
+    </div>
+</body>
+</html>
