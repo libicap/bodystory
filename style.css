@@ -802,3 +802,7 @@ html {
 .refund-policy-details ul {
   margin-bottom: 1.5em;
 }
+
+.perfect-workout-section {
+    max-width: 800px;
+}
