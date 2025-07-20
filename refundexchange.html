@@ -53,21 +53,53 @@
                 display: block !important;
             }
         }
+        .refund-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.refund-logo {
+  max-height: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+.header-title {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.header-contact-desktop {
+  background-color: #fff;
+  color: #163903;
+  text-decoration: underline;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 10px 18px;
+  font-weight: bold;
+  margin-left: 0;
+}
+body {
+  padding-top: 70px !important;
+}
     </style>
 </head>
 <body>
-    <header style="background-color: #163903; color: #fff;">
+    <header class="refund-header" style="background-color: #163903; color: #fff; width: 100%; position: fixed; top: 0; left: 0; z-index: 1000;">
       <div class="container py-3">
-        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between">
-          <div class="d-flex align-items-center justify-content-center mb-2 mb-md-0">
-            <img src="img/logowhitecropped.png" alt="BodyStory Logo" style="height:36px; margin-right:12px;">
-            <span class="fw-bold header-title" style="color:#fff;">Refund, Returns And Exchange Policy</span>
+        <div class="d-flex flex-row align-items-center justify-content-between w-100 refund-header-row">
+          <div class="d-flex align-items-center refund-header-left" style="min-width:0;">
+            <img src="img/logowhitecropped.png" alt="BodyStory Logo" class="refund-logo">
+            <span class="fw-bold header-title" style="color:#fff; font-size:1.1rem;">Refund, Returns And Exchange Policy</span>
           </div>
-          <a href="mailto:info@bodystory.com" class="btn fw-bold header-contact-desktop" style="background-color:#fff; color:#163903; text-decoration:underline; border-radius:6px; font-size:1.1rem; text-align:center; padding:10px 18px; display:none;">Contact Us For Help</a>
+          <a href="mailto:info@bodystory.com" class="btn fw-bold header-contact-desktop" style="background-color:#fff; color:#163903; text-decoration:underline; border-radius:6px; font-size:1.1rem; text-align:center; padding:10px 18px; margin-left:24px;">Contact Us For Help</a>
         </div>
       </div>
     </header>
-    <div style="height:30px;"></div>
+    <div style="height:70px;"></div>
     <div class="container py-5">
         <h1 class="text-primary mb-4">Unhappy with your purchase? We are here to help!</h1>
         <p>We want you to be completely satisfied with your purchase. If you are not happy with your order, please review our policy below:</p>
@@ -137,6 +169,71 @@
   }
   .header-contact-desktop {
     display: block !important;
+  }
+}
+@media (min-width: 768px) {
+  .refund-header-left {
+    justify-content: flex-start !important;
+    text-align: left !important;
+  }
+  .refund-header .d-flex.flex-row {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .refund-header .d-flex.flex-row {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .refund-header-left {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .header-title {
+    font-size: 1rem !important;
+    text-align: center !important;
+    white-space: normal;
+  }
+  .header-contact-desktop {
+    margin-left: 0 !important;
+    margin-top: 8px !important;
+    width: 100%;
+  }
+}
+/* --- Responsive header row --- */
+@media (min-width: 768px) {
+  .refund-header-row {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .refund-header-left {
+    justify-content: flex-start !important;
+    text-align: left !important;
+    flex: 1 1 auto !important;
+  }
+  .header-contact-desktop {
+    margin-left: 24px !important;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .refund-header-row {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+  }
+  .refund-header-left {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .header-title {
+    font-size: 1rem !important;
+    text-align: center !important;
+    white-space: normal;
   }
 }
 </style>

@@ -786,3 +786,18 @@ p, span, a, li {
 html {
     scroll-behavior: auto; /* Temporarily disable smooth scrolling */
 }
+
+/* Remove list bullets from refund policy details */
+.refund-policy-details ul,
+.refund-policy-details li {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.refund-policy-details li strong {
+  display: block;
+  margin-bottom: 0.7em;
+}
+.refund-policy-details ul {
+  margin-bottom: 1.5em;
+}
