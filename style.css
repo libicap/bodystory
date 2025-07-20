@@ -757,6 +757,7 @@ p, span, a, li {
     margin-right: auto;
     margin-left: auto;
     overflow-x: hidden;
+    padding-top: 50px;
 }
 
 .row {
