@@ -370,7 +370,7 @@
           </div>
           <!-- Right: Headline -->
           <div class="col-md-6 text-center text-md-start">
-            <h4 class="fw-light mb-2">Just like your second skin, feels cool, natural, and comfortable</h4>
+            <h3 class="fw-light mb-2" style="max-width:800px; margin:0 auto; text-align:center;">Just like your second skin, feels cool, natural, and comfortable</h3>
             <h2 class="fw-bold">BodyStory TieFit Sports Tudung</h2>
             <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mt-3 mb-2">
               <img src="img/wrinkleresistanticon.png" alt="Wrinkle Resistant" style="width:58px; height:58px; object-fit:contain;">
@@ -520,11 +520,13 @@
                       overflow-x: hidden;
                     }
                     .row.g-3.justify-content-center {
-                      flex-direction: column !important;
+                      display: block !important;
                       min-height: unset;
                       margin-left: 0 !important;
                       margin-right: 0 !important;
-                      gap: 0 !important;
+                      margin-bottom: 0 !important;
+                      border: none !important;
+                      padding: 0 !important;
                     }
                     .col-6.col-md-6.col-lg-6 {
                       flex: 0 0 100vw;
@@ -532,6 +534,10 @@
                       width: 100vw;
                       padding-left: 0 !important;
                       padding-right: 0 !important;
+                     margin-bottom: 0 !important;
+                     margin-top: 0 !important;
+                     padding: 0 !important;
+                     border: none !important;
                     }
                     .offer-box {
                       margin-bottom: 0;
@@ -545,10 +551,14 @@
                       box-sizing: border-box;
                       border: 1px solid #d1d5db;
                       transition: box-shadow 0.35s cubic-bezier(.4,2,.6,1);
+                     margin-top: 0 !important;
+                     margin-bottom: 0 !important;
+                     padding: 0 !important;
                     }
                     .offer-box > * {
                       padding-top: 0 !important;
                       padding-bottom: 0 !important;
+                     margin: 0 !important;
                     }
                     .offer-box.zoomed {
                       position: relative !important;
@@ -564,6 +574,13 @@
                     .offer-box.zoomed ~ .offer-box {
                       pointer-events: auto;
                     }
+                   /* Remove extra spacing from Bootstrap utility classes */
+                   .row.g-3.justify-content-center > [class^='col-'] {
+                     margin-bottom: 0 !important;
+                     margin-top: 0 !important;
+                     padding: 0 !important;
+                     border: none !important;
+                   }
                   }
                 </style>
                 <script>
