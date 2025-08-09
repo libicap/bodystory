@@ -121,6 +121,18 @@
 
 
     <style>
+@media (max-width: 575.98px) {
+  .productleft .producttextbox,
+  .productright .producttextbox {
+    height: 120px;
+    min-height: 120px;
+    max-height: 160px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
         .herosection {
             padding-bottom: 30px;
@@ -334,15 +346,12 @@
         </div>
     </section>
 
-
-    <!-- Banner Video Section Start -->
     <section class="banner-video-section" style="padding:0; margin:0; width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; background:#000;">
       <video class="banner-video" autoplay muted loop playsinline poster="img/bannervid.jpg" style="width:100vw; height:auto; max-height:480px; object-fit:cover; display:block; background:#000;">
         <source src="img/bannervid.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>
-    <!-- Banner Video Section End -->
 
     <section class="shopyourproduct py-5" id="shopyourproduct">
                 <div class="container mx-auto" style="max-width: 1400px;">
