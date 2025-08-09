@@ -91,7 +91,7 @@
         <div class="container-xl mx-auto" style="max-width: 1400px; margin-top: -20px;">
           <div class="hero-header mb-3">
             <div class="herogrid" style="display: flex; flex-wrap: wrap; min-height: 340px;">
-              <div class="heroleft" style="flex: 1 1 50%; min-width: 300px; display: flex; flex-direction: column; justify-content: center; padding: 32px 24px 32px 0;">
+              <div class="heroleft" style="flex: 1 1 50%; min-width: 300px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 32px 24px 32px 0;">
                 <h3 class="fw-light text-dark animated slideInRight mb-2">Sports Tudung Designed For Malaysian Weather</h3>
                 <h1 class="display-4 text-dark animated slideInRight mb-3">Stay Cool and Dry Throughout Your Workout!</h1>
                 <img class="img-fluid animated pulse infinite mobile-image d-block d-lg-none" src="img/heroblack.PNG" alt="prodcut">
@@ -141,6 +141,15 @@
   .heroleft {
     padding-left: 12px !important;
     padding-right: 12px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .heroleft h3,
+  .heroleft h1 {
+    width: 100%;
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 
