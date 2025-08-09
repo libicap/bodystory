@@ -334,7 +334,17 @@
         </div>
     </section>
 
-            <section class="shopyourproduct py-5" id="shopyourproduct">
+
+    <!-- Banner Video Section Start -->
+    <section class="banner-video-section" style="padding:0; margin:0; width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; background:#000;">
+      <video class="banner-video" autoplay muted loop playsinline poster="img/bannervid.jpg" style="width:100vw; height:auto; max-height:480px; object-fit:cover; display:block; background:#000;">
+        <source src="img/bannervid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <!-- Banner Video Section End -->
+
+    <section class="shopyourproduct py-5" id="shopyourproduct">
                 <div class="container mx-auto" style="max-width: 1400px;">
                     <div class="row g-4">
                         <div class="col-md-4 order-2 order-md-1">
@@ -529,168 +539,7 @@
                     </div>
                   </div>
                 </div>
-                <style>
-                  .offer-box {
-                    cursor: pointer;
-                    z-index: 1;
-                    overflow: hidden;
-                    border-radius: 12px !important;
-                    transition: box-shadow 0.35s cubic-bezier(.4,2,.6,1),
-                                transform 0.35s cubic-bezier(.4,2,.6,1);
-                  }
-                  .offer-box .zoomed-extra {
-                    max-height: 0;
-                    overflow: hidden;
-                    opacity: 0;
-                    transition: max-height 0.4s cubic-bezier(.4,2,.6,1), opacity 0.3s cubic-bezier(.4,2,.6,1);
-                    display: block !important;
-                  }
-                  .offer-box.zoomed .zoomed-extra {
-                    max-height: 500px;
-                    opacity: 1;
-                  }
-                  .offer-box.zoomed {
-                    position: relative !important;
-                    width: 100%;
-                    box-shadow: 0 12px 48px rgba(22,57,3,0.25);
-                    background: #fff;
-                    transform: scale(1.01);
-                    opacity: 1;
-                    border-radius: 12px !important;
-                  }
-                  @media (min-width: 768px) {
-                    .row.g-3.justify-content-center {
-                      position: relative;
-                    }
-                    .col-6.col-md-6.col-lg-6 {
-                      /* Use Bootstrap grid for 2x2 layout, no fixed width or centering here */
-                      padding-left: 0 !important;
-                      padding-right: 0 !important;
-                    }
-                    .offer-box {
-                      width: 100% !important;
-                      /* No max-width or centering, let grid handle width */
-                    }
-                    .offer-box.zoomed {
-                      position: absolute !important;
-                      top: 0;
-                      left: 0;
-                      width: 100% !important;
-                      height: 100%;
-                      z-index: 10;
-                      box-shadow: 0 12px 48px rgba(22,57,3,0.25);
-                      background: #fff;
-                      transform: scale(1.01);
-                      opacity: 1;
-                      border-radius: 12px !important;
-                      transition: all 0.4s cubic-bezier(.4,2,.6,1);
-                    }
-                    .offer-box.zoomed ~ .offer-box {
-                      visibility: hidden;
-                    }
-                  }
-                  
-                  .offer-box.zoomed .zoomed-extra {
-                    display: block !important;
-                    opacity: 1;
-                    transition: opacity 0.35s cubic-bezier(.4,2,.6,1);
-                  }
-                  .offer-box.zoomed > * {
-                    pointer-events: auto;
-                  }
-                  .offer-box:not(.zoomed) {
-                    filter: blur(0px);
-                    opacity: 1;
-                  }
-                  .offer-box.zoomed ~ .offer-box {
-                    pointer-events: none;
-                  }
-                  .offer-box.zoomed::after {
-                    display: none;
-                  }
-                  .row.g-3.justify-content-center {
-                    position: relative;
-                    min-height: 340px;
-                  }
-                  @media (max-width: 767.98px) {
-                    .minishopping .container {
-                      padding-left: 0 !important;
-                      padding-right: 0 !important;
-                      overflow-x: hidden;
-                    }
-                    .row.g-3.justify-content-center {
-                      display: block !important;
-                      min-height: unset;
-                      margin-left: 0 !important;
-                      margin-right: 0 !important;
-                      margin-bottom: 0 !important;
-                      border: none !important;
-                      padding: 0 !important;
-                    }
-                    .col-6.col-md-6.col-lg-6 {
-                      flex: 0 0 90vw;
-                      max-width: 90vw;
-                      width: 90vw;
-                      margin-left: auto !important;
-                      margin-right: auto !important;
-                      padding-left: 0 !important;
-                      padding-right: 0 !important;
-                      margin-bottom: 0 !important;
-                      margin-top: 0 !important;
-                      padding: 0 !important;
-                      border: none !important;
-                    }
-                    .offer-box {
-                      margin-bottom: 0;
-                      position: relative !important;
-                      width: 90vw !important;
-                      min-width: 0;
-                      max-width: 90vw;
-                      height: auto;
-                      overflow: hidden;
-                      box-shadow: 0 2px 12px rgba(22,57,3,0.08);
-                      box-sizing: border-box;
-                      border: 1px solid #d1d5db;
-                      border-radius: 12px !important;
-                      transition: box-shadow 0.35s cubic-bezier(.4,2,.6,1), transform 0.35s cubic-bezier(.4,2,.6,1);
-                      margin-top: 0 !important;
-                      margin-bottom: 0 !important;
-                      padding: 0 !important;
-                      left: 0;
-                      right: 0;
-                    }
-                    .offer-box > * {
-                      padding-top: 0 !important;
-                      padding-bottom: 0 !important;
-                     margin: 0 !important;
-                    }
-                    .offer-box.zoomed {
-                      position: relative !important;
-                      z-index: 2;
-                      width: 90vw !important;
-                      min-width: 0;
-                      max-width: 90vw;
-                      margin-left: auto !important;
-                      margin-right: auto !important;
-                      height: 260px;
-                      transform: none;
-                      box-shadow: 0 8px 32px rgba(22,57,3,0.18);
-                      opacity: 1;
-                      border-radius: 12px !important;
-                      transition: height 0.35s cubic-bezier(.4,2,.6,1), box-shadow 0.35s cubic-bezier(.4,2,.6,1), opacity 0.35s cubic-bezier(.4,2,.6,1);
-                    }
-                    .offer-box.zoomed ~ .offer-box {
-                      pointer-events: auto;
-                    }
-                   /* Remove extra spacing from Bootstrap utility classes */
-                   .row.g-3.justify-content-center > [class^='col-'] {
-                     margin-bottom: 0 !important;
-                     margin-top: 0 !important;
-                     padding: 0 !important;
-                     border: none !important;
-                   }
-                  }
-                </style>
+                <!-- CSS for offer-boxes and banner-video-section moved to main <style> block above or external stylesheet. -->
                 <script>
                   document.addEventListener('DOMContentLoaded', function() {
                     const offerBoxes = document.querySelectorAll('.offer-box');
