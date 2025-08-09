@@ -131,6 +131,7 @@
   }
 }
 
+
         .herosection {
             padding-bottom: 30px;
             position: relative;
@@ -344,11 +345,74 @@
     </section>
 
     <section class="banner-video-section" style="padding:0; margin:0; width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; background:#000;">
+      <div class="banner-video-overlay">
+        <h2 class="banner-title">RE-INVENTED MODEST ACTIVE WEAR IS HERE</h2>
+        <div class="banner-subtitle">Why suffer when you can maximize the joy of comfortable workout?</div>
+      <a href="#shopyourproduct" class="btn btn-light mt-3 banner-cta-btn" style="font-weight:bold; font-size:1.1rem; color:#000 !important; background:#fff !important; border:2px solid #fff !important; pointer-events:auto;">Get BodyStory TieFit Tudung</a>
+      </div>
       <video class="banner-video" autoplay muted loop playsinline poster="img/bannervid.jpg" style="width:100vw; height:auto; max-height:480px; object-fit:cover; display:block; background:#000;">
         <source src="img/bannervid.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </section>
+<style>
+.banner-video-section {
+  position: relative;
+}
+.banner-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  max-width: 95vw;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  pointer-events: none;
+  text-align: left;
+  padding-left: 5vw;
+}
+.banner-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.45);
+}
+.banner-subtitle {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+@media (max-width: 767.98px) {
+  .banner-video-overlay {
+    padding-left: 4vw;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    text-align: left;
+  }
+  .banner-subtitle {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+</style>
+
+<style>
+.banner-cta-btn {
+  color: #000 !important;
+  background: #fff !important;
+  border: 2px solid #fff !important;
+}
+</style>
 
     <section class="shopyourproduct py-5" id="shopyourproduct">
                 <div class="container mx-auto" style="max-width: 1400px;">
