@@ -59,6 +59,9 @@
                     <p class="fs-7 mb-0" style="color: #000;">Free Shipping To West Malaysia and Over RM100 Spent</p>
         </div>
     </section>
+
+
+
         </div>
     </div>
 
@@ -414,36 +417,6 @@
 }
 </style>
 
-    <section class="shopyourproduct py-5" id="shopyourproduct">
-                <div class="container mx-auto" style="max-width: 1400px;">
-                    <div class="row g-4">
-                        <div class="col-md-4 order-2 order-md-1">
-                            <div class="product-box text-center p-4">
-                                <img src="img/duocolors.jpg" alt="Sports Hijab" class="img-fluid mb-3">
-                                <h4>Black</h4>
-                                <p class="mb-3">Product description goes here</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 order-1 order-md-2">
-                            <div class="product-box text-center p-4">
-                                <img src="img/hijab3.png" alt="Sports Hijab" class="img-fluid mb-3">
-                                <h4>Duo Colors</h4>
-                                <p class="mb-3">Product description goes here</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 order-3 order-md-3">
-                            <div class="product-box text-center p-4">
-                                <img src="img/hijab3.png" alt="Sports Hijab" class="img-fluid mb-3">
-                                <h4>Beige</h4>
-                                <p class="mb-3">Product description goes here</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
       <section class="knowledge">
       <div class="knowledgediv">
@@ -456,7 +429,49 @@
 
         </div>
     </div>
-
+<section class="colorways-section py-5">
+  <div class="container-xl mx-auto" style="max-width: 1200px;">
+    <!-- Desktop/Tablet: 3-column layout -->
+    <div class="row justify-content-center align-items-center g-4 d-none d-md-flex">
+      <div class="col-12 text-center mb-4">
+        <img src="img/sportsbanner.jpg" alt="Sports Banner" class="img-fluid rounded shadow" style="width:100%; max-width:100%; height:auto; object-fit:cover;">
+      </div>
+    </div>
+    <!-- Mobile: Carousel -->
+    <div id="colorwaysCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/sportsbanner.jpg" class="d-block w-100 img-fluid rounded shadow sportsbanner-animate" alt="Sports Banner" style="object-fit:cover;">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#colorwaysCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#colorwaysCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<style>
+@media (max-width: 767.98px) {
+  .sportsbanner-animate {
+    animation: sportsbanner-pan 8s linear infinite alternate;
+    /* Adjust duration for speed */
+    will-change: transform;
+  }
+  @keyframes sportsbanner-pan {
+    0% {
+      transform: scale(1.05) translateX(0);
+    }
+    100% {
+      transform: scale(1.05) translateX(-10%);
+    }
+  }
+}
+</style>
     <!-- MiniShopping Start -->
     <section class="minishopping">
       <div class="container">
