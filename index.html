@@ -508,8 +508,9 @@
             <h3 class="fw-light mb-2" style="max-width:800px; margin:0; text-align:left;">Just like your second skin, feels cool, natural, and comfortable</h3>
             <h2 class="fw-bold" style="text-align:left; margin:0;">BodyStory TieFit Sports Tudung</h2>
 <div class="fw-light text-muted" style="font-size:0.98rem; margin-top:4px; margin-bottom:8px; text-align:left;">High performance tudung specifically designed for any kind of workout. Wrinkle-free, quick dry, light weight and stretchy fabric.</div>
-<div class="color-selector mt-3 mb-3" style="max-width:340px; margin:0 auto;">
-  <div class="fw-bold mb-2" style="font-size:1.05rem; text-align:left;">Choose your color:</div>
+<p class="fw-light text-dark mb-2" style="max-width:600px; text-align:left;">The tudung has all the features a devoted muslim needs for workout without distraction. The fabric has cooling and UB blocking features. The tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through to uphold your values.</p>
+<div class="color-selector mt-3 mb-3" style="max-width:340px; text-align:left; margin-left:0;">
+  <div class="fw-bold mb-2" style="font-size:1.05rem;">Choose your color:</div>
   <div class="d-flex flex-column gap-2">
     <div class="d-flex align-items-center gap-2 mb-1">
       <span style="display:inline-block; width:28px; height:28px; border-radius:50%; background:#000000; border:1px solid #ccc; margin-right:6px;"></span>
@@ -526,8 +527,52 @@
       <button class="qty-btn btn btn-outline-secondary btn-sm" data-color="sandy" data-action="plus" style="width:28px; height:28px;">+</button>
     </div>
   </div>
+  <div id="discount-message" class="fw-bold text-success mb-0" style="font-size:1rem; text-align:left; margin-top:2px;"></div>
 </div>
+<div id="actual-amount" class="fw-bold text-secondary mb-1" style="font-size:1rem; text-align:left;"></div>
+<div id="discount-applied" class="fw-light text-danger mb-1" style="font-size:1rem; text-align:left;"></div>
+<div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">Total Amount: RM79</div>
 <script>
+function updateTotalAmount() {
+  var blackQty = parseInt(document.querySelector('.qty-value[data-color="black"]').textContent, 10);
+  var sandyQty = parseInt(document.querySelector('.qty-value[data-color="sandy"]').textContent, 10);
+  var totalQty = blackQty + sandyQty;
+  var totalAmount = 0;
+  if (totalQty === 1) {
+    totalAmount = 79;
+  } else if (totalQty === 2) {
+    totalAmount = 129;
+  } else if (totalQty >= 3) {
+    totalAmount = (59.6 * totalQty).toFixed(2);
+  }
+  var display = totalQty > 0 ? 'Total Amount: RM' + totalAmount : 'Total Amount: RM0';
+  document.getElementById('total-amount').textContent = display;
+  // Actual Amount
+  var actualAmount = 79 * totalQty;
+  var actualDisplay = totalQty > 0 ? 'Actual Amount: RM' + actualAmount : 'Actual Amount: RM0';
+  document.getElementById('actual-amount').textContent = actualDisplay;
+  // Discount applied
+  var discountApplied = 0;
+  if (totalQty === 1) {
+    discountApplied = 0;
+  } else if (totalQty === 2) {
+    discountApplied = (actualAmount - 129).toFixed(2);
+  } else if (totalQty >= 3) {
+    discountApplied = (actualAmount - (59.6 * totalQty)).toFixed(2);
+  }
+  var discountDisplay = (totalQty > 1) ? 'Discount applied: RM' + discountApplied : 'Discount applied: RM0';
+  document.getElementById('discount-applied').textContent = discountDisplay;
+  // Discount message
+  var discountMsg = '';
+  if (totalQty === 1) {
+    discountMsg = 'Buy 2 to get 18% off';
+  } else if (totalQty === 2) {
+    discountMsg = 'Buy 3 and more to get 25% off';
+  } else if (totalQty >= 3) {
+    discountMsg = 'Buy 3 and more to get 25% off';
+  }
+  document.getElementById('discount-message').textContent = discountMsg;
+}
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.qty-btn').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -542,9 +587,14 @@ document.addEventListener('DOMContentLoaded', function() {
         value = Math.max(0, value - 1);
       }
       valueSpan.textContent = value;
+      updateTotalAmount();
     });
   });
+  updateTotalAmount();
 });
+</script>
+<script>
+// ...existing code...
 </script>
 
         
