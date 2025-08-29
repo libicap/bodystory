@@ -508,7 +508,7 @@
             <h3 class="fw-light mb-2" style="max-width:800px; margin:0; text-align:left;">Just like your second skin, feels cool, natural, and comfortable</h3>
             <h2 class="fw-bold" style="text-align:left; margin:0;">BodyStory TieFit Sports Tudung</h2>
 <div class="fw-light text-muted" style="font-size:0.98rem; margin-top:4px; margin-bottom:8px; text-align:left;">High performance tudung specifically designed for any kind of workout. Wrinkle-free, quick dry, light weight and stretchy fabric.</div>
-<p class="fw-light text-dark mb-2" style="max-width:600px; text-align:left;">The tudung has all the features a devoted muslim needs for workout without distraction. The fabric has cooling and UB blocking features. The tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through to uphold your values.</p>
+<p class="fw-light text-dark mb-2" style="max-width:600px; text-align:left;">The tudung has all the features a devoted muslim needs for workout without distraction. The fabric has cooling and UV blocking features. The tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through to uphold your values.</p>
 <div class="color-selector mt-3 mb-3" style="max-width:340px; text-align:left; margin-left:0;">
   <div class="fw-bold mb-2" style="font-size:1.05rem;">Click to choose color:</div>
 <div class="d-flex justify-content-start gap-3 mb-3" id="color-oval-group">
@@ -557,7 +557,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (totalQty >= 3) {
       totalAmount = (59.6 * totalQty).toFixed(2);
     }
-    var display = totalQty > 0 ? 'Total Amount: RM' + totalAmount : 'Total Amount: RM0';
+    var display = totalQty > 0 ? 'You Pay: RM' + totalAmount : 'Total Amount: RM0';
     document.getElementById('total-amount').textContent = display;
     // Actual Amount
     var actualAmount = 79 * totalQty;
@@ -611,9 +611,20 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 </div>
 <div id="actual-amount" class="fw-bold text-secondary mb-1" style="font-size:1rem; text-align:left;"></div>
-<div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You pay: RM79</div>
-<div id="discount-applied" class="fw-light text-secondary mb-1" style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
-<div id='product-component-1756487930892' style="margin-top:12px;"></div>
+<div class="d-flex align-items-center justify-content-between" style="margin-top:8px;">
+  <div class="d-none d-md-flex align-items-start" style="gap:8px;">
+    <div>
+      <div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You pay: RM79</div>
+      <div id="discount-applied" class="fw-light text-secondary mb-1" style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
+    </div>
+    <div id='product-component-1756487930892' style="margin-top:0;"></div>
+  </div>
+  <div class="d-flex d-md-none flex-column" style="width:100%;">
+    <div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You pay: RM79</div>
+    <div id="discount-applied" class="fw-light text-secondary mb-1" style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
+    <div id='product-component-1756487930892' style="margin-top:8px;"></div>
+  </div>
+</div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
