@@ -2,1200 +2,1270 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSVF11MJRS"></script>
-    <script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSVF11MJRS"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-WSVF11MJRS');
-    </script>
-    <meta charset="utf-8">
-    <title>BodyStory</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  </script>
+  <meta charset="utf-8">
+  <title>BodyStory</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="style.css" rel="stylesheet">
+  <!-- Template Stylesheet -->
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFSKZWJ9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-     
-    <script src="bodystory.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFSKZWJ9" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container-fluid px-0">
-        <div class="container-xl mx-auto" style="max-width: 1400px;">
-            <section class="announcementsec" style="margin-bottom: 0;">
+  <script src="bodystory.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <div class="container-fluid px-0">
+    <div class="container-xl mx-auto" style="max-width: 1400px;">
+      <section class="announcementsec" style="margin-bottom: 0;">
         <div class="logodiv">
-            <img src="img/logo.svg" alt="Logo" class="logo-img" height="50">
+          <img src="img/logo.svg" alt="Logo" class="logo-img" height="50">
         </div>
-                <div class="announcementdiv" style="background-color: #fff;">
-                    <p class="fs-7 mb-0" style="color: #000;">Free Shipping To West Malaysia and Over RM100 Spent</p>
+        <div class="announcementdiv" style="background-color: #fff;">
+          <p class="fs-7 mb-0" style="color: #000;">Free Shipping To West Malaysia and Over RM100 Spent</p>
         </div>
-    </section>
+      </section>
 
 
 
-        </div>
     </div>
+  </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const announcementDiv = document.querySelector('.announcementdiv');
-            const announcementText = announcementDiv.querySelector('p');
-            const logoDiv = document.querySelector('.logodiv');
-            
-            window.addEventListener('scroll', function() {
-                const logoRect = logoDiv.getBoundingClientRect();
-                const logoBottom = logoRect.bottom;
-                const logoTop = logoRect.top;
-                
-                // Check if logo is fully visible
-                if (logoTop >= 0 && logoBottom <= window.innerHeight) {
-                    // Logo is fully visible
-                    announcementDiv.style.backgroundColor = '#fff';
-                    announcementText.style.color = '#000';
-                } else {
-                    // Logo is not fully visible
-                    announcementDiv.style.backgroundColor = '#163903';
-                    announcementText.style.color = '#fff';
-                }
-            });
-        });
-    </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const announcementDiv = document.querySelector('.announcementdiv');
+      const announcementText = announcementDiv.querySelector('p');
+      const logoDiv = document.querySelector('.logodiv');
 
-    <section class="herosection bg-white">
-        <div class="container-xl mx-auto" style="max-width: 1400px; margin-top: -20px;">
-          <div class="hero-header mb-3">
-            <div class="herogrid" style="display: flex; flex-wrap: wrap; min-height: 340px;">
-              <div class="heroleft" style="flex: 1 1 50%; min-width: 300px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 32px 24px 32px 0;">
-                <h3 class="fw-light text-dark animated slideInRight mb-2">Sports Tudung Designed For Malaysian Weather</h3>
-                <h1 class="display-4 text-dark animated slideInRight mb-3">Stay Cool and Dry Throughout Your Workout!</h1>
-                <img class="img-fluid animated pulse infinite mobile-image d-block d-lg-none" src="img/heroblack.PNG" alt="prodcut">
-                <div class="mb-3 mx-lg-0 mx-auto featurediv">
-                  <div class="d-flex align-items-center featureone">
-                    <i class="fas fa-check me-2 text-dark"></i>
-                    <p class="mb-0 text-dark text-start ms-2"> 98% UV Blocking</p>
-                  </div>
-                  <div class="d-flex align-items-center featuretwo mt-3">
-                    <i class="fas fa-check me-2 text-dark"></i>
-                    <p class="mb-0 text-dark text-start ms-2"> Moisture Wicking Fabric</p>
-                  </div>
-                  <div class="d-flex align-items-center featurethree mt-3">
-                    <i class="fas fa-check me-2 text-dark"></i>
-                    <p class="mb-0 text-dark text-start ms-2"> 4-Way Stretch Breathable Fabric</p>
-                  </div>
-                </div>
-                <a href="#shopyourproduct" class="btn btn-primary py-2 px-4 me-3 animated slideInRight">Shop Tudung</a>
+      window.addEventListener('scroll', function () {
+        const logoRect = logoDiv.getBoundingClientRect();
+        const logoBottom = logoRect.bottom;
+        const logoTop = logoRect.top;
+
+        // Check if logo is fully visible
+        if (logoTop >= 0 && logoBottom <= window.innerHeight) {
+          // Logo is fully visible
+          announcementDiv.style.backgroundColor = '#fff';
+          announcementText.style.color = '#000';
+        } else {
+          // Logo is not fully visible
+          announcementDiv.style.backgroundColor = '#163903';
+          announcementText.style.color = '#fff';
+        }
+      });
+    });
+  </script>
+
+  <section class="herosection bg-white">
+    <div class="container-xl mx-auto" style="max-width: 1400px; margin-top: -20px;">
+      <div class="hero-header mb-3">
+        <div class="herogrid" style="display: flex; flex-wrap: wrap; min-height: 340px;">
+          <div class="heroleft"
+            style="flex: 1 1 50%; min-width: 300px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 32px 24px 32px 0;">
+            <h3 class="fw-light text-dark animated slideInRight mb-2">Sports Tudung Designed For Malaysian Weather</h3>
+            <h1 class="display-4 text-dark animated slideInRight mb-3">Stay Cool and Dry Throughout Your Workout!</h1>
+            <img class="img-fluid animated pulse infinite mobile-image d-block d-lg-none" src="img/heroblack.PNG"
+              alt="prodcut">
+            <div class="mb-3 mx-lg-0 mx-auto featurediv">
+              <div class="d-flex align-items-center featureone">
+                <i class="fas fa-check me-2 text-dark"></i>
+                <p class="mb-0 text-dark text-start ms-2"> 98% UV Blocking</p>
               </div>
-              <div class="heroright" style="flex: 1 1 50%; min-width: 300px; display: flex; align-items: center; justify-content: center; position: relative;">
-                <img class="img-fluid animated slideInLeft desktop-image" src="img/heroblack.PNG" alt="prodcut" style="width: 100%; height: 100%; object-fit: cover; object-position: center; min-height: 340px; border-radius: 0 0.75rem 0.75rem 0;" />
+              <div class="d-flex align-items-center featuretwo mt-3">
+                <i class="fas fa-check me-2 text-dark"></i>
+                <p class="mb-0 text-dark text-start ms-2"> Moisture Wicking Fabric</p>
+              </div>
+              <div class="d-flex align-items-center featurethree mt-3">
+                <i class="fas fa-check me-2 text-dark"></i>
+                <p class="mb-0 text-dark text-start ms-2"> 4-Way Stretch Breathable Fabric</p>
+              </div>
+            </div>
+            <a href="#shopyourproduct" class="btn btn-primary py-2 px-4 me-3 animated slideInRight">Shop Tudung</a>
+          </div>
+          <div class="heroright"
+            style="flex: 1 1 50%; min-width: 300px; display: flex; align-items: center; justify-content: center; position: relative;">
+            <img class="img-fluid animated slideInLeft desktop-image" src="img/heroblack.PNG" alt="prodcut"
+              style="width: 100%; height: 100%; object-fit: cover; object-position: center; min-height: 340px; border-radius: 0 0.75rem 0.75rem 0;" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    @media (max-width: 575.98px) {
+
+      .productleft .producttextbox,
+      .productright .producttextbox {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+
+    .herosection {
+      padding-bottom: 30px;
+      position: relative;
+    }
+
+    .heroleft {
+      padding-left: 40px !important;
+      padding-right: 32px !important;
+    }
+
+    @media (max-width: 991.98px) {
+      .heroleft {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .heroleft {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        align-items: center !important;
+        text-align: center !important;
+      }
+
+      .heroleft h3,
+      .heroleft h1 {
+        width: 100%;
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .herogrid {
+        flex-direction: column;
+      }
+
+      .heroleft,
+      .heroright {
+        min-width: 0;
+        width: 100%;
+        padding: 24px 0 !important;
+      }
+
+      .heroright img {
+        border-radius: 0 0 0.75rem 0.75rem !important;
+        min-height: 220px;
+        max-height: 320px;
+      }
+    }
+
+    .producttextbox.highlight {
+      position: relative;
+    }
+
+    .producttextbox.highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #163903;
+      animation: highlight-animation 0.5s ease-in-out;
+    }
+
+    @keyframes highlight-animation {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    .fade-in {
+      opacity: 1;
+      transition: opacity 0.5s ease-in;
+    }
+
+    .fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const productTextboxes = document.querySelectorAll('.producttextbox');
+      const productImage = document.querySelector('.productimg');
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+      // Pair images with product textboxes
+      const imagePairs = [
+        { textbox: productTextboxes[0], image: 'img/weather.png' },
+        { textbox: productTextboxes[1], image: 'img/egghead.png' },
+        { textbox: productTextboxes[2], image: 'img/withholes.jpg' },
+        { textbox: productTextboxes[3], image: 'img/wrinkles.png' },
+        { textbox: productTextboxes[4], image: 'img/duocolors.jpg' }
+      ];
+
+      let currentIndex = 0;
+      let intervalId;
+
+      function updateImage(index) {
+        const { image, textbox } = imagePairs[index];
+
+        // Add fade-out class
+        productImage.classList.add('fade-out');
+
+        // Wait for the fade-out transition to complete
+        setTimeout(() => {
+          productImage.setAttribute('src', image);
+
+          // Remove fade-out and add fade-in class
+          productImage.classList.remove('fade-out');
+          productImage.classList.add('fade-in');
+
+          // Remove fade-in class after the transition
+          setTimeout(() => {
+            productImage.classList.remove('fade-in');
+          }, 500);
+        }, 500);
+
+        if (isMobile) {
+          // Hide all textboxes except the current one
+          productTextboxes.forEach((textbox, i) => {
+            textbox.style.display = i === index ? 'block' : 'none';
+          });
+        } else {
+          // Highlight the corresponding textbox
+          productTextboxes.forEach((textbox, i) => {
+            textbox.classList.remove('highlight');
+          });
+          textbox.classList.add('highlight');
+        }
+      }
+
+      function startImageRotation() {
+        const interval = isMobile ? 5000 : 3000; // 5 seconds for mobile, 3 seconds for desktop/tablet
+
+        intervalId = setInterval(() => {
+          currentIndex = (currentIndex + 1) % imagePairs.length;
+          updateImage(currentIndex);
+        }, interval);
+      }
+
+      // Add click event for mobile to change to the next image
+      if (isMobile) {
+        productImage.addEventListener('click', function () {
+          clearInterval(intervalId); // Stop automatic rotation on click
+          currentIndex = (currentIndex + 1) % imagePairs.length;
+          updateImage(currentIndex);
+          startImageRotation(); // Restart automatic rotation
+        });
+      }
+
+      // Initialize the first image and start rotation
+      updateImage(currentIndex);
+      startImageRotation();
+    });
+  </script>
+
+  <div class="container-fluid px-0">
+    <div class="container-xl mx-auto" style="max-width: 1400px;">
+      <section class="knowledge">
+        <div class="knowledgediv">
+          <h2 class="text-center mb-4">Protect Your Head From Overheating</h2>
+          <div class="mx-auto" style="max-width: 800px;">
+            <h3 class="fw-light">Head and neck are the major cooling zones in the human body. Which means, if you're
+              wearing sports tudung with bad airflow that traps heat, your brain will overheat, your body forces you to
+              slow down to protect itself, even if your muscles still have energy...</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="productsec">
+        <div class="productcontainer mx-auto" style="max-width: 1400px;">
+          <div class="row align-items-center">
+            <div class="col-md-4 col-12 text-center order-2 order-md-1 productleft">
+              <div class="row justify-content-center">
+                <div class="col-8 mb-md-5 producttextbox">
+                  <h6>Stay cool and dry, odor-free all day!</h6>
+                  <p>Peforated fabric maximizes airflow, allowing moisture to evaporate quickly! No moisture trapped, no
+                    bau kepam!</p>
+                </div>
+                <div class="col-8 producttextbox">
+                  <h6>Easy to Style, No More Egg Head!</h6>
+                  <p>Whether you love that flowy look to slim your face or a snug fit for active days, BodyStory TieFit
+                    Tudung shapes beautifully to you!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 order-1 order-md-2 text-center">
+              <img src="img/nikeproduct.png" alt="Middle Image" class="productimg img-fluid">
+            </div>
+            <div class="col-md-4 col-12 text-center order-3 productright">
+              <div class="row justify-content-center">
+                <div class="col-8 mb-md-5 producttextbox">
+                  <h6>Functional Sports Hijab for Tropical Weather</h6>
+                  <p>Made for heat, sweat, and sudden rain! The fabric dries fast and stays light, so you stay fresh and
+                    comfortable whether you're hiking, running, or just out in the sun.</p>
+                </div>
+                <div class="col-8 mb-md-3 producttextbox">
+                  <h6>Wrinkle-resistat fabric</h6>
+                  <p>Save the ironing hassle! The fabric is made of high quality Polyester and Spandex, light weight and
+                    stay smooth all day long!</p>
+                </div>
+                <div class="col-8 producttextbox">
+                  <h6>UV Blocking for better skin health</h6>
+                  <p>Enjoy your outdoor adventures without worrying about UV exposure! Our fabric blocks harmful UV-ray
+                    to protect your skin!</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </section>
 
-
-    <style>
-@media (max-width: 575.98px) {
-  .productleft .producttextbox,
-  .productright .producttextbox {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-
-        .herosection {
-            padding-bottom: 30px;
-            position: relative;
-        }
-
-.heroleft {
-  padding-left: 40px !important;
-  padding-right: 32px !important;
-}
-@media (max-width: 991.98px) {
-  .heroleft {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
-  }
-}
-@media (max-width: 575.98px) {
-  .heroleft {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-  .heroleft h3,
-  .heroleft h1 {
-    width: 100%;
-    text-align: center !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .herogrid {
-    flex-direction: column;
-  }
-  .heroleft, .heroright {
-    min-width: 0;
-    width: 100%;
-    padding: 24px 0 !important;
-  }
-  .heroright img {
-    border-radius: 0 0 0.75rem 0.75rem !important;
-    min-height: 220px;
-    max-height: 320px;
-  }
-}
-
-        .producttextbox.highlight {
-            position: relative;
-        }
-
-        .producttextbox.highlight::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #163903;
-            animation: highlight-animation 0.5s ease-in-out;
-        }
-
-        @keyframes highlight-animation {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
-        }
-
-        .fade-in {
-            opacity: 1;
-            transition: opacity 0.5s ease-in;
-        }
-
-        .fade-out {
-            opacity: 0;
-            transition: opacity 0.5s ease-out;
-        }
-
-        html {
-  scroll-behavior: smooth;
-}
-    </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const productTextboxes = document.querySelectorAll('.producttextbox');
-            const productImage = document.querySelector('.productimg');
-            const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-            // Pair images with product textboxes
-            const imagePairs = [
-                { textbox: productTextboxes[0], image: 'img/weather.png' },
-                { textbox: productTextboxes[1], image: 'img/egghead.png' },
-                { textbox: productTextboxes[2], image: 'img/withholes.jpg' },
-                { textbox: productTextboxes[3], image: 'img/wrinkles.png' },
-                { textbox: productTextboxes[4], image: 'img/duocolors.jpg' }
-            ];
-
-            let currentIndex = 0;
-            let intervalId;
-
-            function updateImage(index) {
-                const { image, textbox } = imagePairs[index];
-
-                // Add fade-out class
-                productImage.classList.add('fade-out');
-
-                // Wait for the fade-out transition to complete
-                setTimeout(() => {
-                    productImage.setAttribute('src', image);
-
-                    // Remove fade-out and add fade-in class
-                    productImage.classList.remove('fade-out');
-                    productImage.classList.add('fade-in');
-
-                    // Remove fade-in class after the transition
-                    setTimeout(() => {
-                        productImage.classList.remove('fade-in');
-                    }, 500);
-                }, 500);
-
-                if (isMobile) {
-                    // Hide all textboxes except the current one
-                    productTextboxes.forEach((textbox, i) => {
-                        textbox.style.display = i === index ? 'block' : 'none';
-                    });
-                } else {
-                    // Highlight the corresponding textbox
-                    productTextboxes.forEach((textbox, i) => {
-                        textbox.classList.remove('highlight');
-                    });
-                    textbox.classList.add('highlight');
-                }
-            }
-
-            function startImageRotation() {
-                const interval = isMobile ? 5000 : 3000; // 5 seconds for mobile, 3 seconds for desktop/tablet
-
-                intervalId = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % imagePairs.length;
-                    updateImage(currentIndex);
-                }, interval);
-            }
-
-            // Add click event for mobile to change to the next image
-            if (isMobile) {
-                productImage.addEventListener('click', function () {
-                    clearInterval(intervalId); // Stop automatic rotation on click
-                    currentIndex = (currentIndex + 1) % imagePairs.length;
-                    updateImage(currentIndex);
-                    startImageRotation(); // Restart automatic rotation
-                });
-            }
-
-            // Initialize the first image and start rotation
-            updateImage(currentIndex);
-            startImageRotation();
-        });
-    </script>
-
-    <div class="container-fluid px-0">
-        <div class="container-xl mx-auto" style="max-width: 1400px;">
-    <section class="knowledge">
-      <div class="knowledgediv">
-                    <h2 class="text-center mb-4">Protect Your Head From Overheating</h2>
-                    <div class="mx-auto" style="max-width: 800px;">
-                        <h3 class="fw-light">Head and neck are the major cooling zones in the human body. Which means, if you're wearing sports tudung with bad airflow that traps heat, your brain will overheat, your body forces you to slow down to protect itself, even if your muscles still have energy...</h3>
-                    </div>
-                </div>
-    </section>
-
-    <section class="productsec">
-                <div class="productcontainer mx-auto" style="max-width: 1400px;">
-            <div class="row align-items-center">
-                <div class="col-md-4 col-12 text-center order-2 order-md-1 productleft">
-                    <div class="row justify-content-center">
-                        <div class="col-8 mb-md-5 producttextbox">
-                            <h6>Stay cool and dry, odor-free all day!</h6>
-                            <p>Peforated fabric maximizes airflow, allowing moisture to evaporate quickly! No moisture trapped, no bau kepam!</p>
-                        </div>
-                        <div class="col-8 producttextbox">
-                            <h6>Easy to Style, No More Egg Head!</h6>
-                            <p>Whether you love that flowy look to slim your face or a snug fit for active days, BodyStory TieFit Tudung shapes beautifully to you!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12 order-1 order-md-2 text-center">
-                    <img src="img/nikeproduct.png" alt="Middle Image" class="productimg img-fluid">
-                </div>
-                <div class="col-md-4 col-12 text-center order-3 productright">
-                    <div class="row justify-content-center">
-                        <div class="col-8 mb-md-5 producttextbox">
-                            <h6>Functional Sports Hijab for Tropical Weather</h6>
-                            <p>Made for heat, sweat, and sudden rain! The fabric dries fast and stays light, so you stay fresh and comfortable whether you're hiking, running, or just out in the sun.</p>
-                        </div>
-                        <div class="col-8 mb-md-3 producttextbox">
-                            <h6>Wrinkle-resistat fabric</h6>
-                            <p>Save the ironing hassle! The fabric is made of high quality Polyester and Spandex, light weight and stay smooth all day long!</p>
-                        </div>
-                        <div class="col-8 producttextbox">
-                            <h6>UV Blocking for better skin health</h6>
-                            <p>Enjoy your outdoor adventures without worrying about UV exposure! Our fabric blocks harmful UV-ray to protect your skin!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <section class="banner-video-section"
+        style="padding:0; margin:0; width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; background:#000;">
+        <div class="banner-video-overlay">
+          <h2 class="banner-title">RE-INVENTED MODEST ACTIVE WEAR IS HERE</h2>
+          <div class="banner-subtitle">Why suffer when you can maximize the joy of comfortable workout?</div>
+          <a href="#shopyourproduct" class="btn btn-light mt-3 banner-cta-btn"
+            style="font-weight:bold; font-size:1.1rem; color:#000 !important; background:#fff !important; border:2px solid #fff !important; pointer-events:auto;">Get
+            BodyStory TieFit Tudung</a>
         </div>
-    </section>
+        <video class="banner-video" autoplay muted loop playsinline poster="img/bannervid.jpg"
+          style="width:100vw; height:auto; max-height:480px; object-fit:cover; display:block; background:#000;">
+          <source src="img/bannervid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <style>
+        .banner-video-section {
+          position: relative;
+        }
 
-    <section class="banner-video-section" style="padding:0; margin:0; width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; background:#000;">
-      <div class="banner-video-overlay">
-        <h2 class="banner-title">RE-INVENTED MODEST ACTIVE WEAR IS HERE</h2>
-        <div class="banner-subtitle">Why suffer when you can maximize the joy of comfortable workout?</div>
-      <a href="#shopyourproduct" class="btn btn-light mt-3 banner-cta-btn" style="font-weight:bold; font-size:1.1rem; color:#000 !important; background:#fff !important; border:2px solid #fff !important; pointer-events:auto;">Get BodyStory TieFit Tudung</a>
-      </div>
-      <video class="banner-video" autoplay muted loop playsinline poster="img/bannervid.jpg" style="width:100vw; height:auto; max-height:480px; object-fit:cover; display:block; background:#000;">
-        <source src="img/bannervid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-<style>
-.banner-video-section {
-  position: relative;
-}
-.banner-video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  max-width: 95vw;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  pointer-events: none;
-  text-align: left;
-  padding-left: 5vw;
-}
-.banner-title {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.45);
-}
-.banner-subtitle {
-  color: #fff;
-  font-size: 1.15rem;
-  font-weight: bold;
-  text-align: left;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
-}
-@media (max-width: 767.98px) {
-  .banner-video-overlay {
-    padding-left: 4vw;
-  }
-  .banner-title {
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
-    text-align: left;
-  }
-  .banner-subtitle {
-    font-size: 1rem;
-    text-align: left;
-  }
-}
-</style>
+        .banner-video-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 400px;
+          max-width: 95vw;
+          height: 100%;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          pointer-events: none;
+          text-align: left;
+          padding-left: 5vw;
+        }
 
-<style>
-.banner-cta-btn {
-  color: #000 !important;
-  background: #fff !important;
-  border: 2px solid #fff !important;
-}
-</style>
+        .banner-title {
+          color: #fff;
+          font-size: 2.5rem;
+          font-weight: bold;
+          text-align: left;
+          margin-bottom: 1rem;
+          text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+        }
+
+        .banner-subtitle {
+          color: #fff;
+          font-size: 1.15rem;
+          font-weight: bold;
+          text-align: left;
+          text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+        }
+
+        @media (max-width: 767.98px) {
+          .banner-video-overlay {
+            padding-left: 4vw;
+          }
+
+          .banner-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.7rem;
+            text-align: left;
+          }
+
+          .banner-subtitle {
+            font-size: 1rem;
+            text-align: left;
+          }
+        }
+      </style>
+
+      <style>
+        .banner-cta-btn {
+          color: #000 !important;
+          background: #fff !important;
+          border: 2px solid #fff !important;
+        }
+      </style>
 
 
       <section class="knowledge">
-      <div class="knowledgediv">
-                    <h2 class="text-center mb-4">Perfect for every workout in every condition</h2>
-                    <div style="max-width:800px; margin:0 auto;">
-                        <h3 class="fw-light">Think TieFit Tudung like a climate control layer. The fabric that stays on your head, the most important parts of your body that regulates your body temperature. Whether it's outdoor running, yoga or pilates in a studio, or AC in the gym, TieFit Tudung's fabric is just like another layer that accommodates you in every situation </h3>
-                    </div>
-                </div>
-    </section>       
+        <div class="knowledgediv">
+          <h2 class="text-center mb-4">Perfect for every workout in every condition</h2>
+          <div style="max-width:800px; margin:0 auto;">
+            <h3 class="fw-light">Think TieFit Tudung like a climate control layer. The fabric that stays on your head,
+              the most important parts of your body that regulates your body temperature. Whether it's outdoor running,
+              yoga or pilates in a studio, or AC in the gym, TieFit Tudung's fabric is just like another layer that
+              accommodates you in every situation </h3>
+          </div>
+        </div>
+      </section>
 
-        </div>
-    </div>
-<section class="colorways-section py-5">
-  <div class="container-xl mx-auto" style="max-width: 1200px;">
-    <!-- Desktop/Tablet: 3-column layout -->
-    <div class="row justify-content-center align-items-center g-4 d-none d-md-flex">
-      <div class="col-12 text-center mb-4">
-        <img src="img/sportsbanner.jpg" alt="Sports Banner" class="img-fluid rounded shadow" style="width:100%; max-width:100%; height:auto; object-fit:cover;">
-      </div>
-    </div>
-    <!-- Mobile: Carousel -->
-    <div id="colorwaysCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/sportsbanner.jpg" class="d-block w-100 img-fluid rounded shadow sportsbanner-animate" alt="Sports Banner" style="object-fit:cover;">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#colorwaysCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#colorwaysCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
-</section>
-<style>
-@media (max-width: 767.98px) {
-  .sportsbanner-animate {
-    animation: sportsbanner-pan 8s linear infinite alternate;
-    /* Adjust duration for speed */
-    will-change: transform;
-  }
-  @keyframes sportsbanner-pan {
-    0% {
-      transform: scale(1.05) translateX(0);
+  <section class="colorways-section py-5">
+    <div class="container-xl mx-auto" style="max-width: 1200px;">
+      <!-- Desktop/Tablet: 3-column layout -->
+      <div class="row justify-content-center align-items-center g-4 d-none d-md-flex">
+        <div class="col-12 text-center mb-4">
+          <img src="img/sportsbanner.jpg" alt="Sports Banner" class="img-fluid rounded shadow"
+            style="width:100%; max-width:100%; height:auto; object-fit:cover;">
+        </div>
+      </div>
+      <!-- Mobile: Carousel -->
+      <div id="colorwaysCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel"
+        data-bs-interval="3000" data-bs-wrap="true">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/sportsbanner.jpg" class="d-block w-100 img-fluid rounded shadow sportsbanner-animate"
+              alt="Sports Banner" style="object-fit:cover;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#colorwaysCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#colorwaysCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <style>
+    @media (max-width: 767.98px) {
+      .sportsbanner-animate {
+        animation: sportsbanner-pan 8s linear infinite alternate;
+        /* Adjust duration for speed */
+        will-change: transform;
+      }
+
+      @keyframes sportsbanner-pan {
+        0% {
+          transform: scale(1.05) translateX(0);
+        }
+
+        100% {
+          transform: scale(1.05) translateX(-10%);
+        }
+      }
     }
-    100% {
-      transform: scale(1.05) translateX(-10%);
-    }
-  }
-}
-</style>
-    <!-- MiniShopping Start -->
-    <section class="minishopping">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left: Image Slider -->
-          <div class="col-md-6 mb-4 mb-md-0">
-            <div id="minishoppingCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="img/reclaim1.webp" class="d-block w-100" alt="Reclaim 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/reclaim2.webp" class="d-block w-100" alt="Reclaim 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/reclaim3.webp" class="d-block w-100" alt="Reclaim 3">
-                </div>
-                <div class="carousel-item">
-                  <img src="img/relcaim4.webp" class="d-block w-100" alt="Reclaim 4">
-                </div>
+  </style>
+  <!-- MiniShopping Start -->
+  <section class="minishopping">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left: Image Slider -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div id="minishoppingCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/reclaim1.webp" class="d-block w-100" alt="Reclaim 1">
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#minishoppingCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#minishoppingCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="carousel-item">
+                <img src="img/reclaim2.webp" class="d-block w-100" alt="Reclaim 2">
+              </div>
+              <div class="carousel-item">
+                <img src="img/reclaim3.webp" class="d-block w-100" alt="Reclaim 3">
+              </div>
+              <div class="carousel-item">
+                <img src="img/relcaim4.webp" class="d-block w-100" alt="Reclaim 4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#minishoppingCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#minishoppingCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- Right: Headline -->
+        <div class="col-md-6 text-center text-md-start">
+          <h3 class="fw-light mb-2" style="max-width:800px; margin:0; text-align:left;">Just like your second skin,
+            feels cool, natural, and comfortable</h3>
+          <h2 class="fw-bold" style="text-align:left; margin:0;">BodyStory TieFit Sports Tudung</h2>
+          <div class="fw-light text-muted"
+            style="font-size:0.98rem; margin-top:4px; margin-bottom:8px; text-align:left;">High performance tudung
+            specifically designed for any kind of workout. Wrinkle-free, quick dry, light weight and stretchy fabric.
+          </div>
+          <p class="fw-light text-dark mb-2" style="max-width:600px; text-align:left;">The tudung has all the features a
+            devoted muslim needs for workout without distraction. The fabric has cooling and UV blocking features. The
+            tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through
+            to uphold your values.</p>
+          <div class="color-selector mt-3 mb-3" style="max-width:340px; text-align:left; margin-left:0;">
+            <!-- <div class="fw-bold mb-2" style="font-size:1.05rem;">Click to choose color:</div> -->
+            <!-- <div class="d-flex justify-content-start gap-3 mb-3" id="color-oval-group">
+              <button class="color-oval-btn" data-color="black"
+                style="border:2px solid transparent; outline:none; background:#000; color:#fff; border-radius:32px; padding:8px 32px; font-weight:bold; font-size:1rem; cursor:pointer; transition:box-shadow 0.2s, border-color 0.2s; box-shadow:0 2px 8px rgba(0,0,0,0.08);">Black</button>
+              <button class="color-oval-btn" data-color="beach"
+                style="border:2px solid transparent; outline:none; background:#CBAF92; color:#222; border-radius:32px; padding:8px 32px; font-weight:bold; font-size:1rem; cursor:pointer; transition:box-shadow 0.2s, border-color 0.2s; box-shadow:0 2px 8px rgba(0,0,0,0.08);">Beach</button>
+            </div> -->
+            <!-- <div class="d-flex align-items-center mb-3" style="gap:16px;">
+              <div class="d-flex justify-content-start align-items-center"
+                style="width:160px; border:1.5px solid #256105; border-radius:12px; overflow:hidden; background:#f8f9fa;">
+                <button id="qty-minus"
+                  style="flex:1; border:none; background:#e9ecef; color:#256105; font-size:1.5rem; font-weight:bold; height:48px; cursor:pointer;">-</button>
+                <div id="qty-value"
+                  style="flex:1; text-align:center; font-size:1.3rem; font-weight:bold; color:#222; background:#fff; height:48px; display:flex; align-items:center; justify-content:center;">
+                  1</div>
+                <button id="qty-plus"
+                  style="flex:1; border:none; background:#e9ecef; color:#256105; font-size:1.5rem; font-weight:bold; height:48px; cursor:pointer;">+</button>
+              </div>
+              <div id="discount-message" class="fw-bold text-success mb-0"
+                style="font-size:1rem; text-align:left; margin-top:0;"></div>
+            </div> -->
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                var ovalBtns = document.querySelectorAll('.color-oval-btn');
+                ovalBtns.forEach(function (btn) {
+                  btn.addEventListener('click', function () {
+                    ovalBtns.forEach(function (b) {
+                      b.style.borderColor = 'transparent';
+                    });
+                    this.style.borderColor = '#256105';
+                    // If 'Both' is picked, set quantity to 2 and update price
+                    if (this.getAttribute('data-color') === 'both') {
+                      qtyValue.textContent = '2';
+                      updateTotalAmountBox();
+                    } else if (this.getAttribute('data-color') === 'black' || this.getAttribute('data-color') === 'beach') {
+                      qtyValue.textContent = '1';
+                      updateTotalAmountBox();
+                    }
+                  });
+                });
+
+                // Quantity box logic
+                var qtyValue = document.getElementById('qty-value');
+                var qtyMinus = document.getElementById('qty-minus');
+                var qtyPlus = document.getElementById('qty-plus');
+                function updateTotalAmountBox() {
+                  var totalQty = parseInt(qtyValue.textContent, 10);
+                  var totalAmount = 0;
+                  if (totalQty === 1) {
+                    totalAmount = 79;
+                  } else if (totalQty === 2) {
+                    totalAmount = 129;
+                  } else if (totalQty >= 3) {
+                    totalAmount = (59.6 * totalQty).toFixed(2);
+                  }
+                  var display = totalQty > 0 ? 'You Pay: RM' + totalAmount : 'Total Amount: RM0';
+                  document.getElementById('total-amount').textContent = display;
+                  // Actual Amount
+                  var actualAmount = 79 * totalQty;
+                  var actualAmountElem = document.getElementById('actual-amount');
+                  var actualDisplay = totalQty > 0 ? 'RM' + actualAmount : 'RM0';
+                  actualAmountElem.textContent = actualDisplay;
+                  if (totalQty > 1) {
+                    actualAmountElem.style.textDecoration = 'line-through';
+                    actualAmountElem.style.opacity = '0.7';
+                  } else {
+                    actualAmountElem.style.textDecoration = 'none';
+                    actualAmountElem.style.opacity = '1';
+                  }
+                  // Discount applied
+                  var discountApplied = 0;
+                  if (totalQty === 1) {
+                    discountApplied = 0;
+                  } else if (totalQty === 2) {
+                    discountApplied = (actualAmount - 129).toFixed(2);
+                  } else if (totalQty >= 3) {
+                    discountApplied = (actualAmount - (59.6 * totalQty)).toFixed(2);
+                  }
+                  var discountDisplay = (totalQty > 1) ? 'You Save: RM' + discountApplied : 'You Save: RM0';
+                  var discountDisplay = (totalQty > 1) ? '*You Save: RM' + discountApplied : '*You Save: RM0';
+                  document.getElementById('discount-applied').textContent = discountDisplay;
+                  // Discount message
+                  var discountMsg = '';
+                  if (totalQty === 1) {
+                    discountMsg = 'Buy 2 to get 18% off';
+                  } else if (totalQty === 2) {
+                    discountMsg = 'Buy 3 and more to get 25% off';
+                  } else if (totalQty >= 3) {
+                    discountMsg = 'Buy 3 and more to get 25% off';
+                  }
+                  document.getElementById('discount-message').textContent = discountMsg;
+                }
+                qtyMinus.addEventListener('click', function () {
+                  var value = parseInt(qtyValue.textContent, 10);
+                  if (value > 1) {
+                    qtyValue.textContent = value - 1;
+                    updateTotalAmountBox();
+                  }
+                });
+                qtyPlus.addEventListener('click', function () {
+                  var value = parseInt(qtyValue.textContent, 10);
+                  qtyValue.textContent = value + 1;
+                  updateTotalAmountBox();
+                });
+                updateTotalAmountBox();
+              });
+            </script>
+          </div>
+          <div id="actual-amount" class="fw-bold text-secondary mb-1" style="font-size:1rem; text-align:left;"></div>
+          <div class="d-flex align-items-center justify-content-between" style="margin-top:8px;">
+            <div class="d-none d-md-flex align-items-start" style="gap:8px;">
+              <div>
+                <div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You
+                  pay: RM79</div>
+                <div id="discount-applied" class="fw-light text-secondary mb-1"
+                  style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
+                <!-- New Buy Now Button -->
+                <div id='product-component-1756760800206'></div>
+                <script type="text/javascript">
+                  /*<![CDATA[*/
+                  (function () {
+                    var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                    if (window.ShopifyBuy) {
+                      if (window.ShopifyBuy.UI) {
+                        ShopifyBuyInit();
+                      } else {
+                        loadScript();
+                      }
+                    } else {
+                      loadScript();
+                    }
+                    function loadScript() {
+                      var script = document.createElement('script');
+                      script.async = true;
+                      script.src = scriptURL;
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                      script.onload = ShopifyBuyInit;
+                    }
+                    function ShopifyBuyInit() {
+                      var client = ShopifyBuy.buildClient({
+                        domain: 'mrrpjk-zs.myshopify.com',
+                        storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',
+                      });
+                      ShopifyBuy.UI.onReady(client).then(function (ui) {
+                        ui.createComponent('product', {
+                          id: '7595444994132',
+                          node: document.getElementById('product-component-1756760800206'),
+                          moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
+                          options: {
+                            "product": {
+                              "styles": {
+                                "product": {
+                                  "@media (min-width: 601px)": {
+                                    "max-width": "calc(25% - 20px)",
+                                    "margin-left": "20px",
+                                    "margin-bottom": "50px"
+                                  }
+                                },
+                                "button": {
+                                  "font-family": "Open Sans, sans-serif",
+                                  ":hover": {
+                                    "background-color": "#256105"
+                                  },
+                                  "background-color": "#163903",
+                                  ":focus": {
+                                    "background-color": "#256105"
+                                  },
+                                  "border-radius": "18px"
+                                }
+                              },
+                              "buttonDestination": "checkout",
+                              "contents": {
+                                "img": false,
+                                "title": false,
+                                "price": false
+                              },
+                              "text": {
+                                "button": "Buy now"
+                              },
+                              "googleFonts": [
+                                "Open Sans"
+                              ]
+                            },
+                            "productSet": {
+                              "styles": {
+                                "products": {
+                                  "@media (min-width: 601px)": {
+                                    "margin-left": "-20px"
+                                  }
+                                }
+                              }
+                            },
+                            "modalProduct": {
+                              "contents": {
+                                "img": false,
+                                "imgWithCarousel": true,
+                                "button": false,
+                                "buttonWithQuantity": true
+                              },
+                              "styles": {
+                                "product": {
+                                  "@media (min-width: 601px)": {
+                                    "max-width": "100%",
+                                    "margin-left": "0px",
+                                    "margin-bottom": "0px"
+                                  }
+                                },
+                                "button": {
+                                  "font-family": "Open Sans, sans-serif",
+                                  ":hover": {
+                                    "background-color": "#256105"
+                                  },
+                                  "background-color": "#163903",
+                                  ":focus": {
+                                    "background-color": "#256105"
+                                  },
+                                  "border-radius": "18px"
+                                },
+                                "title": {
+                                  "font-family": "Montserrat, sans-serif",
+                                  "font-size": "30px"
+                                },
+                                "price": {
+                                  "font-family": "PT Sans, sans-serif",
+                                  "font-weight": "bold"
+                                },
+                                "compareAt": {
+                                  "font-family": "PT Sans, sans-serif",
+                                  "font-weight": "bold"
+                                },
+                                "unitPrice": {
+                                  "font-family": "PT Sans, sans-serif",
+                                  "font-weight": "bold"
+                                }
+                              },
+                              "googleFonts": [
+                                "Montserrat",
+                                "PT Sans",
+                                "Open Sans"
+                              ],
+                              "text": {
+                                "button": "Add to cart"
+                              }
+                            },
+                            "option": {},
+                            "cart": {
+                              "styles": {
+                                "button": {
+                                  "font-family": "Open Sans, sans-serif",
+                                  ":hover": {
+                                    "background-color": "#256105"
+                                  },
+                                  "background-color": "#163903",
+                                  ":focus": {
+                                    "background-color": "#256105"
+                                  },
+                                  "border-radius": "18px"
+                                }
+                              },
+                              "text": {
+                                "total": "Subtotal",
+                                "button": "Checkout"
+                              },
+                              "popup": false,
+                              "googleFonts": [
+                                "Open Sans"
+                              ]
+                            },
+                            "toggle": {
+                              "styles": {
+                                "toggle": {
+                                  "font-family": "Open Sans, sans-serif",
+                                  "background-color": "#163903",
+                                  ":hover": {
+                                    "background-color": "#256105"
+                                  },
+                                  ":focus": {
+                                    "background-color": "#256105"
+                                  }
+                                }
+                              },
+                              "googleFonts": [
+                                "Open Sans"
+                              ]
+                            }
+                          },
+                        });
+                      });
+                    }
+                  })();
+                  /*]]>*/
+                </script>
+              </div>
+              <div id='product-component-1756487930892' style="margin-top:0;"></div>
+            </div>
+            <div class="d-flex d-md-none flex-column" style="width:100%;">
+              <div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You pay:
+                RM79</div>
+              <div id="discount-applied" class="fw-light text-secondary mb-1"
+                style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
+              <div id='product-component-1756487930892-mobile' style="margin-top:8px;"></div>
             </div>
           </div>
-          <!-- Right: Headline -->
-          <div class="col-md-6 text-center text-md-start">
-            <h3 class="fw-light mb-2" style="max-width:800px; margin:0; text-align:left;">Just like your second skin, feels cool, natural, and comfortable</h3>
-            <h2 class="fw-bold" style="text-align:left; margin:0;">BodyStory TieFit Sports Tudung</h2>
-<div class="fw-light text-muted" style="font-size:0.98rem; margin-top:4px; margin-bottom:8px; text-align:left;">High performance tudung specifically designed for any kind of workout. Wrinkle-free, quick dry, light weight and stretchy fabric.</div>
-<p class="fw-light text-dark mb-2" style="max-width:600px; text-align:left;">The tudung has all the features a devoted muslim needs for workout without distraction. The fabric has cooling and UV blocking features. The tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through to uphold your values.</p>
-<div class="color-selector mt-3 mb-3" style="max-width:340px; text-align:left; margin-left:0;">
-  <div class="fw-bold mb-2" style="font-size:1.05rem;">Click to choose color:</div>
-<div class="d-flex justify-content-start gap-3 mb-3" id="color-oval-group">
-  <button class="color-oval-btn" data-color="black" style="border:2px solid transparent; outline:none; background:#000; color:#fff; border-radius:32px; padding:8px 32px; font-weight:bold; font-size:1rem; cursor:pointer; transition:box-shadow 0.2s, border-color 0.2s; box-shadow:0 2px 8px rgba(0,0,0,0.08);">Black</button>
-  <button class="color-oval-btn" data-color="beach" style="border:2px solid transparent; outline:none; background:#CBAF92; color:#222; border-radius:32px; padding:8px 32px; font-weight:bold; font-size:1rem; cursor:pointer; transition:box-shadow 0.2s, border-color 0.2s; box-shadow:0 2px 8px rgba(0,0,0,0.08);">Beach</button>
-</div>
-  <div class="d-flex align-items-center mb-3" style="gap:16px;">
-    <div class="d-flex justify-content-start align-items-center" style="width:160px; border:1.5px solid #256105; border-radius:12px; overflow:hidden; background:#f8f9fa;">
-      <button id="qty-minus" style="flex:1; border:none; background:#e9ecef; color:#256105; font-size:1.5rem; font-weight:bold; height:48px; cursor:pointer;">-</button>
-      <div id="qty-value" style="flex:1; text-align:center; font-size:1.3rem; font-weight:bold; color:#222; background:#fff; height:48px; display:flex; align-items:center; justify-content:center;">1</div>
-      <button id="qty-plus" style="flex:1; border:none; background:#e9ecef; color:#256105; font-size:1.5rem; font-weight:bold; height:48px; cursor:pointer;">+</button>
-    </div>
-    <div id="discount-message" class="fw-bold text-success mb-0" style="font-size:1rem; text-align:left; margin-top:0;"></div>
-  </div>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var ovalBtns = document.querySelectorAll('.color-oval-btn');
-  ovalBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      ovalBtns.forEach(function(b) {
-        b.style.borderColor = 'transparent';
-      });
-      this.style.borderColor = '#256105';
-      // If 'Both' is picked, set quantity to 2 and update price
-      if (this.getAttribute('data-color') === 'both') {
-        qtyValue.textContent = '2';
-        updateTotalAmountBox();
-      } else if (this.getAttribute('data-color') === 'black' || this.getAttribute('data-color') === 'beach') {
-        qtyValue.textContent = '1';
-        updateTotalAmountBox();
-      }
-    });
-  });
-
-  // Quantity box logic
-  var qtyValue = document.getElementById('qty-value');
-  var qtyMinus = document.getElementById('qty-minus');
-  var qtyPlus = document.getElementById('qty-plus');
-  function updateTotalAmountBox() {
-    var totalQty = parseInt(qtyValue.textContent, 10);
-    var totalAmount = 0;
-    if (totalQty === 1) {
-      totalAmount = 79;
-    } else if (totalQty === 2) {
-      totalAmount = 129;
-    } else if (totalQty >= 3) {
-      totalAmount = (59.6 * totalQty).toFixed(2);
-    }
-    var display = totalQty > 0 ? 'You Pay: RM' + totalAmount : 'Total Amount: RM0';
-    document.getElementById('total-amount').textContent = display;
-    // Actual Amount
-    var actualAmount = 79 * totalQty;
-    var actualAmountElem = document.getElementById('actual-amount');
-    var actualDisplay = totalQty > 0 ? 'RM' + actualAmount : 'RM0';
-    actualAmountElem.textContent = actualDisplay;
-    if (totalQty > 1) {
-      actualAmountElem.style.textDecoration = 'line-through';
-      actualAmountElem.style.opacity = '0.7';
-    } else {
-      actualAmountElem.style.textDecoration = 'none';
-      actualAmountElem.style.opacity = '1';
-    }
-    // Discount applied
-    var discountApplied = 0;
-    if (totalQty === 1) {
-      discountApplied = 0;
-    } else if (totalQty === 2) {
-      discountApplied = (actualAmount - 129).toFixed(2);
-    } else if (totalQty >= 3) {
-      discountApplied = (actualAmount - (59.6 * totalQty)).toFixed(2);
-    }
-    var discountDisplay = (totalQty > 1) ? 'You Save: RM' + discountApplied : 'You Save: RM0';
-    var discountDisplay = (totalQty > 1) ? '*You Save: RM' + discountApplied : '*You Save: RM0';
-    document.getElementById('discount-applied').textContent = discountDisplay;
-    // Discount message
-    var discountMsg = '';
-    if (totalQty === 1) {
-      discountMsg = 'Buy 2 to get 18% off';
-    } else if (totalQty === 2) {
-      discountMsg = 'Buy 3 and more to get 25% off';
-    } else if (totalQty >= 3) {
-      discountMsg = 'Buy 3 and more to get 25% off';
-    }
-    document.getElementById('discount-message').textContent = discountMsg;
-  }
-  qtyMinus.addEventListener('click', function() {
-    var value = parseInt(qtyValue.textContent, 10);
-    if (value > 1) {
-      qtyValue.textContent = value - 1;
-      updateTotalAmountBox();
-    }
-  });
-  qtyPlus.addEventListener('click', function() {
-    var value = parseInt(qtyValue.textContent, 10);
-    qtyValue.textContent = value + 1;
-    updateTotalAmountBox();
-  });
-  updateTotalAmountBox();
-});
-</script>
-</div>
-<div id="actual-amount" class="fw-bold text-secondary mb-1" style="font-size:1rem; text-align:left;"></div>
-<div class="d-flex align-items-center justify-content-between" style="margin-top:8px;">
-  <div class="d-none d-md-flex align-items-start" style="gap:8px;">
-    <div>
-      <div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You pay: RM79</div>
-      <div id="discount-applied" class="fw-light text-secondary mb-1" style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
-      <!-- New Buy Now Button -->
-      <div id='product-component-1756760800206'></div>
-      <script type="text/javascript">
-      /*<![CDATA[*/
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-        function loadScript() {
-          var script = document.createElement('script');
-          script.async = true;
-          script.src = scriptURL;
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          script.onload = ShopifyBuyInit;
-        }
-        function ShopifyBuyInit() {
-          var client = ShopifyBuy.buildClient({
-            domain: 'mrrpjk-zs.myshopify.com',
-            storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',
-          });
-          ShopifyBuy.UI.onReady(client).then(function (ui) {
-            ui.createComponent('product', {
-              id: '7595444994132',
-              node: document.getElementById('product-component-1756760800206'),
-              moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
-              options: {
-                "product": {
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "calc(25% - 20px)",
-                        "margin-left": "20px",
-                        "margin-bottom": "50px"
-                      }
-                    },
-                    "button": {
-                      "font-family": "Open Sans, sans-serif",
-                      ":hover": {
-                        "background-color": "#256105"
-                      },
-                      "background-color": "#163903",
-                      ":focus": {
-                        "background-color": "#256105"
-                      },
-                      "border-radius": "18px"
-                    }
-                  },
-                  "buttonDestination": "checkout",
-                  "contents": {
-                    "img": false,
-                    "title": false,
-                    "price": false
-                  },
-                  "text": {
-                    "button": "Buy now"
-                  },
-                  "googleFonts": [
-                    "Open Sans"
-                  ]
-                },
-                "productSet": {
-                  "styles": {
-                    "products": {
-                      "@media (min-width: 601px)": {
-                        "margin-left": "-20px"
-                      }
-                    }
-                  }
-                },
-                "modalProduct": {
-                  "contents": {
-                    "img": false,
-                    "imgWithCarousel": true,
-                    "button": false,
-                    "buttonWithQuantity": true
-                  },
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "100%",
-                        "margin-left": "0px",
-                        "margin-bottom": "0px"
-                      }
-                    },
-                    "button": {
-                      "font-family": "Open Sans, sans-serif",
-                      ":hover": {
-                        "background-color": "#256105"
-                      },
-                      "background-color": "#163903",
-                      ":focus": {
-                        "background-color": "#256105"
-                      },
-                      "border-radius": "18px"
-                    },
-                    "title": {
-                      "font-family": "Montserrat, sans-serif",
-                      "font-size": "30px"
-                    },
-                    "price": {
-                      "font-family": "PT Sans, sans-serif",
-                      "font-weight": "bold"
-                    },
-                    "compareAt": {
-                      "font-family": "PT Sans, sans-serif",
-                      "font-weight": "bold"
-                    },
-                    "unitPrice": {
-                      "font-family": "PT Sans, sans-serif",
-                      "font-weight": "bold"
-                    }
-                  },
-                  "googleFonts": [
-                    "Montserrat",
-                    "PT Sans",
-                    "Open Sans"
-                  ],
-                  "text": {
-                    "button": "Add to cart"
-                  }
-                },
-                "option": {},
-                "cart": {
-                  "styles": {
-                    "button": {
-                      "font-family": "Open Sans, sans-serif",
-                      ":hover": {
-                        "background-color": "#256105"
-                      },
-                      "background-color": "#163903",
-                      ":focus": {
-                        "background-color": "#256105"
-                      },
-                      "border-radius": "18px"
-                    }
-                  },
-                  "text": {
-                    "total": "Subtotal",
-                    "button": "Checkout"
-                  },
-                  "popup": false,
-                  "googleFonts": [
-                    "Open Sans"
-                  ]
-                },
-                "toggle": {
-                  "styles": {
-                    "toggle": {
-                      "font-family": "Open Sans, sans-serif",
-                      "background-color": "#163903",
-                      ":hover": {
-                        "background-color": "#256105"
-                      },
-                      ":focus": {
-                        "background-color": "#256105"
-                      }
-                    }
-                  },
-                  "googleFonts": [
-                    "Open Sans"
-                  ]
+          <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
                 }
-              },
+              } else {
+                loadScript();
+              }
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'mrrpjk-zs.myshopify.com',
+                  storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  var productOptions = {
+                    id: '7616794394708',
+                    moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
+                    options: {
+                      "product": {
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "calc(25% - 20px)",
+                              "margin-left": "20px",
+                              "margin-bottom": "50px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Open Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#256105"
+                            },
+                            "background-color": "#163903",
+                            ":focus": {
+                              "background-color": "#256105"
+                            },
+                            "border-radius": "18px"
+                          }
+                        },
+                        "contents": {
+                          "img": false,
+                          "title": false,
+                          "price": false
+                        },
+                        "text": {
+                          "button": "Add to cart"
+                        },
+                        "googleFonts": [
+                          "Open Sans"
+                        ]
+                      },
+                      "productSet": {
+                        "styles": {
+                          "products": {
+                            "@media (min-width: 601px)": {
+                              "margin-left": "-20px"
+                            }
+                          }
+                        }
+                      },
+                      "modalProduct": {
+                        "contents": {
+                          "img": false,
+                          "imgWithCarousel": true,
+                          "button": false,
+                          "buttonWithQuantity": true
+                        },
+                        "styles": {
+                          "product": {
+                            "@media (min-width: 601px)": {
+                              "max-width": "100%",
+                              "margin-left": "0px",
+                              "margin-bottom": "0px"
+                            }
+                          },
+                          "button": {
+                            "font-family": "Open Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#256105"
+                            },
+                            "background-color": "#163903",
+                            ":focus": {
+                              "background-color": "#256105"
+                            },
+                            "border-radius": "18px"
+                          }
+                        },
+                        "googleFonts": [
+                          "Open Sans"
+                        ],
+                        "text": {
+                          "button": "Add to cart"
+                        }
+                      },
+                      "option": {},
+                      "cart": {
+                        "styles": {
+                          "button": {
+                            "font-family": "Open Sans, sans-serif",
+                            ":hover": {
+                              "background-color": "#256105"
+                            },
+                            "background-color": "#163903",
+                            ":focus": {
+                              "background-color": "#256105"
+                            },
+                            "border-radius": "18px"
+                          }
+                        },
+                        "text": {
+                          "total": "Subtotal",
+                          "button": "Checkout"
+                        },
+                        "popup": false,
+                        "googleFonts": [
+                          "Open Sans"
+                        ]
+                      },
+                      "toggle": {
+                        "styles": {
+                          "toggle": {
+                            "font-family": "Open Sans, sans-serif",
+                            "background-color": "#163903",
+                            ":hover": {
+                              "background-color": "#256105"
+                            },
+                            ":focus": {
+                              "background-color": "#256105"
+                            }
+                          }
+                        },
+                        "googleFonts": [
+                          "Open Sans"
+                        ]
+                      }
+                    }
+                  };
+                  // Desktop/Tablet
+                  ui.createComponent('product', Object.assign({}, productOptions, {
+                    node: document.getElementById('product-component-1756487930892')
+                  }));
+                  // Mobile
+                  ui.createComponent('product', Object.assign({}, productOptions, {
+                    node: document.getElementById('product-component-1756487930892-mobile')
+                  }));
+                });
+              }
+            })();
+            /*]]>*/
+          </script>
+          <script>
+            function updateTotalAmount() {
+              var blackQty = parseInt(document.querySelector('.qty-value[data-color="black"]').textContent, 10);
+              var sandyQty = parseInt(document.querySelector('.qty-value[data-color="sandy"]').textContent, 10);
+              var totalQty = blackQty + sandyQty;
+              var totalAmount = 0;
+              if (totalQty === 1) {
+                totalAmount = 79;
+              } else if (totalQty === 2) {
+                totalAmount = 129;
+              } else if (totalQty >= 3) {
+                totalAmount = (59.6 * totalQty).toFixed(2);
+              }
+              var display = totalQty > 0 ? 'Total Amount: RM' + totalAmount : 'Total Amount: RM0';
+              document.getElementById('total-amount').textContent = display;
+              // Actual Amount
+              var actualAmount = 79 * totalQty;
+              var actualDisplay = totalQty > 0 ? 'Actual Amount: RM' + actualAmount : 'Actual Amount: RM0';
+              document.getElementById('actual-amount').textContent = actualDisplay;
+              // Discount applied
+              var discountApplied = 0;
+              if (totalQty === 1) {
+                discountApplied = 0;
+              } else if (totalQty === 2) {
+                discountApplied = (actualAmount - 129).toFixed(2);
+              } else if (totalQty >= 3) {
+                discountApplied = (actualAmount - (59.6 * totalQty)).toFixed(2);
+              }
+              var discountDisplay = (totalQty > 1) ? 'Discount applied: RM' + discountApplied : 'Discount applied: RM0';
+              document.getElementById('discount-applied').textContent = discountDisplay;
+              // Discount message
+              var discountMsg = '';
+              if (totalQty === 1) {
+                discountMsg = 'Buy 2 to get 18% off';
+              } else if (totalQty === 2) {
+                discountMsg = 'Buy 3 and more to get 25% off';
+              } else if (totalQty >= 3) {
+                discountMsg = 'Buy 3 and more to get 25% off';
+              }
+              document.getElementById('discount-message').textContent = discountMsg;
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+              document.querySelectorAll('.qty-btn').forEach(function (btn) {
+                btn.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  var color = this.getAttribute('data-color');
+                  var action = this.getAttribute('data-action');
+                  var valueSpan = document.querySelector('.qty-value[data-color="' + color + '"]');
+                  var value = parseInt(valueSpan.textContent, 10);
+                  if (action === 'plus') {
+                    value++;
+                  } else if (action === 'minus') {
+                    value = Math.max(0, value - 1);
+                  }
+                  valueSpan.textContent = value;
+                  updateTotalAmount();
+                });
+              });
+              updateTotalAmount();
             });
-          });
-        }
-      })();
-      /*]]>*/
-      </script>
-    </div>
-    <div id='product-component-1756487930892' style="margin-top:0;"></div>
-  </div>
-  <div class="d-flex d-md-none flex-column" style="width:100%;">
-    <div id="total-amount" class="fw-bold text-dark mt-2" style="font-size:1.08rem; text-align:left;">You pay: RM79</div>
-    <div id="discount-applied" class="fw-light text-secondary mb-1" style="font-size:0.85rem; text-align:left; margin-top:2px;"></div>
-    <div id='product-component-1756487930892-mobile' style="margin-top:8px;"></div>
-  </div>
-</div>
-<script type="text/javascript">
-/*<![CDATA[*/
-(function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-  if (window.ShopifyBuy) {
-    if (window.ShopifyBuy.UI) {
-      ShopifyBuyInit();
-    } else {
-      loadScript();
-    }
-  } else {
-    loadScript();
-  }
-  function loadScript() {
-    var script = document.createElement('script');
-    script.async = true;
-    script.src = scriptURL;
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-    script.onload = ShopifyBuyInit;
-  }
-  function ShopifyBuyInit() {
-    var client = ShopifyBuy.buildClient({
-      domain: 'mrrpjk-zs.myshopify.com',
-      storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',
-    });
-    ShopifyBuy.UI.onReady(client).then(function (ui) {
-      var productOptions = {
-        id: '7616794394708',
-        moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
-        options: {
-          "product": {
-            "styles": {
-              "product": {
-                "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
-                  "margin-bottom": "50px"
-                }
-              },
-              "button": {
-                "font-family": "Open Sans, sans-serif",
-                ":hover": {
-                  "background-color": "#256105"
-                },
-                "background-color": "#163903",
-                ":focus": {
-                  "background-color": "#256105"
-                },
-                "border-radius": "18px"
-              }
-            },
-            "contents": {
-              "img": false,
-              "title": false,
-              "price": false
-            },
-            "text": {
-              "button": "Add to cart"
-            },
-            "googleFonts": [
-              "Open Sans"
-            ]
-          },
-          "productSet": {
-            "styles": {
-              "products": {
-                "@media (min-width: 601px)": {
-                  "margin-left": "-20px"
-                }
-              }
-            }
-          },
-          "modalProduct": {
-            "contents": {
-              "img": false,
-              "imgWithCarousel": true,
-              "button": false,
-              "buttonWithQuantity": true
-            },
-            "styles": {
-              "product": {
-                "@media (min-width: 601px)": {
-                  "max-width": "100%",
-                  "margin-left": "0px",
-                  "margin-bottom": "0px"
-                }
-              },
-              "button": {
-                "font-family": "Open Sans, sans-serif",
-                ":hover": {
-                  "background-color": "#256105"
-                },
-                "background-color": "#163903",
-                ":focus": {
-                  "background-color": "#256105"
-                },
-                "border-radius": "18px"
-              }
-            },
-            "googleFonts": [
-              "Open Sans"
-            ],
-            "text": {
-              "button": "Add to cart"
-            }
-          },
-          "option": {},
-          "cart": {
-            "styles": {
-              "button": {
-                "font-family": "Open Sans, sans-serif",
-                ":hover": {
-                  "background-color": "#256105"
-                },
-                "background-color": "#163903",
-                ":focus": {
-                  "background-color": "#256105"
-                },
-                "border-radius": "18px"
-              }
-            },
-            "text": {
-              "total": "Subtotal",
-              "button": "Checkout"
-            },
-            "popup": false,
-            "googleFonts": [
-              "Open Sans"
-            ]
-          },
-          "toggle": {
-            "styles": {
-              "toggle": {
-                "font-family": "Open Sans, sans-serif",
-                "background-color": "#163903",
-                ":hover": {
-                  "background-color": "#256105"
-                },
-                ":focus": {
-                  "background-color": "#256105"
-                }
-              }
-            },
-            "googleFonts": [
-              "Open Sans"
-            ]
-          }
-        }
-      };
-      // Desktop/Tablet
-      ui.createComponent('product', Object.assign({}, productOptions, {
-        node: document.getElementById('product-component-1756487930892')
-      }));
-      // Mobile
-      ui.createComponent('product', Object.assign({}, productOptions, {
-        node: document.getElementById('product-component-1756487930892-mobile')
-      }));
-    });
-  }
-})();
-/*]]>*/
-</script>
-<script>
-function updateTotalAmount() {
-  var blackQty = parseInt(document.querySelector('.qty-value[data-color="black"]').textContent, 10);
-  var sandyQty = parseInt(document.querySelector('.qty-value[data-color="sandy"]').textContent, 10);
-  var totalQty = blackQty + sandyQty;
-  var totalAmount = 0;
-  if (totalQty === 1) {
-    totalAmount = 79;
-  } else if (totalQty === 2) {
-    totalAmount = 129;
-  } else if (totalQty >= 3) {
-    totalAmount = (59.6 * totalQty).toFixed(2);
-  }
-  var display = totalQty > 0 ? 'Total Amount: RM' + totalAmount : 'Total Amount: RM0';
-  document.getElementById('total-amount').textContent = display;
-  // Actual Amount
-  var actualAmount = 79 * totalQty;
-  var actualDisplay = totalQty > 0 ? 'Actual Amount: RM' + actualAmount : 'Actual Amount: RM0';
-  document.getElementById('actual-amount').textContent = actualDisplay;
-  // Discount applied
-  var discountApplied = 0;
-  if (totalQty === 1) {
-    discountApplied = 0;
-  } else if (totalQty === 2) {
-    discountApplied = (actualAmount - 129).toFixed(2);
-  } else if (totalQty >= 3) {
-    discountApplied = (actualAmount - (59.6 * totalQty)).toFixed(2);
-  }
-  var discountDisplay = (totalQty > 1) ? 'Discount applied: RM' + discountApplied : 'Discount applied: RM0';
-  document.getElementById('discount-applied').textContent = discountDisplay;
-  // Discount message
-  var discountMsg = '';
-  if (totalQty === 1) {
-    discountMsg = 'Buy 2 to get 18% off';
-  } else if (totalQty === 2) {
-    discountMsg = 'Buy 3 and more to get 25% off';
-  } else if (totalQty >= 3) {
-    discountMsg = 'Buy 3 and more to get 25% off';
-  }
-  document.getElementById('discount-message').textContent = discountMsg;
-}
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.qty-btn').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      var color = this.getAttribute('data-color');
-      var action = this.getAttribute('data-action');
-      var valueSpan = document.querySelector('.qty-value[data-color="' + color + '"]');
-      var value = parseInt(valueSpan.textContent, 10);
-      if (action === 'plus') {
-        value++;
-      } else if (action === 'minus') {
-        value = Math.max(0, value - 1);
-      }
-      valueSpan.textContent = value;
-      updateTotalAmount();
-    });
-  });
-  updateTotalAmount();
-});
-</script>
-<script>
-// ...existing code...
-</script>
+          </script>
+          <script>
+            // ...existing code...
+          </script>
 
-        
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- MiniShopping End -->
+
+
+  <!-- Feature Start -->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px; margin-bottom: 30px;">
+        <h1 class="text-primary mb-3">
+          <span class="text-dark fw-bold">The Boring (But Important) Part!</span>
+        </h1>
+        <h3 class="fw-light">We want you to know exactly what you're wearing and how to take care of it!</h3>
+      </div>
+
+      <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
+        <!-- Text Section -->
+        <div class="col-md-6 p-4 bg-light text-center text-md-start h-100">
+          <h1>You are paying for:</h1>
+          <p>
+            From the high-quality materials we use and the all-day comfort it provides,
+            to easy washing tips, eco-friendly packaging, and reliable after-sales support—we've got nothing to hide and
+            everything to share!
+          </p>
+          <ul class="list-unstyled feature-list mt-3">
+            <li><strong>Cloth Type: </strong> 60% Polyester, 40% Spandex</li>
+            <li><strong>Logo: </strong> 3D Material</li>
+            <li><strong>Washable: </strong> Yes</li>
+            <li><strong>Ironing: </strong> Not Required</li>
+            <li><strong>Dryer: </strong> Safe for Low Heat</li>
+            <li><strong>Stretchability: </strong> 40% Stretch</li>
+            <li><strong>Tying Rope: </strong> Adjustable</li>
+            <li><strong>Packaging: </strong> Eco-Friendly</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Call to Action</a>
+        </div>
+
+        <!-- Video Section -->
+        <div class="col-md-6 p-0">
+          <div class="video-wrapper">
+            <video class="w-100" autoplay muted loop playsinline>
+              <source src="img/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Feature End -->
+
+
+  <!-- Try Us Risk Free Section Start -->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px; margin-bottom: 30px;">
+        <h1 class="text-primary mb-3">
+          <span class="text-dark fw-bold">Try Us Risk Free</span>
+        </h1>
+        <h3 class="fw-light mt-2">We don’t settle for just a good product, we’re here to deliver a flawless shopping
+          experience from start to finish</h3>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- Try Us Risk Free Section End -->
+  <!-- Risk Free Benefits Section Start -->
+  <div class="container-fluid" style="margin-top: -50px;">
+    <div class="container" style="margin-bottom: 50px;">
+      <div class="row justify-content-center text-center g-4">
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+          <img src="img/freedelivery.svg" alt="Free Delivery" style="width:60px; height:60px;" class="mb-2">
+          <span class="fw-bold">Free Shipping</span>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+          <img src="img/moneyback.svg" alt="Money Back" style="width:60px; height:60px;" class="mb-2">
+          <span class="fw-bold">30 Days Money Back Guarantee</span>
+        </div>
+        <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+          <img src="img/easyreturn.svg" alt="Easy Return" style="width:60px; height:60px;" class="mb-2">
+          <span class="fw-bold">Easy Return Process</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Risk Free Benefits Section End -->
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-white footer">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+          <a href="index.html" class="d-inline-block mb-3">
+            <h1 class="text-primary">BodyStory</h1>
+          </a>
+          <p class="mb-0">Committed to create high quality sports wear, designed for every body, every background with
+            different stories</p>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+          <h5 class="mb-4">Get In Touch</h5>
+          <p style="word-break: break-word; margin-bottom: 8px; color: #000; background: #fff; text-align: left;">1
+            Jalan SP 16 Taman Sri Putra 47000 Sg Buloh, Selangor</p>
+          <p style="margin-bottom: 8px; color: #000; background: #fff; text-align: left;">+012 345 67890</p>
+          <p style="margin-bottom: 8px; color: #000; background: #fff; text-align: left;">support@bodystory.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+          <h5 class="mb-4">Customer Help</h5>
+          <a href="refundexchange.html"
+            style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">Return and
+            Exchange</a>
+          <a href="aboutus.html"
+            style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">About
+            Us</a>
+          <a href="contactus.html"
+            style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">Contact
+            Us</a>
+          <a href="privacypolicy.html"
+            style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">Privacy
+            Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            © <a class="border-bottom" href="#">www.bodystory.com</a>, All Right Reserved.
+
+            <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="">Home</a>
+              <a href="">Cookies</a>
+              <a href="">Help</a>
+              <a href="">FAQs</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- MiniShopping End -->
-
-
-   <!-- Feature Start -->
-<div class="container-fluid py-5">
-    <div class="container">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px; margin-bottom: 30px;">
-            <h1 class="text-primary mb-3">
-                <span class="text-dark fw-bold">The Boring (But Important) Part!</span>
-            </h1>
-            <h3 class="fw-light">We want you to know exactly what you're wearing and how to take care of it!</h3>
-        </div>
-
-        <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
-            <!-- Text Section -->
-            <div class="col-md-6 p-4 bg-light text-center text-md-start h-100">
-                <h1>You are paying for:</h1>
-                <p>
-                    From the high-quality materials we use and the all-day comfort it provides, 
-                    to easy washing tips, eco-friendly packaging, and reliable after-sales support—we've got nothing to hide and everything to share!
-                </p>
-                <ul class="list-unstyled feature-list mt-3">
-                    <li><strong>Cloth Type: </strong> 60% Polyester, 40% Spandex</li>
-                    <li><strong>Logo: </strong> 3D Material</li>
-                    <li><strong>Washable: </strong> Yes</li>
-                    <li><strong>Ironing: </strong> Not Required</li>
-                    <li><strong>Dryer: </strong> Safe for Low Heat</li>
-                    <li><strong>Stretchability: </strong> 40% Stretch</li>
-                    <li><strong>Tying Rope: </strong> Adjustable</li>
-                    <li><strong>Packaging: </strong> Eco-Friendly</li>
-                </ul>
-                <a href="#" class="btn btn-primary">Call to Action</a>
-            </div>
-
-            <!-- Video Section -->
-            <div class="col-md-6 p-0">
-                <div class="video-wrapper">
-                    <video class="w-100" autoplay muted loop playsinline>
-                        <source src="img/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Feature End -->
-
-
-<!-- Try Us Risk Free Section Start -->
-<div class="container-fluid py-5">
-    <div class="container">
-        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 800px; margin-bottom: 30px;">
-            <h1 class="text-primary mb-3">
-                <span class="text-dark fw-bold">Try Us Risk Free</span>
-            </h1>
-            <h3 class="fw-light mt-2">We don’t settle for just a good product, we’re here to deliver a flawless shopping experience from start to finish</h3>
-            </h1>
-        </div>
-    </div>
-</div>
-<!-- Try Us Risk Free Section End -->
-<!-- Risk Free Benefits Section Start -->
-<div class="container-fluid" style="margin-top: -50px;">
-  <div class="container" style="margin-bottom: 50px;">
-    <div class="row justify-content-center text-center g-4">
-      <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-        <img src="img/freedelivery.svg" alt="Free Delivery" style="width:60px; height:60px;" class="mb-2">
-        <span class="fw-bold">Free Shipping</span>
-      </div>
-      <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-        <img src="img/moneyback.svg" alt="Money Back" style="width:60px; height:60px;" class="mb-2">
-        <span class="fw-bold">30 Days Money Back Guarantee</span>
-      </div>
-      <div class="col-12 col-md-4 d-flex flex-column align-items-center">
-        <img src="img/easyreturn.svg" alt="Easy Return" style="width:60px; height:60px;" class="mb-2">
-        <span class="fw-bold">Easy Return Process</span>
-      </div>
     </div>
   </div>
-</div>
-<!-- Risk Free Benefits Section End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-white footer">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-primary">BodyStory</h1>
-                    </a>
-                    <p class="mb-0">Committed to create high quality sports wear, designed for every body, every background with different stories</p>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="mb-4">Get In Touch</h5>
-                    <p style="word-break: break-word; margin-bottom: 8px; color: #000; background: #fff; text-align: left;">1 Jalan SP 16 Taman Sri Putra 47000 Sg Buloh, Selangor</p>
-                    <p style="margin-bottom: 8px; color: #000; background: #fff; text-align: left;">+012 345 67890</p>
-                    <p style="margin-bottom: 8px; color: #000; background: #fff; text-align: left;">support@bodystory.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-primary me-1" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="mb-4">Customer Help</h5>
-                    <a href="refundexchange.html" style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">Return and Exchange</a>
-                    <a href="aboutus.html" style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">About Us</a>
-                    <a href="contactus.html" style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">Contact Us</a>
-                    <a href="privacypolicy.html" style="color: #000; background: #fff; text-decoration: none; display: block; margin-bottom: 8px;">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        © <a class="border-bottom" href="#">www.bodystory.com</a>, All Right Reserved.
-
-                                <!--/*** This template is free as long as you keep the footer author's credit link/attribution link/backlink. If you'd like to use the template without the footer author's credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+  <!-- Footer End -->
 
 
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
-
-
-    <div data-lastpass-root=""
-        style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important; float: left !important;">
-    </div>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 
 
-        </div>
-    </div>
+
+  <div data-lastpass-root=""
+    style="position: absolute !important; top: 0px !important; left: 0px !important; height: 0px !important; width: 0px !important; float: left !important;">
+  </div>
+
+
+  </div>
+  </div>
 
 </body>
 
