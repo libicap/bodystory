@@ -806,3 +806,7 @@ html {
 .perfect-workout-section {
     max-width: 800px;
 }
+
+.product-button {
+  max-width: 150px !important;
+}
