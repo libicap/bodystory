@@ -36,5 +36,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     window.addEventListener('scroll', handleScroll);
+    
 });
-
+    gtag('event', 'add_to_cart', {
+      items: [{
+        item_id: 'SKU_12345',
+        item_name: 'hijabblack',
+        currency: 'MYR',
+        price: 79.00,
+        quantity: 1
+      }]
+    });
