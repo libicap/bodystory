@@ -20,30 +20,3 @@ window.addEventListener("scroll", function () {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const duoColorsBox = document.querySelector('.product-box:nth-child(2)');
-
-    function handleScroll() {
-        const rect = duoColorsBox.getBoundingClientRect();
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-
-        // Check if any part of the Duo Colors box is visible on the screen
-        if (rect.top < windowHeight && rect.bottom > 0) {
-            duoColorsBox.classList.add('zoomed');
-        } else {
-            duoColorsBox.classList.remove('zoomed');
-        }
-    }
-
-    window.addEventListener('scroll', handleScroll);
-    
-});
-    gtag('event', 'add_to_cart', {
-      items: [{
-        item_id: 'SKU_12345',
-        item_name: 'hijabblack',
-        currency: 'MYR',
-        price: 79.00,
-        quantity: 1
-      }]
-    });
