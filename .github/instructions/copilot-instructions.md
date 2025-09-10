@@ -1,0 +1,4 @@
+- Try to keep any javascript changes in bodystory.js. Avoid inline script tags except for cases where it makes sense, like third party stuff.
+- Avoid redundant comments.
+- When editing styles, default to using bootstrap classes first, before relying on custom classes. Check bootstrap.min.css for reference if needed. If bootstrap doesn't have the needed functionality, add custom classes in style.css. Never use inline styles.
+- Never ever add comments to the code you write.
