@@ -131,9 +131,9 @@ body {
 }
 .blog-container {
     max-width: 700px;
-    margin: 40px auto;
+    margin: 5px auto 0 auto;
     border-radius: 12px;
-    padding: 32px 24px;
+    padding: 10px 24px;
 }
 .main-headline {
     font-family: 'Montserrat', Arial, sans-serif;
@@ -145,7 +145,7 @@ body {
 }
 .subheadline {
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 700;
     color: #256105;
     margin-bottom: 24px;
     line-height: 1.5;
@@ -173,5 +173,6 @@ p {
     }
     .subheadline {
         font-size: 1rem;
+        font-weight: 700;
     }
 }
