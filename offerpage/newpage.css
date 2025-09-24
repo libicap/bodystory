@@ -1,0 +1,292 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+    color: #222;
+}
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding-bottom: 10px;
+}
+.banner {
+    background: #ffe600;
+    color: #222;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+nav .logo {
+    height: 40px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #0077ff;
+}
+.product-main {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: 30px auto;
+    max-width: 1100px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+    gap: 40px;
+}
+.product-gallery {
+    flex: 1 1 320px;
+    min-width: 320px;
+    text-align: center;
+}
+.product-gallery .main-img {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.product-gallery .thumbs {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.product-gallery .thumbs img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: border 0.2s;
+}
+.product-gallery .thumbs img:hover {
+    border: 2px solid #0077ff;
+}
+.product-info {
+    flex: 2 1 400px;
+    min-width: 320px;
+}
+.product-info h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+.price-offer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.price {
+    font-size: 1.7em;
+    color: #0077ff;
+    font-weight: bold;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1.1em;
+}
+.offer {
+    background: #ffe600;
+    color: #222;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.buy-btn {
+    background: #0077ff;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+}
+.buy-btn:hover {
+    background: #005bb5;
+}
+.desc {
+    font-size: 1.1em;
+    margin-bottom: 18px;
+}
+.features {
+    padding-left: 18px;
+    margin-bottom: 18px;
+}
+.features li {
+    margin-bottom: 7px;
+    font-size: 1em;
+}
+.why-love {
+    background: #fff;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+.why-love h2 {
+    margin-bottom: 18px;
+}
+.icons {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+}
+.icons img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+.how-to-use {
+    background: #fff;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+.how-to-use h2 {
+    margin-bottom: 12px;
+}
+.how-to-use ol {
+    padding-left: 22px;
+}
+.faq {
+    background: #fff;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+.faq h2 {
+    margin-bottom: 12px;
+}
+.faq details {
+    margin-bottom: 10px;
+}
+.reviews {
+    background: #fff;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+.reviews h2 {
+    margin-bottom: 18px;
+}
+.review {
+    background: #f3f3f3;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+}
+.related-products {
+    background: #fff;
+    max-width: 1100px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 30px;
+}
+.related-products h2 {
+    margin-bottom: 18px;
+}
+.related-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.related-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    text-align: center;
+}
+.related-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+footer {
+    background: #222;
+    color: #fff;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-links, .footer-social, .footer-payments {
+    margin-bottom: 18px;
+}
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+.footer-links a:hover, .footer-social a:hover {
+    color: #ffe600;
+}
+.footer-payments img {
+    height: 28px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.copyright {
+    font-size: 0.95em;
+    color: #bbb;
+    margin-top: 10px;
+}
+@media (max-width: 900px) {
+    .product-main {
+        flex-direction: column;
+        gap: 20px;
+        padding: 18px;
+    }
+    .why-love, .how-to-use, .faq, .reviews, .related-products {
+        padding: 18px;
+    }
+    .icons {
+        gap: 18px;
+    }
+    .related-list {
+        gap: 18px;
+    }
+}
