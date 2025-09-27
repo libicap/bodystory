@@ -52,11 +52,18 @@ nav ul li a:hover {
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     padding: 30px;
     gap: 40px;
+    align-items: flex-start;
+    height: 80vh;
+    min-height: 500px;
 }
 .product-gallery {
-    flex: 1 1 320px;
-    min-width: 320px;
+    flex: 1 1 0;
+    min-width: 0;
     text-align: center;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    z-index: 2;
 }
 .product-gallery .main-img {
     width: 90%;
@@ -83,8 +90,16 @@ nav ul li a:hover {
     border: 2px solid #0077ff;
 }
 .product-info {
-    flex: 2 1 400px;
-    min-width: 320px;
+    flex: 1 1 0;
+    min-width: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+.product-info::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 .product-info h1 {
     font-size: 2.2em;
@@ -114,7 +129,7 @@ nav ul li a:hover {
     font-weight: 500;
 }
 .buy-btn {
-    background: #0077ff;
+    background: #163903;
     color: #fff;
     border: none;
     padding: 12px 32px;
@@ -126,7 +141,7 @@ nav ul li a:hover {
     transition: background 0.2s;
 }
 .buy-btn:hover {
-    background: #005bb5;
+    background: #0f2602;
 }
 .desc {
     font-size: 1.1em;
@@ -274,11 +289,100 @@ footer {
     color: #bbb;
     margin-top: 10px;
 }
+/* Sliding cart panel styles */
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 16px rgba(0,0,0,0.13);
+    z-index: 1000;
+    transition: right 0.35s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 30px 0;
+}
+.cart-panel.open {
+    right: 0;
+}
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 24px 28px 12px 28px;
+    border-bottom: 1px solid #eee;
+}
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 1.7em;
+    color: #888;
+    cursor: pointer;
+    line-height: 1;
+}
+.cart-timer {
+    padding: 18px 28px 10px 28px;
+    font-size: 1.1em;
+    color: #111;
+    text-align: center;
+    font-weight: 500;
+}
+#cartCountdown {
+    font-weight: bold;
+    color: #e53935;
+    margin-left: 8px;
+}
+.cart-itinerary {
+    display: flex;
+    align-items: center;
+    padding: 18px 28px;
+    border-bottom: 1px solid #eee;
+}
+.cart-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+.cart-details {
+    flex: 1;
+}
+.cart-title {
+    font-size: 1.08em;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.cart-prices {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1em;
+}
+.cart-new {
+    color: #0077ff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 @media (max-width: 900px) {
     .product-main {
         flex-direction: column;
         gap: 20px;
-        padding: 18px;
+        height: auto;
+        min-height: unset;
+    }
+    .product-gallery, .product-info {
+        position: static !important;
+        max-height: unset;
+        overflow: visible;
     }
     .why-love, .how-to-use, .faq, .reviews, .related-products {
         padding: 18px;
@@ -288,5 +392,14 @@ footer {
     }
     .related-list {
         gap: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .cart-panel, .cart-panel.open {
+        width: 100vw;
+        right: -100vw;
+    }
+    .cart-panel.open {
+        right: 0;
     }
 }

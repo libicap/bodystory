@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BodyStory Modest Sportswear</title>
-    <link rel="stylesheet" href="newpage.css">
+    <link rel="stylesheet" href="offer.css">
 </head>
 <body>
+    <div id="cartPanel" class="cart-panel">
+        <div class="cart-header">
+            <span>Your Cart</span>
+            <button class="close-cart" onclick="closeCart()">&times;</button>
+        </div>
+        <div class="cart-timer">
+            Free Shipping Ends <span id="cartCountdown">06:00</span>
+        </div>
+        <div class="cart-itinerary">
+            <img src="img/square1.png" alt="Product" class="cart-thumb">
+            <div class="cart-details">
+                <div class="cart-title">BodyStory TieFit Sports Tudung</div>
+                <div class="cart-prices">
+                    <span class="cart-old">RM 120</span>
+                    <span class="cart-new">RM79</span>
+                </div>
+            </div>
+        </div>
+        <div class="cart-offer" style="padding: 18px 28px 0 28px; font-size: 1.08em; color: #0077ff; font-weight: 500;">
+            Buy 1 more at 50% off
+        </div>
+        <div class="cart-itinerary">
+            <img src="img/square4.png" alt="Product Beach" class="cart-thumb">
+            <div class="cart-details">
+                <div class="cart-title">BodyStory TieFit Sports Tudung (Beach)</div>
+                <div class="cart-prices">
+                    <span class="cart-new">RM 60</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="banner">🚚 FREE SHIPPING &nbsp; 🎉 30 Days Money Back Guarantee 🎉</div>
         <nav>
@@ -21,21 +52,21 @@
     <main>
         <section class="product-main">
             <div class="product-gallery">
-                <img src="img/square1.png" alt="Brush Main" class="main-img">
+                <img src="img/square1.png" alt="Brush Main" class="main-img" id="mainProductImg">
                 <div class="thumbs">
-                    <img src="img/square2.png" alt="Thumb 1">
-                    <img src="img/square3.png" alt="Thumb 2">
-                    <img src="img/square4.png" alt="Thumb 3">
+                    <img src="img/square2.png" alt="Thumb 1" onclick="setMainImg(this)">
+                    <img src="img/square3.png" alt="Thumb 2" onclick="setMainImg(this)">
+                    <img src="img/square4.png" alt="Thumb 3" onclick="setMainImg(this)">
                 </div>
             </div>
             <div class="product-info">
                 <h1>BodyStory TieFit Sports Tudung</h1>
                 <div class="price-offer">
-                    <span class="price">€59,99</span>
-                    <span class="old-price">€179,98</span>
-                    <span class="offer">You Save 120€</span>
+                    <span class="price">RM 79</span>
+                    <span class="old-price">RM 120</span>
+                    <span class="offer">You Save RM 41</span>
                 </div>
-                <button class="buy-btn">ADD TO CART</button>
+                <button class="buy-btn" onclick="openCart()">ADD TO CART</button>
                 <p class="desc">The world's first fully automatic toothbrush that cleans your teeth in just 30 seconds! Each tooth experiences 48,000 vibrations per minute, providing thorough cleaning and a sensation that our customers describe as a dental massage... but it's so much more than that!</p>
                 <ul class="features">
                     <li>Soft mode for sensitive gums</li>
@@ -44,6 +75,10 @@
                     <li>360° mouthpiece</li>
                     <li>Lifetime warranty</li>
                 </ul>
+                <div class="overheat-info" style="margin-top:18px; font-size:1.08em; color:#444;">
+                    <strong>Protect Your Head From Overheating</strong><br>
+                    Head and neck are the major cooling zones in the human body. Which means, if you're wearing sports tudung with bad airflow that traps heat, your brain will overheat, your body forces you to slow down to protect itself, even if your muscles still have energy...
+                </div>
             </div>
         </section>
         <section class="why-love">
@@ -137,5 +172,34 @@
         </div>
         <div class="copyright">© 2025 ScandinavianSmiles™</div>
     </footer>
+<script>
+function setMainImg(thumb) {
+    var mainImg = document.getElementById('mainProductImg');
+    mainImg.src = thumb.src;
+    mainImg.alt = thumb.alt;
+}
+
+function openCart() {
+    document.getElementById('cartPanel').classList.add('open');
+    startCartCountdown();
+}
+function closeCart() {
+    document.getElementById('cartPanel').classList.remove('open');
+}
+let cartCountdownInterval;
+function startCartCountdown() {
+    let duration = 6 * 60; // 6 minutes in seconds
+    clearInterval(cartCountdownInterval);
+    function updateTimer() {
+        let min = Math.floor(duration / 60);
+        let sec = duration % 60;
+        document.getElementById('cartCountdown').textContent = `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+        if (duration > 0) duration--;
+        else clearInterval(cartCountdownInterval);
+    }
+    updateTimer();
+    cartCountdownInterval = setInterval(updateTimer, 1000);
+}
+</script>
 </body>
 </html>
