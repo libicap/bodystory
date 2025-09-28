@@ -1,3 +1,15 @@
+/* Consistent dropdown style for all select elements in cart */
+.cart-panel select {
+    font-size: 0.98em;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;

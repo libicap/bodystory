@@ -38,11 +38,17 @@
                     Buy 1 more at 50% off
                 </div>
                 <div class="cart-itinerary cart-secondary">
-                    <img src="img/square4.png" alt="Product Beach" class="cart-thumb">
+                    <img id="cartSecondaryImg" src="img/square4.png" alt="Product Beach" class="cart-thumb">
                     <div class="cart-details">
-                        <div class="cart-title">BodyStory TieFit Sports Tudung (Beach)</div>
-                        <div class="cart-prices">
-                            <span class="cart-new">RM 60</span>
+                        <div class="cart-title" id="cartSecondaryTitle">BodyStory TieFit Sports Tudung (Beach) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span></div>
+                        <div class="cart-color-price-row" style="display: flex; align-items: flex-start; gap: 18px; margin: 8px 0 10px 0;">
+                            <div class="cart-colors">
+                                <label for="cartSecondaryColorSelect" style="font-size:0.98em; margin-right:8px;">Color:</label>
+                                <select id="cartSecondaryColorSelect" style="font-size:0.98em; padding:3px 10px; border-radius:6px; border:1px solid #ccc;">
+                                    <option value="black">Black</option>
+                                    <option value="beach">Beach</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>

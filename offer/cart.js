@@ -1,3 +1,21 @@
+// Logic for cart-offer color dropdown
+document.addEventListener('DOMContentLoaded', function() {
+    var secondaryColorSelect = document.getElementById('cartSecondaryColorSelect');
+    if (secondaryColorSelect) {
+        secondaryColorSelect.addEventListener('change', function() {
+            var color = this.value;
+            var secondaryImg = document.getElementById('cartSecondaryImg');
+            var secondaryTitle = document.getElementById('cartSecondaryTitle');
+            if (color === 'black') {
+                if (secondaryImg) secondaryImg.src = 'img/square1.png';
+                if (secondaryTitle) secondaryTitle.textContent = 'BodyStory TieFit Sports Tudung (Black)';
+            } else if (color === 'beach') {
+                if (secondaryImg) secondaryImg.src = 'img/square4.png';
+                if (secondaryTitle) secondaryTitle.textContent = 'BodyStory TieFit Sports Tudung (Beach)';
+            }
+        });
+    }
+});
 function setMainImg(thumb) {
     var mainImg = document.getElementById('mainProductImg');
     mainImg.src = thumb.src;
@@ -13,6 +31,17 @@ function setCartColor(color) {
     } else if (color === 'beach') {
         img.src = 'img/square4.png';
         title.textContent = 'BodyStory TieFit Sports Tudung (Beach)';
+    }
+
+    // Cart offer logic (cart-offer, cart-secondary)
+    var secondaryImg = document.getElementById('cartSecondaryImg');
+    var secondaryTitle = document.getElementById('cartSecondaryTitle');
+    if (color === 'black') {
+        if (secondaryImg) secondaryImg.src = 'img/square4.png';
+        if (secondaryTitle) secondaryTitle.innerHTML = 'BodyStory TieFit Sports Tudung (Beach) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span>';
+    } else if (color === 'beach') {
+        if (secondaryImg) secondaryImg.src = 'img/square1.png';
+        if (secondaryTitle) secondaryTitle.innerHTML = 'BodyStory TieFit Sports Tudung (Black) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span>';
     }
 }
 
