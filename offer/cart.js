@@ -43,6 +43,43 @@ function setCartColor(color) {
         if (secondaryImg) secondaryImg.src = 'img/square1.png';
         if (secondaryTitle) secondaryTitle.innerHTML = 'BodyStory TieFit Sports Tudung (Black) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span>';
     }
+
+    // Shopify Buy Button swap logic
+    var buySticky = document.querySelector('.cart-buy-sticky');
+    if (!buySticky) return;
+    var buyButtonDiv = buySticky.querySelector('#product-component-1759079085176, #product-component-1759089005839');
+    if (color === 'beach') {
+        // Remove current buy button and add new one for Beach
+        if (buyButtonDiv) buyButtonDiv.remove();
+        var newDiv = document.createElement('div');
+        newDiv.id = 'product-component-1759089005839';
+        buySticky.appendChild(newDiv);
+        // Remove any previous injected script
+        var prevScript = document.getElementById('shopify-buy-script-beach');
+        if (prevScript) prevScript.remove();
+        // Add new script for Beach
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.id = 'shopify-buy-script-beach';
+        script.innerHTML = `/*<![CDATA[*/\n(function () {\n  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';\n  if (window.ShopifyBuy) {\n    if (window.ShopifyBuy.UI) {\n      ShopifyBuyInit();\n    } else {\n      loadScript();\n    }\n  } else {\n    loadScript();\n  }\n  function loadScript() {\n    var script = document.createElement('script');\n    script.async = true;\n    script.src = scriptURL;\n    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);\n    script.onload = ShopifyBuyInit;\n  }\n  function ShopifyBuyInit() {\n    var client = ShopifyBuy.buildClient({\n      domain: 'mrrpjk-zs.myshopify.com',\n      storefrontAccessToken: 'a1d38a2a7bba048d8df85bd5bcbc9fcf',\n    });\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\n      ui.createComponent('product', {\n        id: '7786136600660',\n          variantId: '42533768429652',\n        node: document.getElementById('product-component-1759089005839'),\n        moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',\n        options: {\n  "product": {\n    "styles": {\n      "product": {\n        "@media (min-width: 601px)": {\n          "max-width": "calc(25% - 20px)",\n          "margin-left": "20px",\n          "margin-bottom": "50px"\n        }\n      },\n      "button": {\n        "font-family": "Avant Garde, sans-serif",\n        ":hover": {\n          "background-color": "#000000"\n        },\n        "background-color": "#000000",\n        ":focus": {\n          "background-color": "#000000"\n        },\n        "border-radius": "18px",\n        "padding-left": "65px",\n        "padding-right": "65px"\n      }\n    },\n    "buttonDestination": "checkout",\n    "contents": {\n      "img": false,\n      "title": false,\n      "price": false,\n      "options": false\n    },\n    "text": {\n      "button": "Buy now"\n    }\n  },\n  "productSet": {\n    "styles": {\n      "products": {\n        "@media (min-width: 601px)": {\n          "margin-left": "-20px"\n        }\n      }\n    }\n  },\n  "modalProduct": {\n    "contents": {\n      "img": false,\n      "imgWithCarousel": true,\n      "button": false,\n      "buttonWithQuantity": true\n    },\n    "styles": {\n      "product": {\n        "@media (min-width: 601px)": {\n          "max-width": "100%",\n          "margin-left": "0px",\n          "margin-bottom": "0px"\n        }\n      },\n      "button": {\n        "font-family": "Avant Garde, sans-serif",\n        ":hover": {\n          "background-color": "#000000"\n        },\n        "background-color": "#000000",\n        ":focus": {\n          "background-color": "#000000"\n        },\n        "border-radius": "18px",\n        "padding-left": "65px",\n        "padding-right": "65px"\n      },\n      "title": {\n        "font-family": "Montserrat, sans-serif",\n        "font-size": "30px"\n      },\n      "price": {\n        "font-family": "PT Sans, sans-serif",\n        "font-weight": "bold"\n      },\n      "compareAt": {\n        "font-family": "PT Sans, sans-serif",\n        "font-weight": "bold"\n      },\n      "unitPrice": {\n        "font-family": "PT Sans, sans-serif",\n        "font-weight": "bold"\n      }\n    },\n    "googleFonts": [\n      "Montserrat",\n      "PT Sans"\n    ],\n    "text": {\n      "button": "Add to cart"\n    }\n  },\n  "option": {},\n  "cart": {\n    "styles": {\n      "button": {\n        "font-family": "Avant Garde, sans-serif",\n        ":hover": {\n          "background-color": "#000000"\n        },\n        "background-color": "#000000",\n        ":focus": {\n          "background-color": "#000000"\n        },\n        "border-radius": "18px"\n      }\n    },\n    "text": {\n      "total": "Subtotal",\n      "button": "Checkout"\n    },\n    "popup": false\n  },\n  "toggle": {\n    "styles": {\n      "toggle": {\n        "font-family": "Avant Garde, sans-serif",\n        "background-color": "#000000",\n        ":hover": {\n          "background-color": "#000000"\n        },\n        ":focus": {\n          "background-color": "#000000"\n        }\n      }\n    }\n  }\n},\n      });\n    });\n  }\n})();\n/*]]>*/`;
+        buySticky.appendChild(script);
+    } else if (color === 'black') {
+        // Remove beach buy button if present and restore original
+        var beachDiv = buySticky.querySelector('#product-component-1759089005839');
+        if (beachDiv) beachDiv.remove();
+        var prevScript = document.getElementById('shopify-buy-script-beach');
+        if (prevScript) prevScript.remove();
+        // If original button is missing, re-add it
+        if (!buySticky.querySelector('#product-component-1759079085176')) {
+            var origDiv = document.createElement('div');
+            origDiv.id = 'product-component-1759079085176';
+            buySticky.appendChild(origDiv);
+            // Optionally, re-initialize the original buy button if needed
+            if (window.ShopifyBuy && window.ShopifyBuy.UI && typeof ShopifyBuyInit === 'function') {
+                ShopifyBuyInit();
+            }
+        }
+    }
 }
 
 function openCart() {
