@@ -19,28 +19,32 @@
                         <img id="cartMainImg" src="img/square1.png" alt="Product" class="cart-thumb">
                         <div class="cart-details">
                             <div class="cart-title" id="cartMainTitle">BodyStory TieFit Sports Tudung (Black)</div>
-                            <div class="cart-colors" style="margin: 8px 0 10px 0;">
-                                <span style="font-size:0.98em;">Color:</span>
-                                <button class="cart-color-btn" id="colorBlack" style="background:#222; color:#fff; border:none; border-radius:6px; padding:3px 14px; margin-left:8px; cursor:pointer; font-size:0.98em;" onclick="setCartColor('black')">Black</button>
-                                <button class="cart-color-btn" id="colorBeach" style="background:#e5d7c3; color:#222; border:none; border-radius:6px; padding:3px 14px; margin-left:8px; cursor:pointer; font-size:0.98em;" onclick="setCartColor('beach')">Beach</button>
-                            </div>
-                            <div class="cart-prices">
-                                <span class="cart-old">RM 120</span>
-                                <span class="cart-new">RM79</span>
+                            <div class="cart-color-price-row" style="display: flex; align-items: flex-start; gap: 18px; margin: 8px 0 10px 0;">
+                                <div class="cart-colors">
+                                    <label for="cartColorSelect" style="font-size:0.98em; margin-right:8px;">Color:</label>
+                                    <select id="cartColorSelect" style="font-size:0.98em; padding:3px 10px; border-radius:6px; border:1px solid #ccc;" onchange="setCartColor(this.value)">
+                                        <option value="black">Black</option>
+                                        <option value="beach">Beach</option>
+                                    </select>
+                                </div>
+                                <div class="cart-prices" style="display: flex; flex-direction: column; align-items: flex-end; min-width: 60px;">
+                                    <span class="cart-old" style="margin-bottom:2px;">RM 120</span>
+                                    <span class="cart-new">RM79</span>
+                                </div>
                             </div>
                         </div>
                 </div>
                 <div class="cart-offer" style="padding: 18px 28px 0 28px; font-size: 1.08em; color: #0077ff; font-weight: 500;">
-                        Buy 1 more at 50% off
+                    Buy 1 more at 50% off
                 </div>
-                <div class="cart-itinerary">
-                        <img src="img/square4.png" alt="Product Beach" class="cart-thumb">
-                        <div class="cart-details">
-                                <div class="cart-title">BodyStory TieFit Sports Tudung (Beach)</div>
-                                <div class="cart-prices">
-                                        <span class="cart-new">RM 60</span>
-                                </div>
+                <div class="cart-itinerary cart-secondary">
+                    <img src="img/square4.png" alt="Product Beach" class="cart-thumb">
+                    <div class="cart-details">
+                        <div class="cart-title">BodyStory TieFit Sports Tudung (Beach)</div>
+                        <div class="cart-prices">
+                            <span class="cart-new">RM 60</span>
                         </div>
+                    </div>
                 </div>
                 <div style="padding: 24px 28px 0 28px;">
                         <div id='product-component-1759079085176'></div>
@@ -364,13 +368,9 @@ function setCartColor(color) {
     if (color === 'black') {
         img.src = 'img/square1.png';
         title.textContent = 'BodyStory TieFit Sports Tudung (Black)';
-        document.getElementById('colorBlack').style.outline = '2px solid #163903';
-        document.getElementById('colorBeach').style.outline = 'none';
     } else if (color === 'beach') {
         img.src = 'img/square4.png';
         title.textContent = 'BodyStory TieFit Sports Tudung (Beach)';
-        document.getElementById('colorBeach').style.outline = '2px solid #163903';
-        document.getElementById('colorBlack').style.outline = 'none';
     }
 }
 
