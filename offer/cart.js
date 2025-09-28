@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
             var secondaryTitle = document.getElementById('cartSecondaryTitle');
             if (color === 'black') {
                 if (secondaryImg) secondaryImg.src = 'img/square1.png';
-                if (secondaryTitle) secondaryTitle.textContent = 'BodyStory TieFit Sports Tudung (Black)';
+                if (secondaryTitle) secondaryTitle.innerHTML = 'BodyStory TieFit Sports Tudung (Black) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span>';
             } else if (color === 'beach') {
                 if (secondaryImg) secondaryImg.src = 'img/square4.png';
-                if (secondaryTitle) secondaryTitle.textContent = 'BodyStory TieFit Sports Tudung (Beach)';
+                if (secondaryTitle) secondaryTitle.innerHTML = 'BodyStory TieFit Sports Tudung (Beach) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span>';
             }
         });
     }
