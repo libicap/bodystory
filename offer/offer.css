@@ -372,6 +372,9 @@ footer {
     font-size: 1.2em;
     font-weight: bold;
 }
+.cart-bottom {
+    margin-top: auto;
+}
 @media (max-width: 900px) {
     .product-main {
         flex-direction: column;
