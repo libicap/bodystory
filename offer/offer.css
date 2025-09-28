@@ -1,3 +1,37 @@
+/* Sticky Buy Now button and discount row */
+.cart-buy-sticky {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 10;
+    padding: 8px 28px 8px 28px;
+    box-shadow: 0 -2px 12px 0 rgba(0,0,0,0.04);
+}
+.cart-discount-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.cart-discount-label {
+    font-size: 1.08em;
+    color: #222;
+    font-weight: 500;
+}
+.cart-discount-off {
+    font-size: 1.08em;
+    color: #0077ff;
+    font-weight: 700;
+}
+#product-component-1759079085176 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
 /* Consistent dropdown style for all select elements in cart */
 .cart-panel select {
     font-size: 0.98em;
