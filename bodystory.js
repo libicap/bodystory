@@ -44,10 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     const imagePairs = [
-      { textbox: productTextboxes[0], image: "img/weather.png" },
-      { textbox: productTextboxes[1], image: "img/egghead.png" },
-      { textbox: productTextboxes[2], image: "img/withholes.jpg" },
-      { textbox: productTextboxes[3], image: "img/wrinkles.png" },
+      { textbox: productTextboxes[0], image: "img/showholes.jpg" },
+      { textbox: productTextboxes[1], image: "img/showlogo.png" },
+      { textbox: productTextboxes[2], image: "img/blackegg.png" },
+      { textbox: productTextboxes[3], image: "img/leg.png" },
       { textbox: productTextboxes[4], image: "img/duocolors.jpg" },
     ];
 
