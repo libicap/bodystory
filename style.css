@@ -143,17 +143,22 @@ html {
 .logo-img {
   max-width: 50px;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .logo-container {
   padding: 10px 0 2.5px;
+  background: #fff;
+  z-index: 1100;
+  position: relative;
 }
 
 .announcementdiv {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 50px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,9 +168,20 @@ html {
 
 .announcementdiv p {
   margin: 0;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: 13px;
   font-weight: 700;
   color: #000;
+}
+
+.announcement-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #f8f9fa;
+  z-index: 1050;
+  text-align: center;
+  padding: 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 /* Hero Section */
