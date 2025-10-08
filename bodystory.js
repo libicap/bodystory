@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var ctaBtn = document.querySelector('.banner-cta-btn');
+  if (ctaBtn) {
+    ctaBtn.addEventListener('click', function(e) {
+      var target = document.querySelector('.minishopping-text');
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+});
 document.addEventListener("DOMContentLoaded", function () {
   // ANNOUNCEMENT BAR LOGIC
   const logo = document.querySelector(".logodiv");
