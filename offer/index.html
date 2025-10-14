@@ -10,13 +10,15 @@
             body, h1, h2, h3, h4, h5, h6, .desc, .features, .cart-title, .cart-details, .cart-offer, .cart-discount-label, .cart-discount-off, .banner, nav, .product-info, .overheat-info, .why-love, .how-to-use, .faq, .reviews, .related-products, .footer-links, .footer-social, .footer-payments, .copyright {
                 font-family: 'Open Sans', Arial, sans-serif !important;
             }
+            body {
+                background: #fff !important;
+            }
             .announcement-bar {
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
                 z-index: 9999;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.04);
                 background-color: #fff;
                 padding: 10px 0;
                 text-align: center;
@@ -26,6 +28,34 @@
             .spacer {
                 height: 44px;
             }
+            /* --- Card style removal overrides --- */
+            body, html {
+                background:#fff !important;
+            }
+            /* Remove shadows globally */
+            * {
+                box-shadow: none !important;
+            }
+            /* Neutralize typical card containers */
+            section, header, footer, nav, .product-main, .product-info, .cart-panel, .cart-header, .cart-itinerary, .cart-buy-sticky, .reviews .review, .related-item, .why-love, .how-to-use, .faq, .reviews, .related-products, .discount-message {
+                background: transparent !important;
+                border-radius: 0 !important;
+                border: 0 !important;
+            }
+            /* Restore white background just for fixed announcement bar */
+            .announcement-bar {
+                background:#fff !important;
+            }
+            /* If external CSS set a grey page wrapper, flatten it */
+            .page, .wrapper, .container, .page-wrapper {
+                background: transparent !important;
+            }
+            /* Buttons keep shape but no card feel */
+            button, .buy-btn {
+                box-shadow:none !important;
+            }
+            /* Optional: remove rounded images if they looked like cards (comment out if you want them back) */
+            /* img { border-radius:0 !important; } */
         </style>
 </head>
 <body>
@@ -282,7 +312,7 @@
                 <button class="buy-btn" onclick="openCart()">ADD TO CART</button>
                 <p class="desc">High performance tudung specifically designed for any kind of workout. Wrinkle-free, quick dry, light weight and stretchy fabric.</p>
                 <p class="desc">The tudung has all the features a devoted muslim needs for workout without distraction. The fabric has cooling and UV blocking features. The tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through to uphold your values.</p>
-                <div class="discount-message" style="background:#f8f9fa; color:#222; border-radius:6px; padding:6px 12px; font-size:0.8em; display:inline-block; margin-bottom:12px; margin-top:-8px;">* 20% Discount will be added once you choose your color!</div>
+                <div class="discount-message" style="color:#222; padding:6px 12px; font-size:0.8em; display:inline-block; margin-bottom:12px; margin-top:-8px;">* 20% Discount will be added once you choose your color!</div>
                 <div style="height:18px;"></div>
                 <div class="payment-logos" style="display:flex; gap:1.2rem; align-items:center; margin-bottom:16px;">
                     <img src="img/visapng.png" alt="Visa" style="height:24px;">
