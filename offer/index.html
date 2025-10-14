@@ -56,6 +56,13 @@
             }
             /* Optional: remove rounded images if they looked like cards (comment out if you want them back) */
             /* img { border-radius:0 !important; } */
+            /* Force secondary cart itinerary images to fixed square size */
+            .cart-itinerary.cart-secondary img {
+                width:460px !important;
+                height:460px !important;
+                object-fit:cover;
+                max-width:none !important;
+            }
         </style>
 </head>
 <body>
