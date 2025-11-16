@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     const imagePairs = [
-      { textbox: productTextboxes[0], image: "https://www.bodystory.my/img/showholes.jpg" },
-      { textbox: productTextboxes[1], image: "https://www.bodystory.my/img/showlogo.png" },
-      { textbox: productTextboxes[2], image: "https://www.bodystory.my/img/blackegg.png" },
-      { textbox: productTextboxes[3], image: "https://www.bodystory.my/img/leg.png" },
-      { textbox: productTextboxes[4], image: "https://www.bodystory.my/img/duocolors.jpg" },
+      { textbox: productTextboxes[0], image: "img/showholes.jpg" },
+      { textbox: productTextboxes[1], image: "img/showlogo.png" },
+      { textbox: productTextboxes[2], image: "img/blackegg.png" },
+      { textbox: productTextboxes[3], image: "img/leg.png" },
+      { textbox: productTextboxes[4], image: "img/duocolors.jpg" },
     ];
 
     let currentIndex = 0;
