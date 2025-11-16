@@ -56,12 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
     const imagePairs = [
-      { textbox: productTextboxes[0], image: "/img/showholes.jpg" },
-      { textbox: productTextboxes[1], image: "/img/showlogo.png" },
-      { textbox: productTextboxes[2], image: "/img/blackegg.png" },
-      { textbox: productTextboxes[3], image: "/img/leg.png" },
-      { textbox: productTextboxes[4], image: "/img/duocolors.jpg" },
-    ];
+      { textbox: productTextboxes[0], image: basePath + "img/showholes.jpg" },
+      { textbox: productTextboxes[1], image: basePath + "img/showlogo.png" },
+      { textbox: productTextboxes[2], image: basePath + "img/blackegg.png" },
+      { textbox: productTextboxes[3], image: basePath + "img/leg.png" },
+      { textbox: productTextboxes[4], image: basePath + "img/duocolors.jpg" },
+    ]
 
     let currentIndex = 0;
     let intervalId;
