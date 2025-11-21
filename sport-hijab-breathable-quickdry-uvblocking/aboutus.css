@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #163903;
+    padding: 20px 40px;
+    color: #ffffff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    max-height: 24px;
+    height: 24px;
+}
+
+.main-header h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.back-button {
+    background-color: #ffffff;
+    color: #163903;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+.back-button-mobile {
+    display: none;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #000;
+    text-align: left;
+}
+
+.closing-statement {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #163903;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header-left {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .back-button {
+        display: none;
+    }
+
+    .back-button-mobile {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        color: #163903;
+        text-decoration: none;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        z-index: 1000;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+        padding: 40px 20px 80px 20px;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
+
+    .closing-statement {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 30px 15px 80px 15px;
+    }
+
+    .main-header {
+        padding: 15px;
+    }
+
+    .about-section {
+        margin-bottom: 30px;
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .closing-statement {
+        font-size: 1rem;
+    }
+}
