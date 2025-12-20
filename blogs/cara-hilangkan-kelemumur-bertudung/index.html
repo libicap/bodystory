@@ -68,6 +68,33 @@
 }
 </script>
     
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://yourdomain.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blogs",
+      "item": "https://yourdomain.com/blogs/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kesihatan Kulit Kepala Bertudung",
+      "item": "https://yourdomain.com/blogs/cara-hilangkan-kelemumur-bertudung/"
+    }
+  ]
+}
+</script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="kelemumur.css">
 </head>
@@ -76,9 +103,15 @@
         <header class="main-header">
             <div class="header-left">
                 <img src="img/logowhitecropped.png" alt="Body Story Logo" class="logo">
-                <span class="header-title">Blogs > Kesihatan Kulit Kepala Bertudung </span>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../index.html">Blogs</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Kesihatan Kulit Kepala Bertudung</li>
+                    </ol>
+                </nav>
             </div>
-            <a href="index.html" class="back-button">Back to main page</a>
+            <a href="../../index.html" class="back-button">Back to main page</a>
         </header>
         
         <main class="content">
