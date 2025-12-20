@@ -38,7 +38,8 @@ body {
     height: 24px;
 }
 
-.main-header h1 {
+.main-header h1,
+.header-title {
     font-size: 16px;
     font-weight: 700;
     margin: 0;
