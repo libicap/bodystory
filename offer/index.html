@@ -37,7 +37,7 @@
                 box-shadow: none !important;
             }
             /* Neutralize typical card containers */
-            section, header, footer, nav, .product-main, .product-info, .cart-panel, .cart-header, .cart-itinerary, .cart-buy-sticky, .reviews .review, .related-item, .why-love, .how-to-use, .faq, .reviews, .related-products, .discount-message {
+            section, header, footer, nav, .product-main, .product-info, .cart-header, .cart-itinerary, .cart-buy-sticky, .reviews .review, .related-item, .why-love, .how-to-use, .faq, .reviews, .related-products, .discount-message {
                 background: transparent !important;
                 border-radius: 0 !important;
                 border: 0 !important;
@@ -70,59 +70,29 @@
             🚚 Free Shipping to Malaysia &nbsp; 🎉 15 Days Money Back Guarantee 🎉
         </div>
         <div class="spacer"></div>
+    <div id="cartOverlay" class="cart-overlay" onclick="closeCart()"></div>
     <div id="cartPanel" class="cart-panel">
-                <div class="cart-header">
-                        <span>Your Cart</span>
-                        <button class="close-cart" onclick="closeCart()">&times;</button>
-                </div>
-                <div class="cart-timer">
-                        Free Shipping Ends <span id="cartCountdown">06:00</span>
-                </div>
-                <div class="cart-itinerary">
-                        <img id="cartMainImg" src="img/square1.png" alt="Product" class="cart-thumb">
-                        <div class="cart-details">
-                            <div class="cart-title" id="cartMainTitle">BodyStory TieFit Sports Tudung (Black)</div>
-                            <div class="cart-color-price-row" style="display: flex; align-items: flex-start; gap: 18px; margin: 8px 0 10px 0;">
-                                <div class="cart-colors">
-                                    <label for="cartColorSelect" style="font-size:0.98em; margin-right:8px;">Color:</label>
-                                    <select id="cartColorSelect" style="font-size:0.98em; padding:3px 10px; border-radius:6px; border:1px solid #ccc;" onchange="setCartColor(this.value)">
-                                        <option value="black">Black</option>
-                                        <option value="beach">Beach</option>
-                                    </select>
-                                </div>
-                                <div class="cart-prices" style="display: flex; flex-direction: column; align-items: flex-end; min-width: 60px;">
-                                    <span class="cart-old" style="margin-bottom:2px;">RM 120</span>
-                                    <span class="cart-new">RM79</span>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="cart-offer" style="padding: 18px 28px 0 28px; font-size: 1.08em; color: #0077ff; font-weight: 500;">
-                    Buy 1 more at 50% off
-                </div>
-                <div class="cart-itinerary cart-secondary">
-                    <img id="cartSecondaryImg" src="img/square1.png" alt="Product Black" class="cart-thumb">
-                    <div class="cart-details">
-                        <div class="cart-title" id="cartSecondaryTitle">BodyStory TieFit Sports Tudung (Black) <span class="cart-old" style="text-decoration:line-through; color:#888; font-size:0.98em; margin-left:8px;">RM120</span> <span class="cart-new" style="margin-left:6px;">RM60</span></div>
-                        <div class="cart-color-price-row" style="display: flex; align-items: flex-start; gap: 18px; margin: 8px 0 10px 0;">
-                            <div class="cart-colors">
-                                <label for="cartSecondaryColorSelect" style="font-size:0.98em; margin-right:8px;">Color:</label>
-                                <select id="cartSecondaryColorSelect" style="font-size:0.98em; padding:3px 10px; border-radius:6px; border:1px solid #ccc;">
-                                    <option value="black">Black</option>
-                                    <option value="beach">Beach</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart-buy-sticky">
-                    <div class="cart-discount-row">
-                        <span class="cart-discount-label">Discount</span>
-                        <span class="cart-discount-off">50% off</span>
-                    </div>
-                    <div id='product-component-1759079085176'></div>
-                </div>
+        <div class="cart-header">
+            <h2 style="margin: 0; font-size: 1.3em; font-weight: 600;">Cart</h2>
+            <button class="close-cart" onclick="closeCart()">&times;</button>
         </div>
+        <div class="cart-content">
+            <p style="text-align: center; color: #666; padding: 40px 20px;">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <button class="checkout-btn" disabled style="opacity: 0.5;">CHECKOUT</button>
+        </div>
+    </div>
+    <script>
+        function openCart() {
+            document.getElementById('cartPanel').classList.add('open');
+            document.getElementById('cartOverlay').classList.add('open');
+        }
+        function closeCart() {
+            document.getElementById('cartPanel').classList.remove('open');
+            document.getElementById('cartOverlay').classList.remove('open');
+        }
+    </script>
         <script type="text/javascript">
         /*<![CDATA[*/
         (function () {

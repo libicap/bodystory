@@ -84,7 +84,6 @@ function setCartColor(color) {
 
 function openCart() {
     document.getElementById('cartPanel').classList.add('open');
-    startCartCountdown();
 }
 function closeCart() {
     document.getElementById('cartPanel').classList.remove('open');
