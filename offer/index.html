@@ -87,11 +87,25 @@
         function openCart() {
             document.getElementById('cartPanel').classList.add('open');
             document.getElementById('cartOverlay').classList.add('open');
+            // Push a state to history so back button closes the cart
+            if (window.history && window.history.pushState) {
+                window.history.pushState({cartOpen: true}, '', window.location.href);
+            }
         }
         function closeCart() {
             document.getElementById('cartPanel').classList.remove('open');
             document.getElementById('cartOverlay').classList.remove('open');
         }
+        
+        // Handle browser back button - close cart instead of navigating away
+        window.addEventListener('popstate', function(event) {
+            var panel = document.getElementById('cartPanel');
+            if (panel && panel.classList.contains('open')) {
+                closeCart();
+                // Prevent further back navigation by pushing forward again
+                event.preventDefault();
+            }
+        });
     </script>
         <script type="text/javascript">
         /*<![CDATA[*/
