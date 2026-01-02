@@ -20,7 +20,7 @@
                 width: 100%;
                 z-index: 9999;
                 background: linear-gradient(180deg, #651f17, #41140f);
-                padding: 10px 0;
+                padding: 12px 10px;
                 text-align: center;
                 font-size: 0.9em;
                 color: #fff;
@@ -30,7 +30,25 @@
                 transform: translateY(-100%);
             }
             .spacer {
-                height: 44px;
+                height: 48px;
+            }
+            @media (max-width: 768px) {
+                .announcement-bar {
+                    font-size: 0.8em;
+                    padding: 10px 5px;
+                }
+                .spacer {
+                    height: 44px;
+                }
+            }
+            @media (max-width: 480px) {
+                .announcement-bar {
+                    font-size: 0.75em;
+                    padding: 8px 5px;
+                }
+                .spacer {
+                    height: 40px;
+                }
             }
             /* --- Card style removal overrides --- */
             body, html {
@@ -41,10 +59,14 @@
                 box-shadow: none !important;
             }
             /* Neutralize typical card containers */
-            section, header, footer, nav, .product-main, .product-info, .cart-header, .cart-itinerary, .cart-buy-sticky, .reviews .review, .related-item, .why-love, .how-to-use, .faq, .reviews, .related-products, .discount-message {
+            section, footer, nav, .product-main, .product-info, .cart-header, .cart-itinerary, .cart-buy-sticky, .reviews .review, .related-item, .why-love, .how-to-use, .faq, .reviews, .related-products, .discount-message {
                 background: transparent !important;
                 border-radius: 0 !important;
                 border: 0 !important;
+            }
+            /* Keep header with white background for sticky */
+            header {
+                background: #fff !important;
             }
             /* If external CSS set a grey page wrapper, flatten it */
             .page, .wrapper, .container, .page-wrapper {
@@ -324,7 +346,7 @@
         /*]]>*/
         </script>
         <header>
-        <nav style="display: flex; justify-content: center; align-items: center; padding: 10px 30px;">
+        <nav style="display: flex; justify-content: center; align-items: center;">
             <img src="img/newlogo.svg" alt="BodyStory Logo" class="logo">
         </nav>
     </header>
@@ -571,24 +593,6 @@
         </section>
     
     </main>
-    <footer>
-        <div class="footer-links">
-            <a href="#">Contact Us</a>
-            <a href="#">Track Your Order</a>
-            <a href="#">FAQs</a>
-            <a href="#">Shipping & Delivery</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.instagram.com/scandinavian_smiles/">Instagram</a>
-            <a href="https://www.tiktok.com/@scandinaviansmiles">TikTok</a>
-        </div>
-        <div class="footer-payments">
-            <img src="https://scandinaviansmiles.com/cdn/shop/files/visa.png?v=1746306217" alt="Visa">
-            <img src="https://scandinaviansmiles.com/cdn/shop/files/master.png?v=1746306217" alt="Mastercard">
-            <img src="https://scandinaviansmiles.com/cdn/shop/files/applepay.png?v=1746306217" alt="Apple Pay">
-        </div>
-        <div class="copyright">© 2025 ScandinavianSmiles™</div>
-    </footer>
 <script src="cart.js"></script>
 </body>
 </html>
