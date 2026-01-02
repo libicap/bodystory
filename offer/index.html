@@ -128,6 +128,34 @@
             
             lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
         }, false);
+
+        // Color selection function
+        function selectColor(element, colorName) {
+            // Remove selection from all color options
+            const allColors = element.parentElement.querySelectorAll('div[onclick]');
+            allColors.forEach(function(colorDiv) {
+                colorDiv.style.background = 'transparent';
+                const circle = colorDiv.querySelector('div');
+                if (circle) {
+                    circle.style.borderColor = '#ddd';
+                    circle.style.borderWidth = '3px';
+                }
+            });
+            
+            // Add selection to clicked color
+            element.style.background = '#f0f0f0';
+            const circle = element.querySelector('div');
+            if (circle) {
+                const colorMap = {
+                    'Black': '#0A0A0A',
+                    'Light Gray': '#B8BABE',
+                    'Midnight Navy': '#1A222E',
+                    'Light Sand': '#DED0C1'
+                };
+                circle.style.borderColor = colorMap[colorName];
+                circle.style.borderWidth = '3px';
+            }
+        }
     </script>
         <script type="text/javascript">
         /*<![CDATA[*/
@@ -480,6 +508,53 @@
                                 </ul>
                             </div>
                         </details>
+
+                        <!-- Mini Shopping Section -->
+                        <div style="margin-top: 24px; padding: 20px; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px;">
+                            <h3 style="margin: 0 0 8px 0; font-size: 1.3em; font-weight: 700; color: #000;">BodyStory TieFit Sports Hijab</h3>
+                            <p style="margin: 0 0 12px 0; font-size: 0.9em; color: #666; line-height: 1.6;">Breathable, quick-dry, sweat-wicking and UV bloacking sports hijab for active muslimah. Comfortable and easy to style, this sports hijab is made for performance and endurance, while also making it the best casual sports fashion essentials.</p>
+                            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 12px;">
+                                <div style="display: flex; gap: 2px;">
+                                    <span style="color: #ffc107; font-size: 1.1em;">★</span>
+                                    <span style="color: #ffc107; font-size: 1.1em;">★</span>
+                                    <span style="color: #ffc107; font-size: 1.1em;">★</span>
+                                    <span style="color: #ffc107; font-size: 1.1em;">★</span>
+                                    <span style="color: #ffc107; font-size: 1.1em;">★</span>
+                                </div>
+                                <span style="font-size: 0.95em; color: #666; font-weight: 600;">4.8/5</span>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <span style="text-decoration: line-through; color: #999; font-size: 0.95em;">98.75 MYR</span>
+                            </div>
+                            <div style="margin-bottom: 8px;">
+                                <span style="font-size: 1.5em; font-weight: 700; color: #971b1b;">79 MYR</span>
+                            </div>
+                            <div>
+                                <span style="display: inline-block; background: #971b1b; color: #fff; padding: 4px 12px; border-radius: 4px; font-size: 0.9em; font-weight: 600;">20% OFF</span>
+                            </div>
+                            <div style="margin-top: 16px;">
+                                <div style="font-size: 0.95em; font-weight: 600; color: #333; margin-bottom: 8px;">Colors:</div>
+                                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                                    <div onclick="selectColor(this, 'Black')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 4px; border-radius: 8px; transition: background 0.2s;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #0A0A0A; border: 3px solid #0A0A0A;"></div>
+                                        <span style="font-size: 0.85em; color: #666;">Black</span>
+                                    </div>
+                                    <div onclick="selectColor(this, 'Light Gray')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 4px; border-radius: 8px; transition: background 0.2s;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #B8BABE; border: 3px solid #ddd;"></div>
+                                        <span style="font-size: 0.85em; color: #666;">Light Gray</span>
+                                    </div>
+                                    <div onclick="selectColor(this, 'Midnight Navy')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 4px; border-radius: 8px; transition: background 0.2s;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #1A222E; border: 3px solid #ddd;"></div>
+                                        <span style="font-size: 0.85em; color: #666;">Midnight Navy</span>
+                                    </div>
+                                    <div onclick="selectColor(this, 'Light Sand')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 4px; border-radius: 8px; transition: background 0.2s;">
+                                        <div style="width: 40px; height: 40px; border-radius: 50%; background: #DED0C1; border: 3px solid #ddd;"></div>
+                                        <span style="font-size: 0.85em; color: #666;">Light Sand</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="openCart()" style="margin-top: 16px; width: 100%; padding: 14px; background: #163903; color: #fff; border: none; border-radius: 6px; font-size: 1em; font-weight: 600; cursor: pointer; transition: background 0.2s; text-transform: uppercase; letter-spacing: 0.5px;">Add to Cart</button>
+                        </div>
                     </div>
 
             </div>
