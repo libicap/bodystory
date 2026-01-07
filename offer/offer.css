@@ -215,8 +215,8 @@ nav ul li a:hover {
     font-size: 1.1em;
 }
 .offer {
-    background: #ffe600;
-    color: #222;
+    background: #971b1b;
+    color: #fff;
     padding: 3px 10px;
     border-radius: 6px;
     font-weight: 500;
@@ -255,9 +255,28 @@ nav ul li a:hover {
     border-radius: 12px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.07);
     padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.why-love-image {
+    flex: 1;
+    min-width: 0;
+}
+.why-love-image img {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.why-love-content {
+    flex: 1;
+    min-width: 0;
 }
 .why-love h2 {
     margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+    .why-love {
+        flex-direction: column;
+    }
 }
 .icons {
     display: flex;
