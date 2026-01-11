@@ -637,3 +637,98 @@ footer {
         right: 0;
     }
 }
+
+/* Problem Solutions Grid */
+.problem-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.solution-box {
+    padding: 24px;
+    border: 2px solid #163903;
+}
+
+.solution-box h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #163903;
+    margin-bottom: 12px;
+}
+
+.solution-box p {
+    font-size: 1.05em;
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Mobile Responsiveness for Problem Solutions Grid */
+@media (max-width: 768px) {
+    .problem-solutions-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .solution-box {
+        padding: 20px;
+    }
+    
+    .solution-box h3 {
+        font-size: 1.1em;
+    }
+    
+    .solution-box p {
+        font-size: 1em;
+    }
+    
+    .product-main {
+        padding: 10px;
+    }
+    
+    .overheat-info, .why-love {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+    
+    .product-info h1 {
+        white-space: normal !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .problem-solutions-grid {
+        gap: 12px;
+        margin-top: 20px;
+    }
+    
+    .solution-box {
+        padding: 16px;
+    }
+    
+    .solution-box h3 {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+    
+    .solution-box p {
+        font-size: 0.95em;
+        line-height: 1.6;
+    }
+    
+    .overheat-info, .why-love {
+        padding: 15px;
+        margin: 15px 5px;
+    }
+    
+    .overheat-info h2, .why-love h2 {
+        font-size: 1.3em;
+        margin-bottom: 12px;
+    }
+    
+    .knowledge-intro {
+        font-size: 0.95em;
+    }
+}
