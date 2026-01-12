@@ -290,7 +290,7 @@ nav ul li a:hover {
     margin-bottom: 18px;
     text-align: center;
     font-size: 2em;
-    color: #163903;
+    color: #000;
     font-weight: 700;
 }
 .icons {
@@ -750,7 +750,7 @@ footer {
 
 .bundle-offer-section h2 {
     font-size: 2em;
-    color: #163903;
+    color: #000;
     margin-bottom: 24px;
     font-weight: 700;
 }
@@ -926,5 +926,131 @@ details[open] > div {
 
 details > div > * {
     overflow: hidden;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    background-color: #163903;
+    color: #fff;
+    padding: 50px 20px;
+    margin: 40px 0;
+}
+
+.subscribe-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe-section h2 {
+    color: #fff;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.subscribe-benefits {
+    text-align: left;
+    margin: 25px auto;
+    max-width: 650px;
+}
+
+.benefit-item {
+    margin-bottom: 15px;
+    padding: 0;
+    background: transparent;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.benefit-item:hover {
+    background: transparent;
+}
+
+.benefit-item p {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.shipping-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    font-size: 1em;
+    gap: 5px;
+    opacity: 0.95;
+    margin-top: 8px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 12px;
+    max-width: 550px;
+    margin: 30px auto 0;
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 18px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 1.1em;
+    outline: none;
+    background: rgba(255, 255, 255, 0.95);
+    transition: border-color 0.3s, background 0.3s;
+}
+
+.subscribe-input:focus {
+    border-color: #fff;
+    background: #fff;
+}
+
+.subscribe-button {
+    padding: 18px 40px;
+    background-color: #fff;
+    color: #163903;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.subscribe-button:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .subscribe-section {
+        padding: 50px 20px;
+    }
+    
+    .subscribe-section h2 {
+        font-size: 2em;
+    }
+    
+    .benefit-item p {
+        font-size: 1.2em;
+    }
+    
+    .shipping-details {
+        font-size: 1em;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+    }
+    
+    .subscribe-button {
+        width: 100%;
+    }
 }
 
