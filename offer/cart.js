@@ -102,3 +102,82 @@ function startCartCountdown() {
     updateTimer();
     cartCountdownInterval = setInterval(updateTimer, 1000);
 }
+
+// Cart overlay and panel functions
+function openCart() {
+    document.getElementById('cartPanel').classList.add('open');
+    document.getElementById('cartOverlay').classList.add('open');
+    // Push a state to history so back button closes the cart
+    if (window.history && window.history.pushState) {
+        window.history.pushState({cartOpen: true}, '', window.location.href);
+    }
+}
+
+function closeCart() {
+    document.getElementById('cartPanel').classList.remove('open');
+    document.getElementById('cartOverlay').classList.remove('open');
+}
+
+// Handle browser back button - close cart instead of navigating away
+window.addEventListener('popstate', function(event) {
+    var panel = document.getElementById('cartPanel');
+    if (panel && panel.classList.contains('open')) {
+        closeCart();
+        // Prevent further back navigation by pushing forward again
+        event.preventDefault();
+    }
+});
+
+// Hide announcement bar on scroll down, show on scroll up
+let lastScrollTop = 0;
+const announcementBar = document.querySelector('.announcement-bar');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+        // Scrolling down
+        announcementBar.classList.add('hidden');
+    } else {
+        // Scrolling up
+        announcementBar.classList.remove('hidden');
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}, false);
+
+// Color selection function
+function selectColor(element, colorName) {
+    // Remove selection from all color options
+    const allColors = element.parentElement.querySelectorAll('div[onclick]');
+    allColors.forEach(function(colorDiv) {
+        colorDiv.style.background = 'transparent';
+        colorDiv.style.border = 'none';
+        const circle = colorDiv.querySelector('div');
+        if (circle) {
+            circle.style.borderColor = '#ddd';
+            circle.style.borderWidth = '3px';
+        }
+    });
+    
+    // Add selection to clicked color
+    element.style.background = 'transparent';
+    element.style.border = '2px solid #163903';
+    const circle = element.querySelector('div');
+    if (circle) {
+        const colorMap = {
+            'Black': '#0A0A0A',
+            'Light Gray': '#B8BABE',
+            'Midnight Navy': '#1A222E',
+            'Light Sand': '#DED0C1'
+        };
+        circle.style.borderColor = colorMap[colorName];
+        circle.style.borderWidth = '3px';
+    }
+    
+    // Update selected color name display
+    const selectedColorSpan = document.getElementById('selectedColorName');
+    if (selectedColorSpan) {
+        selectedColorSpan.textContent = ' - ' + colorName;
+    }
+}
