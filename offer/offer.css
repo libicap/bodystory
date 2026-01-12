@@ -894,3 +894,31 @@ footer {
         gap: 24px;
     }
 }
+
+/* Smooth dropdown transitions */
+details {
+    overflow: hidden;
+}
+
+details > div {
+    animation: slideDown 0.3s ease-out;
+}
+
+details[open] summary span {
+    transform: rotate(45deg);
+}
+
+details summary span {
+    transition: transform 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

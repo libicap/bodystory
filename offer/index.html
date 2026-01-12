@@ -222,7 +222,24 @@
                     <span class="old-price">98.75 MYR</span>
                     <span class="offer">You save 20%</span>
                 </div>
-                <button class="buy-btn" onclick="openCart()">ADD TO CART</button>
+                <div style="margin-top: 16px;">
+                    <div style="font-size: 0.95em; font-weight: 600; color: #333; margin-bottom: 8px;">Colors:<span id="selectedColorName" style="color: #000;"></span></div>
+                    <div style="display: flex; gap: 8px; flex-wrap: nowrap; justify-content: flex-start;">
+                        <div onclick="selectColor(this, 'Black')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 2px; border-radius: 8px; transition: background 0.2s;">
+                            <div style="width: 36px; height: 36px; border-radius: 50%; background: #0A0A0A; border: 3px solid #0A0A0A;"></div>
+                        </div>
+                        <div onclick="selectColor(this, 'Light Gray')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 2px; border-radius: 8px; transition: background 0.2s;">
+                            <div style="width: 36px; height: 36px; border-radius: 50%; background: #B8BABE; border: 3px solid #ddd;"></div>
+                        </div>
+                        <div onclick="selectColor(this, 'Midnight Navy')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 2px; border-radius: 8px; transition: background 0.2s;">
+                            <div style="width: 36px; height: 36px; border-radius: 50%; background: #1A222E; border: 3px solid #ddd;"></div>
+                        </div>
+                        <div onclick="selectColor(this, 'Light Sand')" style="display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; padding: 2px; border-radius: 8px; transition: background 0.2s;">
+                            <div style="width: 36px; height: 36px; border-radius: 50%; background: #DED0C1; border: 3px solid #ddd;"></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-btn" onclick="openCart()" style="margin-top: 20px;">ADD TO CART</button>
                 <p class="desc">High performance tudung specifically designed for any kind of workout. Wrinkle-free, quick dry, light weight and stretchy fabric.</p>
                 <p class="desc">The tudung has all the features a devoted muslim needs for workout without distraction. The fabric has cooling and UV blocking features. The tiny holes on the fabric helps maximize airflow, but when folded and during the wear, it is non see through to uphold your values.</p>
                 <div class="discount-message" style="color:#222; padding:6px 12px; font-size:0.8em; display:inline-block; margin-bottom:12px; margin-top:-8px;">* 20% Discount will be added once you choose your color!</div>
