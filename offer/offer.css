@@ -900,25 +900,31 @@ details {
     overflow: hidden;
 }
 
-details > div {
-    animation: slideDown 0.3s ease-out;
+details summary {
+    cursor: pointer;
+    user-select: none;
+}
+
+details summary span {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
 }
 
 details[open] summary span {
     transform: rotate(45deg);
 }
 
-details summary span {
-    transition: transform 0.3s ease;
+details > div {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+details[open] > div {
+    grid-template-rows: 1fr;
 }
+
+details > div > * {
+    overflow: hidden;
+}
+
