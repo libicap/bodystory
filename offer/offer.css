@@ -1036,27 +1036,51 @@ details > div > * {
 
 @media (max-width: 768px) {
     .subscribe-section {
-        padding: 50px 20px;
+        padding: 40px 15px;
+        margin: 20px 0;
+    }
+    
+    .subscribe-container {
+        padding: 0 5px;
     }
     
     .subscribe-section h2 {
-        font-size: 2em;
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+    
+    .subscribe-benefits {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    
+    .benefit-item {
+        margin-bottom: 12px;
     }
     
     .benefit-item p {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     
     .shipping-details {
-        font-size: 1em;
+        font-size: 0.9em;
+        margin-left: 20px;
     }
     
     .subscribe-form {
         flex-direction: column;
+        padding: 0 10px;
+    }
+    
+    .subscribe-input {
+        padding: 14px 16px;
+        font-size: 1em;
     }
     
     .subscribe-button {
         width: 100%;
+        padding: 14px 20px;
+        font-size: 1em;
     }
 }
 
