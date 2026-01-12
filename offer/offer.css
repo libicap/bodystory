@@ -288,6 +288,10 @@ nav ul li a:hover {
 }
 .overheat-info h2 {
     margin-bottom: 18px;
+    text-align: center;
+    font-size: 2em;
+    color: #163903;
+    font-weight: 700;
 }
 .icons {
     display: flex;
@@ -840,7 +844,7 @@ footer {
 }
 
 .bundle-card-title {
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: 600;
     color: #222;
     margin: 0 0 12px 0;
@@ -854,7 +858,7 @@ footer {
     padding: 6px 16px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 0.85em;
     margin-bottom: 12px;
     width: fit-content;
 }
@@ -868,13 +872,13 @@ footer {
 .bundle-price-old {
     text-decoration: line-through;
     color: #888;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .bundle-price-new {
     color: #0077ff;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 @media (max-width: 900px) {
