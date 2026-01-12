@@ -805,3 +805,88 @@ footer {
         font-size: 0.95em;
     }
 }
+
+/* Bundle Cards Grid */
+.bundle-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+    text-align: left;
+}
+
+.bundle-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.bundle-card-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bundle-card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.bundle-card-image img:hover {
+    transform: scale(1.05);
+}
+
+.bundle-card-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.bundle-discount-tag {
+    display: inline-block;
+    background: #971b1b;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 12px;
+    width: fit-content;
+}
+
+.bundle-card-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bundle-price-old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1em;
+}
+
+.bundle-price-new {
+    color: #0077ff;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+@media (max-width: 900px) {
+    .bundle-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bundle-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
