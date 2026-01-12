@@ -973,6 +973,7 @@ details > div > * {
     margin-bottom: 8px;
     font-weight: 600;
     line-height: 1.3;
+    color: #fff;
 }
 
 .shipping-details {
@@ -983,6 +984,11 @@ details > div > * {
     gap: 5px;
     opacity: 0.95;
     margin-top: 8px;
+    color: #fff;
+}
+
+.shipping-details span {
+    color: #fff;
 }
 
 .subscribe-form {
