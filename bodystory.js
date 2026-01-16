@@ -135,8 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               product: {
                 "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
+                  "max-width": "calc(25% - 5px)",
+                  "margin-left": "5px",
                   "margin-bottom": "50px",
                 },
               },
@@ -256,8 +256,8 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               product: {
                 "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
+                  "max-width": "calc(25% - 5px)",
+                  "margin-left": "5px",
                   "margin-bottom": "50px",
                 },
               },
@@ -382,8 +382,8 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               product: {
                 "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
+                  "max-width": "calc(25% - 5px)",
+                  "margin-left": "5px",
                   "margin-bottom": "50px"
                 }
               },
@@ -527,8 +527,8 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               product: {
                 "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
+                  "max-width": "calc(25% - 5px)",
+                  "margin-left": "5px",
                   "margin-bottom": "50px"
                 }
               },
