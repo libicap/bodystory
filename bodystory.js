@@ -350,6 +350,144 @@ document.addEventListener("DOMContentLoaded", function () {
           },
         },
       });
+      ui.createComponent('product', {
+        id: '7595444994132',
+        variantId: '42833075306580',
+        node: document.getElementById('product-component-1768564485808'),
+        moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
+        options: {
+          product: {
+            styles: {
+              product: {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(25% - 20px)",
+                  "margin-left": "20px",
+                  "margin-bottom": "50px"
+                }
+              },
+              button: {
+                "font-family": "Avant Garde, sans-serif",
+                ":hover": {
+                  "background-color": "#0c4994"
+                },
+                "background-color": "#0d51a4",
+                ":focus": {
+                  "background-color": "#0c4994"
+                },
+                "border-radius": "18px",
+                "padding-left": "65px",
+                "padding-right": "65px"
+              }
+            },
+            contents: {
+              img: false,
+              title: false,
+              price: false,
+              options: false
+            },
+            text: {
+              button: "Blue"
+            }
+          },
+          productSet: {
+            styles: {
+              products: {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          modalProduct: {
+            contents: {
+              img: false,
+              imgWithCarousel: true,
+              button: false,
+              buttonWithQuantity: true
+            },
+            styles: {
+              product: {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              button: {
+                "font-family": "Avant Garde, sans-serif",
+                ":hover": {
+                  "background-color": "#0c4994"
+                },
+                "background-color": "#0d51a4",
+                ":focus": {
+                  "background-color": "#0c4994"
+                },
+                "border-radius": "18px",
+                "padding-left": "65px",
+                "padding-right": "65px"
+              },
+              title: {
+                "font-family": "Montserrat, sans-serif",
+                "font-size": "30px"
+              },
+              price: {
+                "font-family": "PT Sans, sans-serif",
+                "font-weight": "bold"
+              },
+              compareAt: {
+                "font-family": "PT Sans, sans-serif",
+                "font-weight": "bold"
+              },
+              unitPrice: {
+                "font-family": "PT Sans, sans-serif",
+                "font-weight": "bold"
+              }
+            },
+            googleFonts: [
+              "Montserrat",
+              "PT Sans"
+            ],
+            text: {
+              button: "Add to cart"
+            }
+          },
+          option: {},
+          cart: {
+            styles: {
+              button: {
+                "font-family": "Avant Garde, sans-serif",
+                ":hover": {
+                  "background-color": "#0c4994"
+                },
+                "background-color": "#0d51a4",
+                ":focus": {
+                  "background-color": "#0c4994"
+                },
+                "border-radius": "18px"
+              }
+            },
+            text: {
+              total: "Subtotal",
+              button: "Checkout"
+            },
+            popup: false
+          },
+          toggle: {
+            styles: {
+              toggle: {
+                "font-family": "Avant Garde, sans-serif",
+                "background-color": "#0d51a4",
+                ":hover": {
+                  "background-color": "#0c4994"
+                },
+                ":focus": {
+                  "background-color": "#0c4994"
+                }
+              }
+            }
+          }
+        },
+      });
     });
   }
   (function () {
