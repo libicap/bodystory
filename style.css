@@ -406,6 +406,22 @@ html {
   margin-right: 0 !important;
 }
 
+/* Mobile responsive - stack buttons vertically */
+@media (max-width: 600px) {
+  .product-button-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  
+  .product-button {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 /* Boring Part Section */
 .video-wrapper {
   max-width: 600px;
