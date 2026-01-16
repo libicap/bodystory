@@ -182,10 +182,15 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               button: {
                 "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
                 ":hover": { "background-color": "#000000" },
                 "background-color": "#000000",
                 ":focus": { "background-color": "#000000" },
-                "border-radius": "18px",
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
               },
               title: {
                 "font-family": "Montserrat, sans-serif",
@@ -212,10 +217,11 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               button: {
                 "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
                 ":hover": { "background-color": "#000000" },
                 "background-color": "#000000",
                 ":focus": { "background-color": "#000000" },
-                "border-radius": "18px",
+                "border-radius": "30px"
               },
             },
             text: { total: "Subtotal", button: "Checkout" },
@@ -293,11 +299,16 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               button: {
                 "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
                 color: "#000000",
                 ":hover": { color: "#000000", "background-color": "#b79e83" },
                 "background-color": "#cbaf92",
                 ":focus": { "background-color": "#b79e83" },
-                "border-radius": "18px",
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
               },
               title: {
                 "font-family": "Montserrat, sans-serif",
@@ -324,11 +335,12 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               button: {
                 "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
                 color: "#000000",
                 ":hover": { color: "#000000", "background-color": "#b79e83" },
                 "background-color": "#cbaf92",
                 ":focus": { "background-color": "#b79e83" },
-                "border-radius": "18px",
+                "border-radius": "30px"
               },
             },
             text: { total: "Subtotal", button: "Checkout" },
@@ -367,6 +379,7 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               button: {
                 "font-family": "Avant Garde, sans-serif",
+                "font-size": "13px",
                 ":hover": {
                   "background-color": "#0c4994"
                 },
@@ -374,9 +387,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 ":focus": {
                   "background-color": "#0c4994"
                 },
-                "border-radius": "18px",
-                "padding-left": "65px",
-                "padding-right": "65px"
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
               }
             },
             contents: {
@@ -415,6 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               button: {
                 "font-family": "Avant Garde, sans-serif",
+                "font-size": "13px",
                 ":hover": {
                   "background-color": "#0c4994"
                 },
@@ -422,9 +438,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 ":focus": {
                   "background-color": "#0c4994"
                 },
-                "border-radius": "18px",
-                "padding-left": "65px",
-                "padding-right": "65px"
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
               },
               title: {
                 "font-family": "Montserrat, sans-serif",
@@ -456,6 +474,7 @@ document.addEventListener("DOMContentLoaded", function () {
             styles: {
               button: {
                 "font-family": "Avant Garde, sans-serif",
+                "font-size": "13px",
                 ":hover": {
                   "background-color": "#0c4994"
                 },
@@ -463,7 +482,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ":focus": {
                   "background-color": "#0c4994"
                 },
-                "border-radius": "18px"
+                "border-radius": "30px"
               }
             },
             text: {
