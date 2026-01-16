@@ -142,10 +142,15 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               button: {
                 "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
                 ":hover": { "background-color": "#000000" },
                 "background-color": "#000000",
                 ":focus": { "background-color": "#000000" },
-                "border-radius": "18px",
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
               },
             },
             contents: {
@@ -258,11 +263,16 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               button: {
                 "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
                 color: "#000000",
                 ":hover": { color: "#000000", "background-color": "#b79e83" },
                 "background-color": "#cbaf92",
                 ":focus": { "background-color": "#b79e83" },
-                "border-radius": "18px",
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
               },
             },
             contents: {
