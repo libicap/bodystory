@@ -399,6 +399,11 @@ html {
 
 .product-button {
   max-width: 150px !important;
+  margin-right: 5px !important;
+}
+
+.product-button:last-child {
+  margin-right: 0 !important;
 }
 
 /* Boring Part Section */
