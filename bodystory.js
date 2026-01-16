@@ -519,7 +519,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       ui.createComponent('product', {
         id: '7595444994132',
-        node: document.getElementById('product-component-1768567447162'),
+        variantId: '42833075339348',
+        node: document.getElementById('product-component-1768567860579'),
         moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
         options: {
           product: {
