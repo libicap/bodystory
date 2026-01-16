@@ -517,6 +517,160 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         },
       });
+      ui.createComponent('product', {
+        id: '7595444994132',
+        node: document.getElementById('product-component-1768567447162'),
+        moneyFormat: 'RM%7B%7Bamount%7D%7D%20MYR',
+        options: {
+          product: {
+            styles: {
+              product: {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(25% - 20px)",
+                  "margin-left": "20px",
+                  "margin-bottom": "50px"
+                }
+              },
+              button: {
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
+                ":hover": {
+                  "background-color": "#787878"
+                },
+                "background-color": "#858585",
+                ":focus": {
+                  "background-color": "#787878"
+                },
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
+              }
+            },
+            contents: {
+              img: false,
+              title: false,
+              price: false,
+              options: false
+            },
+            text: {
+              button: "Gray"
+            },
+            googleFonts: [
+              "Open Sans"
+            ]
+          },
+          productSet: {
+            styles: {
+              products: {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          modalProduct: {
+            contents: {
+              img: false,
+              imgWithCarousel: true,
+              button: false,
+              buttonWithQuantity: true
+            },
+            styles: {
+              product: {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              button: {
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
+                ":hover": {
+                  "background-color": "#787878"
+                },
+                "background-color": "#858585",
+                ":focus": {
+                  "background-color": "#787878"
+                },
+                "border-radius": "30px",
+                "padding-left": "30px",
+                "padding-right": "30px",
+                "padding-top": "10px",
+                "padding-bottom": "10px"
+              },
+              title: {
+                "font-family": "Montserrat, sans-serif",
+                "font-size": "30px"
+              },
+              price: {
+                "font-family": "PT Sans, sans-serif",
+                "font-weight": "bold"
+              },
+              compareAt: {
+                "font-family": "PT Sans, sans-serif",
+                "font-weight": "bold"
+              },
+              unitPrice: {
+                "font-family": "PT Sans, sans-serif",
+                "font-weight": "bold"
+              }
+            },
+            googleFonts: [
+              "Montserrat",
+              "PT Sans",
+              "Open Sans"
+            ],
+            text: {
+              button: "Add to cart"
+            }
+          },
+          option: {},
+          cart: {
+            styles: {
+              button: {
+                "font-family": "Open Sans, sans-serif",
+                "font-size": "13px",
+                ":hover": {
+                  "background-color": "#787878"
+                },
+                "background-color": "#858585",
+                ":focus": {
+                  "background-color": "#787878"
+                },
+                "border-radius": "30px"
+              }
+            },
+            text: {
+              total: "Subtotal",
+              button: "Checkout"
+            },
+            popup: false,
+            googleFonts: [
+              "Open Sans"
+            ]
+          },
+          toggle: {
+            styles: {
+              toggle: {
+                "font-family": "Open Sans, sans-serif",
+                "background-color": "#858585",
+                ":hover": {
+                  "background-color": "#787878"
+                },
+                ":focus": {
+                  "background-color": "#787878"
+                }
+              }
+            },
+            googleFonts: [
+              "Open Sans"
+            ]
+          }
+        },
+      });
     });
   }
   (function () {
